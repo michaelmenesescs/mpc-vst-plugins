@@ -228,13 +228,13 @@ class Page:
         self.ctl.append(d)
         return d
 
-    def knob(self, key, x, y, r, label, img=None, base=None, look=None, lab=None, vs=None, bw=None, vink=None,
+    def knob(self, key, x, y, r, label, img=None, base=None, look=None, lab=None, vs=None, bw=None, vink=None, when=None, dup=False,
              **labkw):
         """lab: where the label is printed, as a y offset from the centre (negative = above); None = not printed."""
         if r > 59:
             raise SystemExit("hwpanel: knob %s r=%d: filmstrips over r=59 garble on MPC" % (key, r))
         self._c(kind="knob", key=key, x=x, y=y, r=r, label=label, img=img, base=base, look=look, vs=vs, bw=bw,
-                vink=vink or self.vink)
+                vink=vink or self.vink, when=when, dup=bool(when) or dup)
         if lab is not None and label:
             self.text(x, y + lab, label, **labkw)
 
@@ -272,6 +272,8 @@ class Page:
         return out
 
     def popup(self, key, x, y, w, h, label="", field=True, accent=None, cols=None, cw=None, img=None):
+        if not field and not label:   # no drawn box, so no drawn label: the name only identifies its list
+            label = key.upper().replace("_", " ")
         self._c(kind="popup", key=key, x=x, y=y, w=w, h=h, label=label, field=field, accent=accent, cols=cols, cw=cw,
                 img=img)
 
@@ -279,7 +281,7 @@ class Page:
         self._c(kind="button", key=key, x=x, y=y, label=label, img=img, img_on=img_on, w=w, h=h, color=color)
 
     def readout(self, key, x, y, w, h, label=""):
-        self._c(kind="readout", key=key, x=x, y=y, w=w, h=h, label=label)
+        self._c(kind="readout", key=key, x=x, y=y, w=w, h=h, label=label, dup=True)
 
     def picture(self, key, x, y, w, h, files):
         """One image per option of key (the current one shows): a rotary selector's positions, say."""
@@ -343,7 +345,7 @@ class Page:
             want = 130 if c["kind"] == "knob" else max(130, c["w"])
             me = self.box(c, want)
             for j, d in enumerate(self.ctl):
-                if i == j or d["kind"] == "picture":
+                if i == j or d["kind"] == "picture" or (d.get("key") == c.get("key")):
                     continue
                 o = self.box(d, d.get("bw") or (130 if d["kind"] == "knob" else None))
                 if not o:
@@ -380,7 +382,7 @@ class Page:
                 bw = c.get("bw") or c.get("bw_auto") or 130
                 o.append('knob cx=%d cy=%d r=%d label="%s" key=%s ns=0 bw=%d ink_dim=%s%s%s' % (
                     c["x"], Y(c["y"]), c["r"], lab, key, bw, c["vink"].lstrip("#"),
-                    " vs=%d" % c["vs"] if c.get("vs") else "", look))
+                    " vs=%d" % c["vs"] if c.get("vs") else "", look) + (" when=%s" % c["when"] if c.get("when") else ""))
             elif k in ("slider_v", "slider_h"):
                 bw = c.get("bw") or c.get("bw_auto") or max(130, c["w"])
                 o.append('%s cx=%d cy=%d w=%d h=%d label="%s" key=%s ns=0 bw=%d%s%s' % (

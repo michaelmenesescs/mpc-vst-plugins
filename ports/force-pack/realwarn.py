@@ -15,7 +15,7 @@ for pid in sys.argv[1:]:
     for l in open("logs_%s.txt" % pid):
         if "warning" not in l:
             continue
-        m = re.search(r"TOUCH (.+?) and (.+?) overlap", l)
+        m = re.search(r"TOUCH (.*?) and (.*?) overlap by", l)
         if m and any(n.startswith(p + " ") for n in m.groups() for p in pops):
             continue
         if "EDGE" in l and any((" %s " % p) in l for p in pops):
