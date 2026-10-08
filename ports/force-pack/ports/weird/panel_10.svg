@@ -13,10 +13,10 @@
 <defs><linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1030"/><stop offset="1" stop-color="#3a1a4a"/></linearGradient></defs><rect width="1280" height="628" fill="url(#bgg)"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="1254" height="275" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="18" y="64" width="68" height="26" rx="3" fill="#ff4fb4"/>
-<rect x="12" y="345" width="1254" height="275" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="18" y="351" width="68" height="26" rx="3" fill="#36d1dc"/>
+<rect x="12" y="58" width="356" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
+<rect x="18" y="64" width="59" height="26" rx="3" fill="#ff4fb4"/>
+<rect x="378" y="58" width="889" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
+<rect x="384" y="64" width="135" height="26" rx="3" fill="#36d1dc"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f3e9ff" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">Weird Dreams</text>
 <rect x="314" y="16" width="246" height="10" fill="#ff4fb4"/>
 <rect x="314" y="27" width="246" height="10" fill="#36d1dc"/>

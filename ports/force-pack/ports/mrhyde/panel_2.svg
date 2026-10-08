@@ -13,8 +13,12 @@
 <rect width="1280" height="628" fill="#161616"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="171" y="58" width="938" height="275" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
-<rect x="171" y="345" width="938" height="275" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="12" y="58" width="629" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="651" y="58" width="399" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="1060" y="58" width="207" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="12" y="248" width="906" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="928" y="248" width="339" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="12" y="439" width="1256" height="180" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#161616"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f2f2f2" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">MrHyde</text>
 <rect x="182" y="24" width="378" height="6" fill="#ff6a1f"/>

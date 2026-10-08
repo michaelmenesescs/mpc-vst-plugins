@@ -13,19 +13,10 @@
 <rect width="1280" height="628" fill="#c9cccd"/>
 <rect width="1280" height="628" filter="url(#brush)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="13" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="171" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="329" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="487" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="645" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="803" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="961" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="1119" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="13" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="171" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="329" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="487" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="645" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="13" y="59" width="369" height="560" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="394" y="59" width="282" height="560" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="689" y="59" width="282" height="560" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="984" y="59" width="282" height="560" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#141414" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">Braids</text>
 <text x="182" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#141414" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;font-style:italic;">macro oscillator</text>
 <rect x="0" y="2" width="1280" height="8" fill="#000" opacity="0.18"/>

@@ -1,0 +1,173 @@
+<title>Force Panel Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a studio catalogue - one plate per plugin, the panel image large, the Force's knob row under it. */
+:root {
+  color-scheme: dark;
+  --bg: #121315;          /* rack-room black, slightly blue */
+  --plate: #1b1d20;       /* a plugin's plate */
+  --line: #2c2f34;
+  --ink: #ebe7df;         /* panel silkscreen white */
+  --dim: #9a978f;
+  --accent: #f08a24;      /* 808 orange */
+  --knob: #26292e;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) { --bg: #e9e7e2; --plate: #f6f5f2; --line: #d3d0c9; --ink: #1b1c1e; --dim: #66645f;
+    --accent: #c45f0c; --knob: #e4e2dc; color-scheme: light; }
+}
+:root[data-theme="light"] { --bg: #e9e7e2; --plate: #f6f5f2; --line: #d3d0c9; --ink: #1b1c1e; --dim: #66645f;
+  --accent: #c45f0c; --knob: #e4e2dc; color-scheme: light; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+header h1 { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 6vw, 56px); letter-spacing: 0.04em;
+  text-transform: uppercase; margin: 0; line-height: 1; text-wrap: balance; }
+header p { color: var(--dim); max-width: 68ch; margin: 10px 0 0; }
+.status { display: inline-flex; gap: 8px; align-items: center; font-family: var(--mono); font-size: 12px; color: var(--dim);
+  border: 1px solid var(--line); border-radius: 4px; padding: 3px 8px; margin-top: 14px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 14px;
+  margin-top: 18px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; }
+nav button, .tabs button { font-family: var(--display); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  font-size: 15px; background: transparent; color: var(--dim); border: 1px solid var(--line); border-radius: 3px;
+  padding: 5px 12px; cursor: pointer; }
+nav button[aria-pressed="true"], .tabs button[aria-selected="true"] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+nav button:focus-visible, .tabs button:focus-visible, .shot:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.index { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 14px; font-family: var(--mono); font-size: 12px; }
+.index a { color: var(--dim); text-decoration: none; }
+.index a:hover { color: var(--accent); }
+.plugin { background: var(--plate); border: 1px solid var(--line); border-radius: 6px; margin-top: 28px; padding: 18px; }
+.plugin h2 { font-family: var(--display); font-size: 32px; font-weight: 700; letter-spacing: 0.04em; margin: 0;
+  text-transform: uppercase; line-height: 1.1; }
+.head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; }
+.model { color: var(--dim); font-size: 14px; }
+.model b { color: var(--ink); font-weight: 600; }
+.group { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 12px; }
+.tabs button { font-size: 13px; padding: 3px 10px; }
+.shot { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 3px; aspect-ratio: 1280 / 628; background: #000; }
+.ql { margin-top: 14px; display: grid; gap: 10px; }
+.bank { display: grid; grid-template-columns: 112px 1fr; gap: 8px; align-items: start; min-width: 0; }
+.bank .bn { font-family: var(--mono); font-size: 11px; color: var(--dim); padding-top: 6px; text-transform: uppercase; }
+.row { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 4px; }
+.row + .row { margin-top: 4px; }
+.k { background: var(--knob); border: 1px solid var(--line); border-radius: 3px; padding: 4px 6px; min-width: 0; }
+.k small { display: block; font-family: var(--mono); font-size: 10px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.k span { display: block; font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: 0.04em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.k.empty span { color: var(--dim); opacity: 0.4; }
+.legend { font-size: 13px; color: var(--dim); margin-top: 6px; }
+.box { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.88); display: grid; place-items: center; z-index: 10;
+  padding: 16px; cursor: zoom-out; }
+.box img { max-width: 100%; max-height: 100%; }
+@media (max-width: 640px) {
+  .bank { grid-template-columns: 1fr; }
+  .row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .plugin { padding: 12px; }
+}
+@media (prefers-reduced-motion: no-preference) { .shot img { transition: opacity 0.15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Force Panel Book</h1>
+    <p>Every plugin on the Force, redrawn after the machine it models: the same sections in the same order, the knobs where
+      the hardware has them. Under each page are its Q-Links in Screen mode: the Force's eight knobs left to right, then the
+      second bank. A page with more than 16 controls has several Q-Link sets (A, B, C), which MPC lists as sub-pages of that
+      page's tab.</p>
+    <div class="status"><i></i>Staged · built and previewed offline · not installed yet</div>
+  </header>
+  <nav id="filters" aria-label="Filter by kind"></nav>
+  <div class="index" id="index"></div>
+  <main id="list"></main>
+</div>
+<div class="box" id="box" hidden><img id="boximg" alt=""></div>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const P = window.PLUGINS || [];
+  const groups = ["All", "Synths", "Drum machines", "Effects", "Sequencer"];
+  let filter = "All";
+  try { filter = localStorage.getItem("fpb-filter") || "All"; } catch (e) {}
+  const nav = document.getElementById("filters"), list = document.getElementById("list"), index = document.getElementById("index");
+  const box = document.getElementById("box"), boximg = document.getElementById("boximg");
+
+  function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function bankRow(labels, start) {
+    const r = el("div", "row");
+    for (let i = 0; i < 8; i++) {
+      const lab = labels[i] || "";
+      const k = el("div", "k" + (lab ? "" : " empty"));
+      k.append(el("small", null, "Q" + (start + i)), el("span", null, lab || "—"));
+      r.append(k);
+    }
+    return r;
+  }
+
+  function pageView(pl, i, holder) {
+    holder.replaceChildren();
+    const pg = pl.pages[i];
+    const shot = el("button", "shot"); shot.type = "button"; shot.setAttribute("aria-label", "Enlarge " + pl.name + " " + pg.name);
+    const img = el("img"); img.src = pg.img; img.alt = pl.name + " skin, " + pg.name + " page"; img.loading = "lazy"; img.width = 1280; img.height = 628;
+    shot.append(img);
+    shot.addEventListener("click", () => { boximg.src = pg.img; boximg.alt = img.alt; box.hidden = false; });
+    holder.append(shot);
+    const ql = el("div", "ql");
+    pg.banks.forEach(b => {
+      const bank = el("div", "bank");
+      bank.append(el("div", "bn", b.name));
+      const rows = el("div");
+      rows.append(bankRow(b.b1, 1));
+      if (b.b2.some(Boolean)) rows.append(bankRow(b.b2, 9));
+      bank.append(rows); ql.append(bank);
+    });
+    if (!pg.banks.length) ql.append(el("div", "legend", "No Q-Links on this page (buttons and readouts only)."));
+    holder.append(ql);
+  }
+
+  function render() {
+    nav.replaceChildren(); list.replaceChildren(); index.replaceChildren();
+    groups.forEach(g => {
+      const b = el("button", null, g); b.type = "button"; b.setAttribute("aria-pressed", String(g === filter));
+      b.addEventListener("click", () => { filter = g; try { localStorage.setItem("fpb-filter", g); } catch (e) {} render(); });
+      nav.append(b);
+    });
+    P.filter(p => filter === "All" || p.group === filter).forEach(pl => {
+      const a = el("a", null, pl.name); a.href = "#" + pl.id; index.append(a);
+      const s = el("section", "plugin"); s.id = pl.id;
+      const head = el("div", "head");
+      const left = el("div");
+      left.append(el("div", "group", pl.group), el("h2", null, pl.name));
+      const m = el("div", "model"); m.append("Modelled on "); m.append(el("b", null, pl.model));
+      m.append(" · " + pl.pages.length + (pl.pages.length === 1 ? " page" : " pages"));
+      head.append(left, m); s.append(head);
+      const tabs = el("div", "tabs"); tabs.setAttribute("role", "tablist");
+      const holder = el("div");
+      pl.pages.forEach((pg, i) => {
+        const t = el("button", null, pg.name); t.type = "button"; t.setAttribute("role", "tab");
+        t.setAttribute("aria-selected", String(i === 0));
+        t.addEventListener("click", () => {
+          tabs.querySelectorAll("button").forEach(x => x.setAttribute("aria-selected", "false"));
+          t.setAttribute("aria-selected", "true"); pageView(pl, i, holder);
+        });
+        tabs.append(t);
+      });
+      if (pl.pages.length > 1) s.append(tabs); else s.append(el("div", "tabs"));
+      s.append(holder); pageView(pl, 0, holder);
+      list.append(s);
+    });
+  }
+  box.addEventListener("click", () => { box.hidden = true; });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") box.hidden = true; });
+  render();
+})();
+</script>

@@ -13,19 +13,8 @@
 <rect width="1280" height="628" fill="#161616"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="644" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="802" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="960" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="1118" y="58" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="328" y="345" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="486" y="345" width="148" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
-<rect x="644" y="345" width="306" height="275" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
+<rect x="12" y="58" width="1256" height="304" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
+<rect x="12" y="372" width="1256" height="247" rx="6" fill="#1e1e1e" stroke="#333333" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#0e0e0e"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e8e8e8" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">MIDIVERB</text>
 <text x="226" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e8e8e8" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">DIGITAL REVERB / EFFECTS</text>

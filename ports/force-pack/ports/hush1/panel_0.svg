@@ -13,21 +13,18 @@
 <rect width="1280" height="628" fill="#3a3c3f"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="644" y="58" width="306" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="650" y="64" width="79" height="26" rx="3" fill="#d8382e"/>
-<rect x="960" y="58" width="306" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="966" y="64" width="56" height="26" rx="3" fill="#8a8d90"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="328" y="345" width="464" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="334" y="351" width="56" height="26" rx="3" fill="#8a8d90"/>
-<rect x="802" y="345" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="960" y="345" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
-<rect x="1118" y="345" width="148" height="275" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="12" y="58" width="105" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="18" y="64" width="93" height="26" rx="3" fill="#4a6fb5"/>
+<rect x="127" y="58" width="204" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="133" y="64" width="45" height="26" rx="3" fill="#d8382e"/>
+<rect x="342" y="58" width="242" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="348" y="64" width="117" height="26" rx="3" fill="#8a8d90"/>
+<rect x="595" y="58" width="304" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="601" y="64" width="45" height="26" rx="3" fill="#4a6fb5"/>
+<rect x="909" y="58" width="105" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="915" y="64" width="45" height="26" rx="3" fill="#d8382e"/>
+<rect x="1025" y="58" width="242" height="562" rx="6" fill="#45484b" stroke="#1f2022" stroke-width="1.5"/>
+<rect x="1031" y="64" width="45" height="26" rx="3" fill="#8a8d90"/>
 <rect x="0" y="0" width="1280" height="54" fill="#2a2c2e"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#eeeeec" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">HUSH ONE</text>
 <rect x="226" y="16" width="334" height="10" fill="#4a6fb5"/>

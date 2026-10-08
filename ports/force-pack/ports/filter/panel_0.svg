@@ -13,9 +13,10 @@
 <rect width="1280" height="628" fill="#141414"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="408" y="201" width="148" height="275" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
-<rect x="566" y="201" width="148" height="275" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
-<rect x="724" y="201" width="148" height="275" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="12" y="58" width="407" height="562" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="429" y="58" width="154" height="562" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="593" y="58" width="312" height="562" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="916" y="58" width="351" height="562" rx="6" fill="#1c1c1c" stroke="#3a3a3a" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#141414"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f0ede6" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">FILTER</text>
 <text x="182" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#f0ede6" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">MULTIMODE STATE VARIABLE</text>

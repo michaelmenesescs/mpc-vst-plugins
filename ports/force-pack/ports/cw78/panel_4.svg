@@ -13,10 +13,12 @@
 <rect width="1280" height="628" fill="#1c1916"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="1096" height="275" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="18" y="64" width="45" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="12" y="345" width="1096" height="275" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="18" y="351" width="45" height="26" rx="3" fill="#e07b2c"/>
+<rect x="12" y="58" width="483" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="18" y="64" width="69" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="505" y="58" width="300" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="511" y="64" width="69" height="26" rx="3" fill="#e07b2c"/>
+<rect x="815" y="58" width="452" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="821" y="64" width="61" height="26" rx="3" fill="#e8d7b0"/>
 <rect x="0" y="0" width="1280" height="54" fill="#1c1916"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e8d7b0" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">CW-78</text>
 <rect x="160" y="16" width="400" height="10" fill="#e07b2c"/>
