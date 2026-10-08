@@ -34,5 +34,5 @@ def source(cfg):
     if cfg.get("params"):
         return cfg["params"], None
     if cfg.get("module"):
-        return cfg["module"], "schwung"
+        return cfg["module"], cfg.get("adapter", "schwung")
     raise SystemExit('vst.json: needs "params" (or an adapter\'s source, e.g. "module")')

@@ -288,9 +288,19 @@ def main():
         return
     plist, sections = params.load(os.path.join(here, src))
     import shadow_skin
-    if cfg.get("layout"):
-        plist = plist + shadow_skin.popup_params(os.path.join(here, cfg["layout"]), plist)
     os.makedirs(build, exist_ok=True)
+    # Pick the layout FIRST (auto-layout when vst.json has none) so its popups can add their hidden
+    # "<key>__open" params before params.h is written -- an auto-layout uses popup widgets for long
+    # option lists, and write_skin rejects them unless the hidden params exist.
+    if cfg.get("layout"):
+        layout = os.path.join(here, cfg["layout"])
+    else:
+        import studio
+        ps, sections = studio.load_params(os.path.join(here, src))
+        layout = os.path.join(build, "layout.auto.conf")
+        open(layout, "w").write(studio.auto_layout(ps, sections))
+        print("no layout in vst.json: auto-layout written to", layout)
+    plist = plist + shadow_skin.popup_params(layout, plist)
     gen_params(cfg, plist, os.path.join(build, "params.h"))
     print("params.h: %d params" % len(plist))
     if sys.argv[2:] == ["--params-h"]:
@@ -300,14 +310,6 @@ def main():
         print("custom_skin: the port builds its skin")
         return
 
-    if cfg.get("layout"):
-        layout = os.path.join(here, cfg["layout"])
-    else:
-        import studio
-        ps, sections = studio.load_params(os.path.join(here, src))
-        layout = os.path.join(build, "layout.auto.conf")
-        open(layout, "w").write(studio.auto_layout(ps, sections))
-        print("no layout in vst.json: auto-layout written to", layout)
     import shutil
     shutil.rmtree(os.path.join(build, "skin"), ignore_errors=True)   # no stale images from older builds
     art = os.environ.get("SHADOW_ART") or (os.path.join(TOOLS, "html_art.py") if cfg.get("art") == "html"
