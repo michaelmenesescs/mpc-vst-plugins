@@ -544,3 +544,75 @@ def pdenis(params):
     p.qrow("portamento", "preset", "legato", "patch_mode")
     pages.append(p)
     return pages
+
+
+# ---- ML-185 (RYK M185 / Metropolis-style stage sequencer) ----------------------------------------------------------
+# Reference: the RYK Audio M185 and Intellijel Metropolis Eurorack panels: black anodised panel, white legends, eight
+# stage columns each with its LED, a long PITCH slider, a PULSE COUNT selector, a GATE MODE selector (off / single /
+# multi / hold) and the SLIDE and ACCENT switches; the clock and transport controls in a block at the right (stages,
+# direction, rate, randomize). GLOBAL keeps the scale and MIDI settings in the same panel.
+def pml185(params):
+    INK, Y = "#f2f2f2", "#f2c230"
+    lab = dict(size=12, fill=INK, font=SANS, weight=700, sp=0.08)
+    p = Page("STAGES", vink=Y, lab=lab, seg_text=True)
+    p.add(rect(0, 0, 1280, 628, "#0a0a0a"), brushed(8, 6, 1264, 616, "#151515", dark=True))
+    for x in (24, 1256):
+        for y in (20, 608):
+            p.add(hexscrew(x, y, 6))
+    p.add(T(40, 34, "ML-185", 24, INK, 700, anchor="start", sp=0.1), T(190, 36, "STAGE SEQUENCER", 12, "#9a9a9a", 700, anchor="start", sp=0.3))
+    p.asset("ml_k.svg", knob_img(body="#1a1a1a", edge="#000", knurl="#2b2b2b", knurl_n=24, line_c=INK, line=(0.2, 0.95),
+                                 line_w=7, shine=0.25, rr=0.9))
+    p.asset("ml_tr.svg", svg_doc(28, 200, rect(11, 0, 6, 200, "#000", rx=3)))
+    p.asset("ml_cap.svg", svg_doc(28, 36, rect(1, 1, 26, 34, "#e8e8e8", rx=3, stroke="#555") + rect(1, 16, 26, 4, "#111")))
+    sw_off = p.asset("ml_sw.svg", svg_doc(40, 40, circle(20, 20, 13, "#2a2a2a", "#000") + circle(20, 20, 5, "#3a120c")))
+    sw_on = p.asset("ml_swon.svg", svg_doc(40, 40, circle(20, 20, 13, "#2a2a2a", "#000") + circle(20, 20, 9, Y, extra=' opacity="0.4"') +
+                                       circle(20, 20, 5, Y)))
+    for i in range(1, 9):
+        x = 74 + (i - 1) * 116
+        p.add(line(x + 58, 56, x + 58, 600, "#2c2c2c", 1), T(x, 62, str(i), 16, Y, 700), led(x + 26, 62, 5))
+        for t in range(9):
+            p.add(line(x - 26, 93 + 154 * t / 8, x - 18, 93 + 154 * t / 8, "#5a5a5a", 1))
+        p.slider("pitch%d" % i, x, 170, 28, 170, "PITCH", img="hw_ml_cap.svg", base="hw_ml_tr.svg", vs=15, bw=100)
+        p.knob("pulses%d" % i, x, 336, 22, "PULSES", img="hw_ml_k.svg", lab=-34, size=10, vs=15, bw=100)
+        p.switch("gate%d" % i, x, 462, 4, vertical=True, sw=90, sh=22)
+        p.toggle("slide%d" % i, x - 22, 556, "SLIDE", img=sw_off, img_on=sw_on, w=40, h=40)
+        p.toggle("accent%d" % i, x + 22, 556, "ACCENT", img=sw_off, img_on=sw_on, w=40, h=40)
+        p.add(T(x - 22, 586, "SLD", 9, INK, 700), T(x + 22, 586, "ACC", 9, INK, 700))
+    p.add(T(30, 300, "", 1, INK), T(26, 462, "GATE", 9, "#9a9a9a", 700, extra=' transform="rotate(-90 26 462)"'),
+          T(26, 170, "PITCH", 9, "#9a9a9a", 700, extra=' transform="rotate(-90 26 170)"'))
+    # clock block
+    p.add(rect(1000, 56, 254, 548, "none", rx=6, stroke="#3a3a3a"), T(1127, 76, "CLOCK", 13, Y, 700, sp=0.3))
+    p.knob("length", 1127, 150, 34, "STAGES", img="hw_ml_k.svg", lab=-52)
+    p.add(T(1127, 236, "RATE", 11, INK, 700))
+    p.popup("rate", 1127, 270, 180, 40, label="", accent=Y)
+    p.add(T(1127, 324, "DIRECTION", 11, INK, 700))
+    p.switch("direction", 1127, 392, 4, vertical=True, sw=180, sh=28)
+    p.button("randomize", 1127, 520, "RANDOMIZE", color="b8860b")
+    p.qrow(*["pitch%d" % i for i in range(1, 9)])
+    p.qrow(*["pulses%d" % i for i in range(1, 9)])
+    pages = [p]
+
+    p = Page("GLOBAL", vink=Y, lab=lab, seg_text=True)
+    p.asset("ml_k.svg", knob_img(body="#1a1a1a", edge="#000", knurl="#2b2b2b", knurl_n=24, line_c=INK, line=(0.2, 0.95),
+                                 line_w=7, shine=0.25, rr=0.9))
+    p.add(rect(0, 0, 1280, 628, "#0a0a0a"), brushed(8, 6, 1264, 616, "#151515", dark=True))
+    for x in (24, 1256):
+        for y in (20, 608):
+            p.add(hexscrew(x, y, 6))
+    p.add(T(40, 34, "ML-185", 24, INK, 700, anchor="start", sp=0.1), T(190, 36, "GLOBAL", 12, "#9a9a9a", 700, anchor="start", sp=0.3))
+    for n, a, b in (("TIME", 30, 420), ("KEY", 440, 1250)):
+        p.add(rect(a, 70, b - a, 230, "none", rx=6, stroke="#3a3a3a"), T((a + b) / 2, 90, n, 13, Y, 700, sp=0.3))
+    p.knob("swing", 130, 190, 36, "SWING", img="hw_ml_k.svg", lab=-56)
+    p.knob("gate_len", 320, 190, 36, "GATE LENGTH", img="hw_ml_k.svg", lab=-56)
+    p.add(T(600, 140, "SCALE", 11, INK, 700), T(870, 140, "ROOT", 11, INK, 700))
+    p.popup("scale", 600, 190, 220, 44, label="", accent=Y)
+    p.popup("root", 870, 190, 160, 44, label="", accent=Y)
+    p.knob("octave", 1110, 190, 36, "OCTAVE", img="hw_ml_k.svg", lab=-56)
+    p.add(rect(30, 320, 1220, 280, "none", rx=6, stroke="#3a3a3a"), T(640, 340, "MIDI", 13, Y, 700, sp=0.3))
+    for i, (k, l) in enumerate((("channel", "CHANNEL"), ("velocity", "VELOCITY"), ("accent_vel", "ACCENT VEL"))):
+        p.knob(k, 140 + i * 200, 450, 36, l, img="hw_ml_k.svg", lab=-56)
+    p.add(T(950, 400, "MIDI OUT PORT", 11, INK, 700))
+    p.readout("status", 950, 460, 420, 64, "")
+    p.qrow("swing", "gate_len", "scale", "root", "octave", "channel", "velocity", "accent_vel")
+    pages.append(p)
+    return pages

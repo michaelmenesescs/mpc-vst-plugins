@@ -1,40 +1,238 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
-<defs>
-<filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.002 0.9"
- numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.16 0"/></filter>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9"
- numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.10 0"/></filter>
-<filter id="woodf" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.25"
- numOctaves="3" seed="11"/><feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.20  0 0 0 0 0.09  0 0 0 0.9 0"/></filter>
-<linearGradient id="screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eee"/><stop offset="1" stop-color="#777"/></linearGradient>
-<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/>
- <stop offset="1" stop-color="#000" stop-opacity="0.12"/></linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628"><defs>
+<linearGradient id="hw-screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+<filter id="hw-brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="5"/>
+ <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.20 0"/></filter>
+<filter id="hw-brushd" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="9"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter>
+<filter id="hw-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.07 0"/></filter>
+<filter id="hw-wood" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.18" numOctaves="4" seed="21"/>
+ <feColorMatrix values="0 0 0 0 0.30  0 0 0 0 0.15  0 0 0 0 0.05  0 0 0 0.85 0"/></filter>
+<filter id="hw-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="hw-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.45"/></filter>
+<linearGradient id="hw-vshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="1" stop-color="#000" stop-opacity="0.14"/></linearGradient>
 </defs>
-<defs><linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1030"/><stop offset="1" stop-color="#3a1a4a"/></linearGradient></defs><rect width="1280" height="628" fill="url(#bgg)"/>
-<rect width="1280" height="628" filter="url(#grain)"/>
-<rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="18" y="64" width="34" height="26" rx="3" fill="#ff4fb4"/>
-<rect x="152" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="158" y="64" width="34" height="26" rx="3" fill="#36d1dc"/>
-<rect x="293" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="299" y="64" width="34" height="26" rx="3" fill="#8a5cf5"/>
-<rect x="434" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="440" y="64" width="34" height="26" rx="3" fill="#ff4fb4"/>
-<rect x="574" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="580" y="64" width="34" height="26" rx="3" fill="#36d1dc"/>
-<rect x="715" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="721" y="64" width="34" height="26" rx="3" fill="#8a5cf5"/>
-<rect x="855" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="861" y="64" width="34" height="26" rx="3" fill="#ff4fb4"/>
-<rect x="996" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="1002" y="64" width="34" height="26" rx="3" fill="#36d1dc"/>
-<rect x="1137" y="58" width="130" height="562" rx="6" fill="#24163d" stroke="#5a3f87" stroke-width="1.5"/>
-<rect x="1143" y="64" width="97" height="26" rx="3" fill="#8a5cf5"/>
-<text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f3e9ff" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">Weird Dreams</text>
-<rect x="314" y="16" width="246" height="10" fill="#ff4fb4"/>
-<rect x="314" y="27" width="246" height="10" fill="#36d1dc"/>
-<text x="580" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#f3e9ff" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;font-style:italic;">8 VOICE DRUM MACHINE</text>
-<circle cx="10" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7" stroke="#444" stroke-width="1.6"/>
-<circle cx="1270" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="1267.3" y1="7.3" x2="1272.7" y2="12.7" stroke="#444" stroke-width="1.6"/>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#0b0a0c"/>
+<rect x="6" y="6" width="1268" height="616" rx="8" fill="#151417"/>
+<rect x="6" y="6" width="1268" height="616" filter="url(#hw-grain)"/>
+<text x="26" y="30" font-size="20" fill="#e9e6ef" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.3em;font-style:italic;">WEIRD DREAMS</text>
+<text x="1254" y="30" font-size="12" fill="#9a96a6" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.24em;">8 VOICE DRUM MACHINE</text>
+<rect x="290" y="27" width="22" height="6" rx="3" fill="#ff4f6a"/>
+<rect x="318" y="27" width="22" height="6" rx="3" fill="#ff8a3a"/>
+<rect x="346" y="27" width="22" height="6" rx="3" fill="#f2c63a"/>
+<rect x="374" y="27" width="22" height="6" rx="3" fill="#7ad15a"/>
+<rect x="402" y="27" width="22" height="6" rx="3" fill="#36c9c3"/>
+<rect x="430" y="27" width="22" height="6" rx="3" fill="#3a8ff2"/>
+<rect x="458" y="27" width="22" height="6" rx="3" fill="#8a6af2"/>
+<rect x="486" y="27" width="22" height="6" rx="3" fill="#e05ad8"/>
+<rect x="18" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="18" y="50" width="126" height="26" rx="6" fill="#ff4f6a"/>
+<rect x="18" y="64" width="126" height="12" rx="0" fill="#ff4f6a"/>
+<text x="81" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 1</text>
+<line x1="36" y1="246" x2="44" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="269" x2="44" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="292" x2="44" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="315" x2="44" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="338" x2="44" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="361" x2="44" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="384" x2="44" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="407" x2="44" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="430" x2="44" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="453" x2="44" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="36" y1="476" x2="44" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="58" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="94" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="115" cy="440" r="5" fill="#ff4f6a"/>
+
+<rect x="32" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="81" cy="583" r="6" fill="#ff4f6a" opacity="0.8"/>
+<rect x="152" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="152" y="50" width="126" height="26" rx="6" fill="#ff8a3a"/>
+<rect x="152" y="64" width="126" height="12" rx="0" fill="#ff8a3a"/>
+<text x="215" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 2</text>
+<line x1="170" y1="246" x2="178" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="269" x2="178" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="292" x2="178" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="315" x2="178" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="338" x2="178" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="361" x2="178" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="384" x2="178" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="407" x2="178" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="430" x2="178" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="453" x2="178" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="170" y1="476" x2="178" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="192" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="228" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="249" cy="440" r="5" fill="#ff8a3a"/>
+
+<rect x="166" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="215" cy="583" r="6" fill="#ff8a3a" opacity="0.8"/>
+<rect x="286" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="286" y="50" width="126" height="26" rx="6" fill="#f2c63a"/>
+<rect x="286" y="64" width="126" height="12" rx="0" fill="#f2c63a"/>
+<text x="349" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 3</text>
+<line x1="304" y1="246" x2="312" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="269" x2="312" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="292" x2="312" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="315" x2="312" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="338" x2="312" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="361" x2="312" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="384" x2="312" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="407" x2="312" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="430" x2="312" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="453" x2="312" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="304" y1="476" x2="312" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="326" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="362" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="383" cy="440" r="5" fill="#f2c63a"/>
+
+<rect x="300" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="349" cy="583" r="6" fill="#f2c63a" opacity="0.8"/>
+<rect x="420" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="420" y="50" width="126" height="26" rx="6" fill="#7ad15a"/>
+<rect x="420" y="64" width="126" height="12" rx="0" fill="#7ad15a"/>
+<text x="483" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 4</text>
+<line x1="438" y1="246" x2="446" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="269" x2="446" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="292" x2="446" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="315" x2="446" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="338" x2="446" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="361" x2="446" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="384" x2="446" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="407" x2="446" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="430" x2="446" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="453" x2="446" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="438" y1="476" x2="446" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="460" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="496" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="517" cy="440" r="5" fill="#7ad15a"/>
+
+<rect x="434" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="483" cy="583" r="6" fill="#7ad15a" opacity="0.8"/>
+<rect x="554" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="554" y="50" width="126" height="26" rx="6" fill="#36c9c3"/>
+<rect x="554" y="64" width="126" height="12" rx="0" fill="#36c9c3"/>
+<text x="617" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 5</text>
+<line x1="572" y1="246" x2="580" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="269" x2="580" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="292" x2="580" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="315" x2="580" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="338" x2="580" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="361" x2="580" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="384" x2="580" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="407" x2="580" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="430" x2="580" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="453" x2="580" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="572" y1="476" x2="580" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="594" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="630" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="651" cy="440" r="5" fill="#36c9c3"/>
+
+<rect x="568" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="617" cy="583" r="6" fill="#36c9c3" opacity="0.8"/>
+<rect x="688" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="688" y="50" width="126" height="26" rx="6" fill="#3a8ff2"/>
+<rect x="688" y="64" width="126" height="12" rx="0" fill="#3a8ff2"/>
+<text x="751" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 6</text>
+<line x1="706" y1="246" x2="714" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="269" x2="714" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="292" x2="714" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="315" x2="714" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="338" x2="714" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="361" x2="714" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="384" x2="714" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="407" x2="714" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="430" x2="714" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="453" x2="714" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="706" y1="476" x2="714" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="728" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="764" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="785" cy="440" r="5" fill="#3a8ff2"/>
+
+<rect x="702" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="751" cy="583" r="6" fill="#3a8ff2" opacity="0.8"/>
+<rect x="822" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="822" y="50" width="126" height="26" rx="6" fill="#8a6af2"/>
+<rect x="822" y="64" width="126" height="12" rx="0" fill="#8a6af2"/>
+<text x="885" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 7</text>
+<line x1="840" y1="246" x2="848" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="269" x2="848" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="292" x2="848" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="315" x2="848" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="338" x2="848" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="361" x2="848" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="384" x2="848" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="407" x2="848" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="430" x2="848" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="453" x2="848" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="840" y1="476" x2="848" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="862" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="898" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="919" cy="440" r="5" fill="#8a6af2"/>
+
+<rect x="836" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="885" cy="583" r="6" fill="#8a6af2" opacity="0.8"/>
+<rect x="956" y="50" width="126" height="566" rx="6" fill="#1c1b20"/>
+<rect x="956" y="50" width="126" height="26" rx="6" fill="#e05ad8"/>
+<rect x="956" y="64" width="126" height="12" rx="0" fill="#e05ad8"/>
+<text x="1019" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VOICE 8</text>
+<line x1="974" y1="246" x2="982" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="269" x2="982" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="292" x2="982" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="315" x2="982" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="338" x2="982" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="361" x2="982" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="384" x2="982" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="407" x2="982" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="430" x2="982" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="453" x2="982" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="974" y1="476" x2="982" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="996" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOL</text>
+<rect x="1032" y="420" width="42" height="120" rx="6" fill="#2a2830" stroke="#000" stroke-width="1"/>
+<circle cx="1053" cy="440" r="5" fill="#e05ad8"/>
+
+<rect x="970" y="560" width="98" height="46" rx="8" fill="#2c2a32" stroke="#000" stroke-width="1"/>
+<circle cx="1019" cy="583" r="6" fill="#e05ad8" opacity="0.8"/>
+<rect x="1092" y="50" width="176" height="566" rx="6" fill="#1c1b20"/>
+<rect x="1092" y="50" width="176" height="26" rx="6" fill="#e9e6ef"/>
+<rect x="1092" y="64" width="176" height="12" rx="0" fill="#e9e6ef"/>
+<text x="1180" y="63" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">MASTER</text>
+<line x1="1152" y1="246" x2="1162" y2="246" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="269" x2="1162" y2="269" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="292" x2="1162" y2="292" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="315" x2="1162" y2="315" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="338" x2="1162" y2="338" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="361" x2="1162" y2="361" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="384" x2="1162" y2="384" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="407" x2="1162" y2="407" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="430" x2="1162" y2="430" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="453" x2="1162" y2="453" stroke="#55525e" stroke-width="1"/>
+<line x1="1152" y1="476" x2="1162" y2="476" stroke="#55525e" stroke-width="1"/>
+<text x="1180" y="234" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MASTER</text>
+<text x="50" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="112" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="112" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="184" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="246" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="246" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="318" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="380" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="380" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="452" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="514" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="514" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="586" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="648" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="648" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="720" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="782" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="782" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="854" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="916" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="916" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="988" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PAN</text>
+<text x="1050" y="86" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">REV</text>
+<text x="1050" y="170" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DLY</text>
+<text x="1138" y="84" font-size="12" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">COMP</text>
+<text x="1222" y="84" font-size="10" fill="#e9e6ef" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">DJ FILTER</text>
 </svg>

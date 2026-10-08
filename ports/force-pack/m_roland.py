@@ -904,3 +904,171 @@ def p101_more(params, page, track):
     p.qrow("f_attack", "f_decay", "f_sustain", "f_release", "pwm_depth", "pwm_env_depth", "lfo_pwm", "filter_velocity_sens")
     p.qrow("velocity_sens", "preset", "adsr_declick", "filter_volume_correction")
     return [p]
+
+
+# ---- CR-78 (CW-78) ------------------------------------------------------------------------------------------------
+# Reference: a CR-78 product photo (polynominal.com) and its published control list; Commons has no panel photo.
+# Black panel in a black case: the left column with the variation lever and START/STOP, slide faders across the
+# top, the white-outlined programmable box, the orange name lettering, ACCENT and TEMPO knobs, the four white
+# CANCEL buttons, and the rhythm selector: rows of square buttons in grey/white (WALTZ ... ENKA), green (BOSSANOVA ...
+# BEGUINE), blue (ROCK 1-4), yellow (DISCO 1-2), red at the end. The plugin's RHYTHM I list is those seventeen
+# rhythms in that order, and RHYTHM II the second button (the CR-78 combines two pressed rhythms), so each is a row
+# of the coloured buttons. Instrument levels are CR-78-style faders on the next page, then tune / decay, drive, sends.
+CR_GROUPS = [("#d9d9d4", 1), ("#f4f4ef", 6), ("#3fb36a", 4), ("#3f86d8", 4), ("#f2cf35", 2)]
+CR_NAMES = ["WALTZ", "SHUFFLE", "SLOW ROCK", "SWING", "FOXTROT TANGO", "BOOGIE", "ENKA", "BOSSA NOVA", "SAMBA",
+            "MAMBO CHA-CHA", "BEGUINE RHUMBA", "ROCK 1", "ROCK 2", "ROCK 3", "ROCK 4", "DISCO 1", "DISCO 2"]
+
+
+def cr_row(p, key, y, with_off, label):
+    names = (["OFF"] if with_off else []) + CR_NAMES
+    cols = (["#d8342a"] if with_off else []) + [c for c, n in CR_GROUPS for _ in range(n)]
+    n = len(names)
+    sw = int((1236 - 2 * (n - 1)) / n)
+    x0 = 640 - (n * sw + (n - 1) * 2) / 2
+    p.add(T(22, y - 46, label, 12, "#e8e8e8", 700, anchor="start", sp=0.12))
+    for i, (s, c) in enumerate(zip(names, cols)):
+        x = x0 + i * (sw + 2)
+        words = s.split()
+        for j, w in enumerate(words):
+            p.add(T(x + sw / 2, y - 34 + j * 11 - (len(words) - 1) * 5.5, w, 8.5, "#e8e8e8", 700))
+        p.add(rect(x + 3, y - 20, sw - 6, 44, c, rx=3, stroke="#000", sw=1.2), rect(x + 5, y - 18, sw - 10, 12, "#fff", rx=2, extra=' opacity="0.3"'))
+    off = p.asset("cr_btn.svg", svg_doc(sw, 50, ""))
+    on = p.asset("cr_btnon.svg", svg_doc(sw, 50, rect(3, 3, sw - 6, 44, "none", rx=3, stroke="#ff8a2a", sw=4) +
+                                         circle(sw / 2, 34, 4.5, "#ff3a22", "#5a0d08")))
+    p.switch(key, 640, y + 2, n, vertical=False, sw=sw, sh=50, img=off, img_on=on)
+
+
+def k78(cap="#e9e9e4"):
+    return knob_img(body="#151515", edge="#000", knurl="#2a2a2a", knurl_n=30, cap="#1b1b1b", cap_r=0.75,
+                    line_c="#f07a2a", line=(0.1, 0.95), line_w=5, shine=0.2, rr=0.9)
+
+
+def pcr78(params):
+    INK, OR = "#ececec", "#f0872c"
+    lab = dict(size=11, fill=INK, font=SANS, weight=700, sp=0.06)
+    inst = [("bd", "BASS DRUM"), ("sd", "SNARE"), ("rs", "RIM SHOT"), ("hh", "HI-HAT"), ("cy", "CYMBAL"), ("ma", "MARACAS"),
+            ("cl", "CLAVES"), ("hb", "HI BONGO"), ("lb", "LO BONGO"), ("lc", "LO CONGA"), ("cb", "COWBELL"), ("tb", "TAMB"),
+            ("gu", "GUIRO"), ("mb", "METAL BEAT")]
+
+    def page(name):
+        p = Page(name, vink="#f4b06a", lab=lab, seg_text=False)
+        p.add(rect(0, 0, 1280, 628, "#0c0c0c"), rect(10, 6, 1260, 616, "#191919", rx=4), grain(10, 6, 1260, 616))
+        p.asset("k78.svg", k78())
+        p.asset("cr_tr.svg", svg_doc(30, 150, rect(12, 0, 6, 150, "#050505", rx=2)))
+        p.asset("cr_cap.svg", svg_doc(30, 30, circle(15, 15, 13, "#eeeeea", "#555", 1.5) + circle(12, 11, 6, "#fff", extra=' opacity="0.5"')))
+        return p
+
+    def lettering(p, x=1240, y=56):
+        p.add(T(x, y, "CW-78", 40, OR, 700, anchor="end", font=SANS, italic=True, sp=0.02),
+              line(x - 330, y + 26, x, y + 26, OR, 2), T(x, y + 44, "RHYTHM COMPUTER", 14, INK, 700, anchor="end", sp=0.2))
+
+    p = page("CR-78")
+    lettering(p, 1250, 50)
+    # left column: variation lever, start/stop
+    p.add(line(170, 20, 170, 320, "#c9c9c9", 1.5), T(90, 40, "VARIATION", 12, INK, 700))
+    lev = p.asset("cr_lev.svg", svg_doc(60, 34, rect(26, 4, 8, 26, "#050505", rx=3)))
+    levon = p.asset("cr_levon.svg", svg_doc(60, 34, rect(26, 4, 8, 26, "#050505", rx=3) + rect(18, 6, 24, 22, "#d9d9d6", rx=3, stroke="#555")))
+    p.switch("rhy_ab", 90, 104, 2, vertical=False, sw=60, sh=34, img=lev, img_on=levon)
+    p.add(T(60, 134, "A", 13, INK, 700), T(122, 134, "B", 13, INK, 700))
+    p.add(T(90, 186, "START / STOP", 12, INK, 700))
+    ss = p.asset("cr_ss.svg", svg_doc(80, 66, rect(6, 4, 68, 58, "#eee9d6", rx=4, stroke="#000", sw=1.5) + rect(10, 8, 60, 16, "#fff", rx=3, extra=' opacity="0.5"')))
+    sson = p.asset("cr_sson.svg", svg_doc(80, 66, rect(2, 0, 76, 66, "#ff9a3a", rx=6, extra=' opacity="0.35"') +
+                                          rect(6, 4, 68, 58, "#fff3d6", rx=4, stroke="#000", sw=1.5) + circle(40, 46, 5, "#ff3a22")))
+    p.toggle("rhy_mode", 90, 240, "START / STOP", img=ss, img_on=sson, w=80, h=66)
+    # faders
+    p.add(line(470, 20, 470, 320, "#c9c9c9", 1.5))
+    for i, (k, l) in enumerate((("volume", "VOLUME"), ("vel_depth", "ACCENT"), ("comp", "COMP"))):
+        x = 222 + i * 92
+        for t in range(11):
+            yy = 72 + 150 * t / 10
+            p.add(line(x - 26, yy, x - 18, yy, "#9a9a9a", 1), line(x + 18, yy, x + 26, yy, "#9a9a9a", 1))
+        p.slider(k, x, 147, 30, 150, l, img="hw_cr_cap.svg", base="hw_cr_tr.svg", lab=-102, vs=15)
+    # programmable box: master section
+    p.add(rect(490, 30, 340, 286, "none", rx=6, stroke="#e8e8e8", sw=2), rect(560, 22, 200, 18, "#191919"),
+          T(660, 31, "MASTER", 12, OR, 700, sp=0.2))
+    p.add(ticks(570, 120, 36, 42, 11, OR, 1.6), T(570, 64, "DRIVE", 11, INK, 700))
+    p.knob("master_drive", 570, 120, 30, "DRIVE", img="hw_k78.svg")
+    p.popup("master_dist", 740, 120, 150, 40, label="DISTORTION", accent=OR)
+    p.add(T(590, 222, "HAT CHOKE", 11, INK, 700), T(740, 222, "NOTE MAP", 11, INK, 700))
+    p.switch("hat_choke", 590, 270, 3, vertical=True, sw=110, sh=24)
+    p.switch("note_map", 740, 262, 2, vertical=True, sw=110, sh=24)
+    # accent-style knobs at the right: focus / mutes (the plugin's pad focus and mute mask)
+    for x, k, l in ((930, "ui_focus", "FOCUS"), (1080, "mutes", "MUTES")):
+        p.add(ticks(x, 240, 36, 42, 11, OR, 1.6), T(x, 186, l, 11, INK, 700))
+        p.knob(k, x, 240, 30, l, img="hw_k78.svg")
+    p.add(line(20, 330, 1260, 330, "#c9c9c9", 1.5))
+    cr_row(p, "rhy_style", 412, False, "RHYTHM SELECTOR  I")
+    cr_row(p, "rhy_style2", 544, True, "RHYTHM SELECTOR  II  (COMBINED)")
+    p.qrow("rhy_style", "rhy_style2", "rhy_ab", "volume", "vel_depth", "comp", "master_drive", "hat_choke")
+    p.qrow("rhy_mode", "master_dist", "note_map", "ui_focus", "mutes")
+    pages = [p]
+
+    # instrument levels: CR-78 faders, one per voice
+    p = page("LEVELS")
+    lettering(p, 1250, 50)
+    p.add(T(30, 50, "INSTRUMENT LEVEL", 16, INK, 700, anchor="start", sp=0.16))
+    for i, (v, n) in enumerate(inst):
+        x = 60 + i * 89
+        for t in range(11):
+            yy = 190 + 300 * t / 10
+            p.add(line(x - 24, yy, x - 18, yy, "#8a8a8a", 1))
+        words = n.split()
+        for j, w in enumerate(words):
+            p.add(T(x, 150 + j * 13 - (len(words) - 1) * 6, w, 10, INK, 700))
+        p.slider(v + "_level", x, 340, 30, 300, n, img="hw_cr_cap.svg", base="hw_cr_tr.svg", vs=14)
+    p.qrow(*[v + "_level" for v, _ in inst])
+    pages.append(p)
+
+    # tune / decay per voice
+    p = page("VOICES")
+    lettering(p, 1250, 50)
+    p.add(T(30, 50, "INSTRUMENT VOICING", 16, INK, 700, anchor="start", sp=0.16))
+    for i, (v, n) in enumerate(inst):
+        x = 50 + i * 90.7
+        words = n.split()
+        for j, w in enumerate(words):
+            p.add(T(x, 128 + j * 13 - (len(words) - 1) * 6, w, 10, OR, 700))
+        p.add(line(x + 45, 110, x + 45, 600, "#333", 1))
+        p.knob(v + "_tune", x, 200, 24, "TUNE", img="hw_k78.svg", lab=-38)
+        p.knob(v + "_decay", x, 330, 24, "DECAY", img="hw_k78.svg", lab=-38)
+    p.knob("sd_snappy", 50 + 90.7, 460, 24, "SNAPPY", img="hw_k78.svg", lab=-38)
+    p.knob("gu_rate", 50 + 12 * 90.7, 460, 24, "RATE", img="hw_k78.svg", lab=-38)
+    p.qrow(*[v + "_tune" for v, _ in inst])
+    p.qrow(*[v + "_decay" for v, _ in inst], "sd_snappy", "gu_rate")
+    pages.append(p)
+
+    # drive per voice
+    p = page("DRIVE")
+    lettering(p, 1250, 50)
+    p.add(T(30, 50, "DRIVE PER INSTRUMENT", 16, INK, 700, anchor="start", sp=0.16))
+    for i, (v, n) in enumerate(inst):
+        x = 50 + i * 90.7
+        y = 220 if i < 14 else 0
+        words = n.split()
+        for j, w in enumerate(words):
+            p.add(T(x, 128 + j * 13 - (len(words) - 1) * 6, w, 10, OR, 700))
+        p.knob(v + "_drive", x, 210, 24, "DRIVE", img="hw_k78.svg", lab=-38)
+        p.popup(v + "_dist_type", x, 330 if i % 2 == 0 else 400, 86, 34, label="TYPE", accent=OR)
+    p.qrow(*[v + "_drive" for v, _ in inst])
+    pages.append(p)
+
+    # sends
+    p = page("SENDS")
+    lettering(p, 1250, 50)
+    p.add(T(30, 50, "REVERB / DELAY SENDS", 16, INK, 700, anchor="start", sp=0.16))
+    for i, (v, n) in enumerate(inst[1:]):
+        x = 60 + i * 96
+        words = n.split()
+        for j, w in enumerate(words):
+            p.add(T(x, 128 + j * 13 - (len(words) - 1) * 6, w, 10, OR, 700))
+        p.knob(v + "_rev", x, 210, 24, "REVERB", img="hw_k78.svg", lab=-38)
+        p.knob(v + "_dly", x, 340, 24, "DELAY", img="hw_k78.svg", lab=-38)
+    for i, (k, l) in enumerate((("rev_decay", "REV DECAY"), ("rev_tone", "REV TONE"), ("rev_hpf", "REV HPF"), ("rev_level", "REV LEVEL"),
+                                ("dly_fdbk", "DLY FDBK"), ("dly_tone", "DLY TONE"), ("dly_hpf", "DLY HPF"), ("dly_level", "DLY LEVEL"))):
+        p.knob(k, 100 + i * 120, 500, 26, l, img="hw_k78.svg", lab=-40)
+    p.popup("dly_time", 1150, 500, 160, 40, label="DELAY TIME", accent=OR)
+    p.qrow(*[v + "_rev" for v, _ in inst[1:]])
+    p.qrow(*[v + "_dly" for v, _ in inst[1:]])
+    p.qrow("rev_decay", "rev_tone", "rev_hpf", "rev_level", "dly_fdbk", "dly_tone", "dly_hpf", "dly_level")
+    pages.append(p)
+    return pages
