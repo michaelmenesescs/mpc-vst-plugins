@@ -1,0 +1,25 @@
+{
+ "name": "Bus Driver",
+ "vendor": "legsmechanical",
+ "uid": "BusD",
+ "version": 300,
+ "so": "busdriver.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/busdriver_module.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-std=gnu++17"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

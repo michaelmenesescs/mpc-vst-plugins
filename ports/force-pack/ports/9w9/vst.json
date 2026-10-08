@@ -1,0 +1,28 @@
+{
+ "name": "9W9",
+ "vendor": "athousanddetails; after ER-99 (Matthew Cieplak)",
+ "uid": "9W9X",
+ "version": 20700,
+ "so": "9w9.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/er99_engine.c",
+   "src/dsp/er99_plugin.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/tools",
+   "-Isrc/host",
+   "-Isrc/patches",
+   "-Isrc/samples"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

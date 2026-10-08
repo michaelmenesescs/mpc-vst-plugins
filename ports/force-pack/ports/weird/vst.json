@@ -1,0 +1,23 @@
+{
+ "name": "Weird Dreams",
+ "vendor": "Vincent Fillion (DSP Daniele Filaretti, MIT)",
+ "uid": "Weir",
+ "version": 208,
+ "so": "weird-dreams.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/weird_dreams.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "PSX Verb",
+ "vendor": "charlesvestal",
+ "uid": "PSXV",
+ "version": 503,
+ "so": "psxverb.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/psxverb.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

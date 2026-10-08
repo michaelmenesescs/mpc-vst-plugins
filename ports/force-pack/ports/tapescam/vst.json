@@ -1,0 +1,25 @@
+{
+ "name": "TAPESCAM",
+ "vendor": "charlesvestal",
+ "uid": "TAPE",
+ "version": 505,
+ "so": "tapescam.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/tapescam.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

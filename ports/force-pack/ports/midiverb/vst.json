@@ -1,0 +1,27 @@
+{
+ "name": "Midiverb",
+ "vendor": "Charles Vestal (DSP thement midiverb_emulator)",
+ "uid": "Midi",
+ "version": 202,
+ "so": "midiverb.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/plugin.c",
+   "src/dsp/midiverb_core.c",
+   "src/dsp/resampler.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

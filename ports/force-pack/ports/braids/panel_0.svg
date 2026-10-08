@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
+<defs>
+<filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.002 0.9"
+ numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.16 0"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9"
+ numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.10 0"/></filter>
+<filter id="woodf" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.25"
+ numOctaves="3" seed="11"/><feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.20  0 0 0 0 0.09  0 0 0 0.9 0"/></filter>
+<linearGradient id="screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eee"/><stop offset="1" stop-color="#777"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/>
+ <stop offset="1" stop-color="#000" stop-opacity="0.12"/></linearGradient>
+</defs>
+<rect width="1280" height="628" fill="#c9cccd"/>
+<rect width="1280" height="628" filter="url(#brush)"/>
+<rect width="1280" height="628" fill="url(#shade)"/>
+<rect x="13" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="171" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="329" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="487" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="645" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="803" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="961" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="1119" y="59" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="13" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="171" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="329" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="487" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="645" y="346" width="146" height="273" rx="4" fill="none" stroke="#141414" stroke-opacity="0.55" stroke-width="1.5"/>
+<text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#141414" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">Braids</text>
+<text x="182" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#141414" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;font-style:italic;">macro oscillator</text>
+<rect x="0" y="2" width="1280" height="8" fill="#000" opacity="0.18"/>
+<rect x="0" y="618" width="1280" height="8" fill="#000" opacity="0.18"/>
+<circle cx="14" cy="6" r="5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="11" y1="3" x2="17" y2="9" stroke="#444" stroke-width="1.6"/>
+<circle cx="14" cy="622" r="5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="11" y1="619" x2="17" y2="625" stroke="#444" stroke-width="1.6"/>
+<circle cx="1266" cy="6" r="5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="1263" y1="3" x2="1269" y2="9" stroke="#444" stroke-width="1.6"/>
+<circle cx="1266" cy="622" r="5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="1263" y1="619" x2="1269" y2="625" stroke="#444" stroke-width="1.6"/>
+</svg>

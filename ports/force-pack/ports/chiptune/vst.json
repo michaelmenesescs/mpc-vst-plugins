@@ -1,0 +1,36 @@
+{
+ "name": "Chiptune",
+ "vendor": "charlesvestal",
+ "uid": "Chip",
+ "version": 105,
+ "so": "chiptune.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/libs/nes_snd_emu/nes_apu/Nes_Apu.cpp",
+   "src/libs/nes_snd_emu/nes_apu/Nes_Oscs.cpp",
+   "src/libs/nes_snd_emu/nes_apu/Blip_Buffer.cpp",
+   "src/libs/gb_snd_emu/Gb_Apu.cpp",
+   "src/libs/gb_snd_emu/Gb_Oscs.cpp",
+   "src/libs/gb_snd_emu/Blip_Buffer.cpp",
+   "src/libs/gb_snd_emu/Multi_Buffer.cpp",
+   "src/libs/gb_snd_emu/gb_apu_wrapper.cpp",
+   "src/dsp/chiptune_plugin.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/libs/gb_snd_emu",
+   "-Isrc/libs/nes_snd_emu/nes_apu",
+   "-Isrc/libs/nes_snd_emu",
+   "-std=gnu++14"
+  ],
+  "libs": [
+   "-lm",
+   "-Wl,--allow-multiple-definition"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

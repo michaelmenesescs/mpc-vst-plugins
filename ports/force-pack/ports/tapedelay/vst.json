@@ -1,0 +1,25 @@
+{
+ "name": "TapeDelay",
+ "vendor": "cyrusasfa (port charlesvestal)",
+ "uid": "Tape",
+ "version": 20001,
+ "so": "tapedelay.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/spacecho.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

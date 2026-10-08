@@ -1,0 +1,157 @@
+{
+ "id": "chiptune",
+ "name": "Chiptune",
+ "capabilities": {
+  "chain_params": [
+   {
+    "key": "chip",
+    "name": "Chip",
+    "type": "enum",
+    "options": [
+     "NES",
+     "GB"
+    ]
+   },
+   {
+    "key": "alloc_mode",
+    "name": "Voice Mode",
+    "type": "enum",
+    "options": [
+     "Auto",
+     "Lead",
+     "Locked"
+    ]
+   },
+   {
+    "key": "noise_mode",
+    "name": "Noise Mode",
+    "type": "enum",
+    "options": [
+     "Long",
+     "Short"
+    ]
+   },
+   {
+    "key": "duty",
+    "name": "Duty Cycle",
+    "type": "int",
+    "min": 0,
+    "max": 3,
+    "step": 1
+   },
+   {
+    "key": "env_attack",
+    "name": "Attack",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "env_decay",
+    "name": "Decay",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "env_sustain",
+    "name": "Sustain",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "env_release",
+    "name": "Release",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "sweep",
+    "name": "Sweep",
+    "type": "int",
+    "min": 0,
+    "max": 7,
+    "step": 1
+   },
+   {
+    "key": "vibrato_depth",
+    "name": "Vibrato Depth",
+    "type": "int",
+    "min": 0,
+    "max": 12,
+    "step": 1
+   },
+   {
+    "key": "vibrato_rate",
+    "name": "Vibrato Rate",
+    "type": "int",
+    "min": 0,
+    "max": 10,
+    "step": 1
+   },
+   {
+    "key": "wavetable",
+    "name": "Wavetable (GB)",
+    "type": "int",
+    "min": 0,
+    "max": 7,
+    "step": 1
+   },
+   {
+    "key": "channel_mask",
+    "name": "Channel Mask",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "detune",
+    "name": "Detune",
+    "type": "int",
+    "min": 0,
+    "max": 50,
+    "step": 1
+   },
+   {
+    "key": "volume",
+    "name": "Volume",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   },
+   {
+    "key": "octave_transpose",
+    "name": "Octave",
+    "type": "int",
+    "min": -3,
+    "max": 3,
+    "step": 1
+   },
+   {
+    "key": "pitch_env_depth",
+    "name": "PEnv Depth",
+    "type": "int",
+    "min": 0,
+    "max": 24,
+    "step": 1
+   },
+   {
+    "key": "pitch_env_speed",
+    "name": "PEnv Speed",
+    "type": "int",
+    "min": 0,
+    "max": 15,
+    "step": 1
+   }
+  ],
+  "ui_hierarchy": null
+ }
+}
