@@ -13,17 +13,9 @@
 <rect width="1280" height="628" fill="#bfc2c4"/>
 <rect width="1280" height="628" filter="url(#brush)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="644" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="802" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="960" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="1118" y="58" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
-<rect x="328" y="345" width="148" height="275" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
+<rect x="12" y="58" width="623" height="212" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
+<rect x="645" y="58" width="623" height="212" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
+<rect x="12" y="280" width="1256" height="339" rx="6" fill="#e9e2c9" stroke="#2a2a2a" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#161616"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#eeeeec" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">TAPESCAM</text>
 <rect x="226" y="24" width="334" height="6" fill="#d4262a"/>

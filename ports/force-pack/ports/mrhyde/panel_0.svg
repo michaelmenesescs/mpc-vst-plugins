@@ -13,9 +13,15 @@
 <rect width="1280" height="628" fill="#161616"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="1254" height="275" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
-<rect x="170" y="345" width="464" height="275" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="12" y="58" width="352" height="304" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="374" y="58" width="285" height="304" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="670" y="58" width="256" height="304" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="936" y="58" width="331" height="304" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="12" y="372" width="357" height="247" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="379" y="372" width="103" height="247" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="493" y="372" width="319" height="247" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="823" y="372" width="211" height="247" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
+<rect x="1045" y="372" width="222" height="247" rx="6" fill="#1f1f1f" stroke="#ff6a1f" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#161616"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f2f2f2" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">MrHyde</text>
 <rect x="182" y="24" width="378" height="6" fill="#ff6a1f"/>

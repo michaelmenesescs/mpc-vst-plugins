@@ -13,10 +13,28 @@
 <rect width="1280" height="628" fill="#8e9192"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="1254" height="275" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
-<rect x="18" y="64" width="45" height="26" rx="3" fill="#f2701c"/>
-<rect x="12" y="345" width="1254" height="275" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
-<rect x="18" y="351" width="45" height="26" rx="3" fill="#f2701c"/>
+<rect x="12" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="18" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="170" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="176" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="328" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="334" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="486" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="492" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="645" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="651" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="803" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="809" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="961" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="967" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="1119" y="58" width="148" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="1125" y="64" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="12" y="344" width="412" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="18" y="350" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="434" y="344" width="412" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="440" y="350" width="37" height="26" rx="3" fill="#f2701c"/>
+<rect x="856" y="344" width="412" height="276" rx="6" fill="#a3a6a7" stroke="#2a2b2c" stroke-width="1.5"/>
+<rect x="862" y="350" width="37" height="26" rx="3" fill="#f2701c"/>
 <rect x="0" y="0" width="1280" height="54" fill="#2b2c2d"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f2701c" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">9W9</text>
 <rect x="116" y="24" width="444" height="6" fill="#f2701c"/>

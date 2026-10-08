@@ -13,20 +13,13 @@
 <rect width="1280" height="628" fill="#c3c6c8"/>
 <rect width="1280" height="628" filter="url(#brush)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="644" y="58" width="306" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="960" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="1118" y="58" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="328" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="486" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="644" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="802" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
-<rect x="960" y="345" width="148" height="275" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="12" y="58" width="150" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="172" y="58" width="150" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="333" y="58" width="614" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="957" y="58" width="150" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="1117" y="58" width="150" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="12" y="344" width="730" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
+<rect x="752" y="344" width="515" height="276" rx="6" fill="#d4d6d7" stroke="#1b1b1b" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#2a2b2c"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e9e9e6" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">303</text>
 <rect x="116" y="24" width="444" height="6" fill="#d1361f"/>

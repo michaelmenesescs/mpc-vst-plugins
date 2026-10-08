@@ -13,34 +13,44 @@
 <rect width="1280" height="628" fill="#13161c"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="201" width="1096" height="275" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
-<rect x="18" y="207" width="148" height="26" rx="3" fill="#c2372e"/>
-<circle cx="32" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="72" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="112" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="152" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="192" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="232" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="272" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="312" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="352" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="392" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="432" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="472" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="512" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="552" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="592" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="632" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="672" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="712" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="752" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="792" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="832" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="872" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
-<circle cx="912" cy="460" r="8" fill="#0a0a0a" stroke="#2f9a55" stroke-width="3"/>
-<circle cx="952" cy="460" r="8" fill="#0a0a0a" stroke="#d9b02a" stroke-width="3"/>
-<circle cx="992" cy="460" r="8" fill="#0a0a0a" stroke="#c2372e" stroke-width="3"/>
-<circle cx="1032" cy="460" r="8" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="3"/>
+<rect x="12" y="58" width="153" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="18" y="64" width="141" height="26" rx="3" fill="#c2372e"/>
+<circle cx="32" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="72" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="112" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<rect x="175" y="58" width="153" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="181" y="64" width="135" height="26" rx="3" fill="#2f6fc9"/>
+<circle cx="195" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="235" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="275" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<rect x="338" y="58" width="124" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="344" y="64" width="84" height="26" rx="3" fill="#2f9a55"/>
+<circle cx="358" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="398" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<rect x="472" y="58" width="153" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="478" y="64" width="141" height="26" rx="3" fill="#d9b02a"/>
+<circle cx="492" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="532" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="572" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<rect x="636" y="58" width="153" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="642" y="64" width="97" height="26" rx="3" fill="#c2372e"/>
+<circle cx="656" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="696" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="736" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<rect x="799" y="58" width="229" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="805" y="64" width="122" height="26" rx="3" fill="#2f6fc9"/>
+<circle cx="819" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="859" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="899" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<circle cx="939" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
+<circle cx="979" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<rect x="1038" y="58" width="229" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
+<rect x="1044" y="64" width="59" height="26" rx="3" fill="#2f9a55"/>
+<circle cx="1058" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
+<circle cx="1098" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
+<circle cx="1138" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
+<circle cx="1178" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
+<circle cx="1218" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#0d0f13"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e6e9ef" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">DENIS</text>
 <text x="160" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e6e9ef" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">WEST COAST MONOPHONIC</text>

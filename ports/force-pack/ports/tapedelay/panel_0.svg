@@ -13,12 +13,12 @@
 <rect width="1280" height="628" fill="#1c2620"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="171" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
-<rect x="329" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
-<rect x="487" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
-<rect x="645" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
-<rect x="803" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
-<rect x="961" y="201" width="148" height="275" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="12" y="58" width="206" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="228" y="58" width="223" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="462" y="58" width="223" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="695" y="58" width="223" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="929" y="58" width="164" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
+<rect x="1103" y="58" width="164" height="562" rx="6" fill="#25312a" stroke="#8e9a92" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="54" fill="#b8bcba"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#1c2620" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">TAPE DELAY</text>
 <rect x="270" y="24" width="290" height="6" fill="#d8b04a"/>

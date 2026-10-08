@@ -50,21 +50,21 @@ THEMES = {
                 plate="d4d6d7", plate_line="1b1b1b", title="1b1b1b", knob="moog", toggle="led",
                 logo="303", sub="ACID BASS LINE SYNTHESIZER", tag="COMPUTER CONTROLLED", head_bg="2a2b2c",
                 head_ink="e9e9e6", stripes=["d1361f"], lcd="1e1f20"),
-    "8w8": dict(finish="flat", bg="1b1b1b", ink="f1ece0", ink_dim="b8b2a4", accent="f08a24", accent_hi="f6a33a",
+    "8w8": dict(title_size=12, title_sp=0.04, finish="flat", bg="1b1b1b", ink="f1ece0", ink_dim="b8b2a4", accent="f08a24", accent_hi="f6a33a",
                 plate="262626", plate_line="3a3a3a", title="111111",
                 title_bg=["d93a2b", "ee7a2a", "f2c12e", "ece4d1"], knob="cap", knob_ring="d8d1bf", knob_dot="ece6d6",
                 knob_line="1b1b1b", toggle="led", logo="8W8", sub="RHYTHM COMPOSER", tag="ANALOG DRUM MODELS",
                 head_bg="161616", head_ink="f1ece0", stripes=["d93a2b", "ee7a2a", "f2c12e", "ece4d1"]),
-    "6w6": dict(finish="brushed", bg="b9bcbe", ink="161616", ink_dim="3a3c3e", accent="e0452a", accent_hi="f05a3a",
+    "6w6": dict(title_size=12, title_sp=0.04, finish="brushed", bg="b9bcbe", ink="161616", ink_dim="3a3c3e", accent="e0452a", accent_hi="f05a3a",
                 plate="2a2b2d", plate_line="0f0f0f", title="f0f0ee", title_bg=["e0452a"], plate_ink="f0f0ee",
                 knob="moog", toggle="led", logo="6W6", sub="DRUMATIX", tag="RHYTHM MACHINE", head_bg="b9bcbe",
                 head_ink="161616", stripes=["e0452a", "161616"]),
-    "9w9": dict(finish="flat", bg="8e9192", ink="141414", ink_dim="2e3031", accent="f2701c", accent_hi="ff8a33",
+    "9w9": dict(title_size=12, title_sp=0.04, finish="flat", bg="8e9192", ink="141414", ink_dim="2e3031", accent="f2701c", accent_hi="ff8a33",
                 plate="a3a6a7", plate_line="2a2b2c", title="141414", title_bg=["f2701c"], knob="cap",
                 knob_ring="2b2b2b", knob_dot="3a3a3a", knob_line="f2f2f2", toggle="led", logo="9W9",
                 sub="RHYTHM COMPOSER", tag="ANALOG / SAMPLE", head_bg="2b2c2d", head_ink="f2701c",
                 stripes=["f2701c"]),
-    "cw78": dict(finish="flat", cheeks=True, bg="1c1916", ink="efe3c8", ink_dim="bfae8c", accent="e07b2c",
+    "cw78": dict(title_size=12, title_sp=0.04, finish="flat", cheeks=True, bg="1c1916", ink="efe3c8", ink_dim="bfae8c", accent="e07b2c",
                  accent_hi="f0953f", plate="2a241e", plate_line="5b4b38", title="1c1916",
                  title_bg=["e8d7b0", "e07b2c"], knob="chicken", toggle="switch", logo="CW-78",
                  sub="COMPURHYTHM", tag="RHYTHM COMPUTER", head_bg="1c1916", head_ink="e8d7b0",
@@ -85,7 +85,7 @@ THEMES = {
                   title_bg=["c2372e", "2f6fc9", "2f9a55", "d9b02a"], knob="moog", toggle="led", logo="DENIS",
                   sub="WEST COAST MONOPHONIC", tag="COMPLEX OSCILLATOR / LOW PASS GATE", head_bg="0d0f13",
                   head_ink="e6e9ef", jacks=True),
-    "hush1": dict(finish="flat", bg="3a3c3f", ink="eeeeec", ink_dim="b3b5b6", accent="d8382e", accent_hi="ec4a3f",
+    "hush1": dict(title_size=12, title_sp=0.04, finish="flat", bg="3a3c3f", ink="eeeeec", ink_dim="b3b5b6", accent="d8382e", accent_hi="ec4a3f",
                   plate="45484b", plate_line="1f2022", title="eeeeec", title_bg=["4a6fb5", "d8382e", "8a8d90"],
                   knob="cap", knob_ring="1b1c1d", knob_dot="2c2d2f", knob_line="eeeeec", toggle="switch",
                   logo="HUSH ONE", sub="SYNTHESIZER", tag="MONOPHONIC", head_bg="2a2c2e", head_ink="eeeeec",
@@ -153,7 +153,8 @@ THEMES = {
                   rails=True),
 }
 
-BAND_COLOURS = {"hf": "d33a2c", "hmf": "2f9a55", "lmf": "2f6fc9", "lf": "1a1a1a", "hp": "8a6a3a", "lp": "8a6a3a"}
+BAND_COLOURS = {"hf": "d33a2c", "hmf": "2f9a55", "lmf": "2f6fc9", "lf": "2a2a2a", "hp": "8a6a3a", "lp": "8a6a3a",
+                "io": "8a8d90"}
 
 
 def C(h):
@@ -303,7 +304,8 @@ def panel_svg(t, frames):
                      'stroke-width="1.5"/>' % (x + 3, py + 3, w - 6, h - 6, C(t["plate_line"])))
         if titles and title:
             col = C(titles[i % len(titles)])
-            tw = min(w - 16, int(len(title) * 11.5) + 22)
+            ts = t.get("title_size", 17)
+            tw = min(w - 16, int(len(title) * ts * (0.62 + t.get("title_sp", 0.12))) + 22)
             o.append('<rect x="%g" y="%g" width="%g" height="26" rx="3" fill="%s"/>' % (x + 8, py + 8, tw, col))
         if t.get("jacks"):   # Serge-style banana jacks along the bottom of each section
             cols = ["#c2372e", "#2f6fc9", "#2f9a55", "#d9b02a"]
@@ -311,7 +313,19 @@ def panel_svg(t, frames):
                 jx = x + 22 + j * 40
                 if jx > x + w - 18:
                     break
-                o.append('<circle cx="%g" cy="%g" r="8" fill="#0a0a0a" stroke="%s" stroke-width="3"/>' % (jx, py + h - 18, cols[j % 4]))
+                o.append('<circle cx="%g" cy="%g" r="6" fill="#0a0a0a" stroke="%s" stroke-width="2.5"/>' % (jx, py + h - 11, cols[j % 4]))
+    if t.get("psx") and frames:   # the disc lid, round the biggest section's control
+        x, y, w, h, _ = max(frames, key=lambda f: f[2] * f[3])
+        cx, cy, rr = x + w / 2, y - Y_OFF + h / 2 + 8, min(w, h) / 2 - 26
+        o.append('<circle cx="%g" cy="%g" r="%g" fill="#d3d2ce" stroke="#9a9995" stroke-width="3"/>'
+                 '<circle cx="%g" cy="%g" r="%g" fill="none" stroke="#b5b4b0" stroke-width="2"/>' % (cx, cy, rr, cx, cy, rr - 14))
+        o.append(text(cx, cy + rr - 34, "OPEN", 13, "#5c5c66", 600, anchor="middle", spacing=0.3))
+    if t.get("psx") and frames:   # the disc lid, round the biggest section's control
+        x, y, w, h, _ = max(frames, key=lambda f: f[2] * f[3])
+        cx, cy, rr = x + w / 2, y - Y_OFF + h / 2 + 8, min(w, h) / 2 - 26
+        o.append('<circle cx="%g" cy="%g" r="%g" fill="#d3d2ce" stroke="#9a9995" stroke-width="3"/>'
+                 '<circle cx="%g" cy="%g" r="%g" fill="none" stroke="#b5b4b0" stroke-width="2"/>' % (cx, cy, rr, cx, cy, rr - 14))
+        o.append(text(cx, cy + rr - 34, "OPEN", 13, "#5c5c66", 600, anchor="middle", spacing=0.3))
     # header strip
     hb = t.get("head_bg")
     if hb:
@@ -386,7 +400,7 @@ def css(t):
         "/* generated by skins/hwskin.py */",
         ".frame-border { stroke: none; fill: none; }",
         ".frame-rule { display: none; }",
-        ".frame-title { fill: %s; font-size: 17px; letter-spacing: 0.12em; }" % title,
+        ".frame-title { fill: %s; font-size: %dpx; letter-spacing: %gem; }" % (title, t.get("title_size", 17), t.get("title_sp", 0.12)),
         ".look-line { stroke: %s; }" % knob_line,
         ".box { fill: %s; stroke: %s; }" % (C(t.get("lcd") or t.get("plate") or t["bg"]), C(t["plate_line"])),
         ".box-label { fill: %s; }" % C(t.get("plate_ink") or t["ink_dim"]),
@@ -442,6 +456,7 @@ def build(pid):
             os.path.join(vdir, "layout.conf") if vj.get("layout") else os.path.join(vdir, "build", "layout.auto.conf")
         shutil.copy(src, base)
     lines = open(base).read().splitlines()
+    hw = bool(lines) and lines[0].startswith("# hwpanel")   # panels.py: final positions, keep as written
     names = param_names(vdir)
     top, tabs, cur = [], [], None
     for l in lines:
@@ -460,8 +475,11 @@ def build(pid):
     if t["knob"] != "drawn":
         out.append("knob_look=%s" % t["knob"])
     out.append("toggle_look=%s" % t.get("toggle", "led"))
+    for f in os.listdir(vdir):   # drawings of pages a previous layout had
+        if re.match(r"panel_\d+\.svg$", f):
+            os.remove(os.path.join(vdir, f))
     for n, tab in enumerate(tabs):
-        body = centre(tidy([squeeze(l) for l in tab[1:]], names))
+        body = list(tab[1:]) if hw else centre(tidy([squeeze(l) for l in tab[1:]], names))
         frames = frame_rects(body)
         svg = "panel_%d.svg" % n
         open(os.path.join(vdir, svg), "w").write(panel_svg(t, frames))
@@ -484,7 +502,8 @@ def band_knob_lines(body, vdir):
         m = re.match(r"knob .*key=(\S+)", l)
         if m:
             k = m.group(1).lower()
-            band = next((b for b in ("hmf", "lmf", "hf", "lf", "hp", "lp") if k.startswith(b) or ("_" + b) in k), None)
+            band = next((b for p_, b in (("hf_", "hf"), ("hm_", "hmf"), ("lm_", "lmf"), ("lf_", "lf"), ("hpf", "hp"),
+                                          ("lpf", "lp"), ("input", "io"), ("output", "io")) if k.startswith(p_)), None)
             if band:
                 f = "knob_%s.svg" % band
                 p = os.path.join(vdir, f)

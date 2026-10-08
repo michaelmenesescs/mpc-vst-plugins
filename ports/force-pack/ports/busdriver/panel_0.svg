@@ -13,15 +13,10 @@
 <rect width="1280" height="628" fill="#1e1e1e"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="306" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="644" y="58" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="802" y="58" width="464" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="328" y="345" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
-<rect x="486" y="345" width="148" height="275" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
+<rect x="12" y="58" width="423" height="562" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
+<rect x="445" y="58" width="199" height="562" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
+<rect x="655" y="58" width="403" height="562" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
+<rect x="1068" y="58" width="199" height="562" rx="6" fill="#262626" stroke="#363636" stroke-width="1.5"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e6e6e6" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">Bus Driver</text>
 <text x="270" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e6e6e6" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">DRUM BUSS</text>
 <circle cx="10" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7" stroke="#444" stroke-width="1.6"/>

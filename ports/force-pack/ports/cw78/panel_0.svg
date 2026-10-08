@@ -13,10 +13,39 @@
 <rect width="1280" height="628" fill="#1c1916"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="780" height="275" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="18" y="64" width="45" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="12" y="345" width="1254" height="275" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="18" y="351" width="45" height="26" rx="3" fill="#e07b2c"/>
+<rect x="12" y="58" width="530" height="227" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="18" y="64" width="140" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="552" y="58" width="352" height="227" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="558" y="64" width="93" height="26" rx="3" fill="#e07b2c"/>
+<rect x="915" y="58" width="352" height="227" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="12" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="18" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="102" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="108" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="192" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="198" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="283" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="289" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="373" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="379" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="464" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="470" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="554" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="560" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="645" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="651" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="735" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="741" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="825" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="831" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="916" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="922" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="1006" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="1012" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
+<rect x="1097" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="1103" y="301" width="37" height="26" rx="3" fill="#e07b2c"/>
+<rect x="1187" y="295" width="80" height="324" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
+<rect x="1193" y="301" width="37" height="26" rx="3" fill="#e8d7b0"/>
 <rect x="0" y="0" width="1280" height="54" fill="#1c1916"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e8d7b0" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">CW-78</text>
 <rect x="160" y="16" width="400" height="10" fill="#e07b2c"/>

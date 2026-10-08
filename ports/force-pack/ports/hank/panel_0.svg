@@ -13,19 +13,16 @@
 <rect width="1280" height="628" fill="#2c2723"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="644" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="802" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="960" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="1118" y="58" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="170" y="345" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="328" y="345" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="486" y="345" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
-<rect x="644" y="345" width="148" height="275" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="12" y="58" width="776" height="304" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="18" y="64" width="122" height="26" rx="3" fill="#3fb3a2"/>
+<rect x="798" y="58" width="469" height="304" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="804" y="64" width="122" height="26" rx="3" fill="#a33a3a"/>
+<rect x="12" y="372" width="204" height="247" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="18" y="378" width="84" height="26" rx="3" fill="#3fb3a2"/>
+<rect x="226" y="372" width="620" height="247" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="232" y="378" width="84" height="26" rx="3" fill="#a33a3a"/>
+<rect x="856" y="372" width="412" height="247" rx="6" fill="#36302b" stroke="#574b40" stroke-width="1.5"/>
+<rect x="862" y="378" width="97" height="26" rx="3" fill="#3fb3a2"/>
 <rect x="0" y="0" width="1280" height="54" fill="#1f1b18"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#efe7da" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">HANK</text>
 <rect x="138" y="16" width="422" height="10" fill="#3fb3a2"/>

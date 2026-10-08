@@ -13,11 +13,13 @@
 <rect width="1280" height="628" fill="#c8c7c3"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="250" y="201" width="148" height="275" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
-<rect x="408" y="201" width="148" height="275" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
-<rect x="566" y="201" width="148" height="275" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
-<rect x="724" y="201" width="148" height="275" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
-<rect x="882" y="201" width="148" height="275" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
+<rect x="12" y="58" width="321" height="562" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
+<rect x="343" y="58" width="647" height="562" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
+<rect x="1000" y="58" width="267" height="562" rx="6" fill="#b9b8b4" stroke="#8f8e8a" stroke-width="1.5"/>
+<circle cx="666.5" cy="347" r="257" fill="#d3d2ce" stroke="#9a9995" stroke-width="3"/><circle cx="666.5" cy="347" r="243" fill="none" stroke="#b5b4b0" stroke-width="2"/>
+<text x="666.5" y="570" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#5c5c66" text-anchor="middle" dominant-baseline="central" style="letter-spacing:0.3em;">OPEN</text>
+<circle cx="666.5" cy="347" r="257" fill="#d3d2ce" stroke="#9a9995" stroke-width="3"/><circle cx="666.5" cy="347" r="243" fill="none" stroke="#b5b4b0" stroke-width="2"/>
+<text x="666.5" y="570" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#5c5c66" text-anchor="middle" dominant-baseline="central" style="letter-spacing:0.3em;">OPEN</text>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#2b2b33" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">PSX Verb</text>
 <text x="226" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#2b2b33" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;font-style:italic;">SPU REVERB</text>
 <g transform="translate(1150 30)" fill="none" stroke-width="3"><path d="M-48,8 L-38,-9 L-28,8 Z" stroke="#2fa87a"/><circle cx="-6" cy="0" r="9" stroke="#d6383a"/><path d="M14,-8 L30,8 M30,-8 L14,8" stroke="#4a78c8"/><rect x="40" y="-8" width="16" height="16" stroke="#d47ab0"/></g>

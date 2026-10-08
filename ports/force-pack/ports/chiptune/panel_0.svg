@@ -13,18 +13,10 @@
 <rect width="1280" height="628" fill="#c4c3bf"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="644" y="58" width="622" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="170" y="345" width="306" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="486" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="644" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="802" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="960" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
-<rect x="1118" y="345" width="148" height="275" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
+<rect x="12" y="58" width="710" height="276" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
+<rect x="732" y="58" width="535" height="276" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
+<rect x="12" y="344" width="692" height="276" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
+<rect x="714" y="344" width="553" height="276" rx="6" fill="#a3b468" stroke="#54556a" stroke-width="1.5"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#2b2d8c" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;font-style:italic;">Chiptune</text>
 <text x="226" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#2b2d8c" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;font-style:italic;">DOT MATRIX WITH STEREO SOUND</text>
 <circle cx="10" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7" stroke="#444" stroke-width="1.6"/>

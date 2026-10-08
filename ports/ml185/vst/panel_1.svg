@@ -13,7 +13,9 @@
 <rect width="1280" height="628" fill="#141414"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="1254" height="275" rx="6" fill="#1b1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="12" y="58" width="452" height="276" rx="6" fill="#1b1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="474" y="58" width="794" height="276" rx="6" fill="#1b1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<rect x="12" y="344" width="1256" height="276" rx="6" fill="#1b1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#f2f2f2" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">ML-185</text>
 <text x="182" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#f2f2f2" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">STAGE SEQUENCER</text>
 <text x="1250" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#f2f2f2" text-anchor="end" dominant-baseline="central" style="letter-spacing:0.2em;" opacity="0.75">8 STAGES / PULSES / GATES</text>

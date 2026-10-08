@@ -13,15 +13,9 @@
 <rect width="1280" height="628" fill="#18202a"/>
 <rect width="1280" height="628" filter="url(#grain)"/>
 <rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="170" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="328" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="486" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="644" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="802" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="960" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="1118" y="58" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
-<rect x="12" y="345" width="148" height="275" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
+<rect x="12" y="58" width="293" height="562" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
+<rect x="315" y="58" width="709" height="562" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
+<rect x="1034" y="58" width="233" height="562" rx="6" fill="#1f2935" stroke="#2f3d4d" stroke-width="1.5"/>
 <text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e4edf5" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">DUCKER</text>
 <text x="182" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e4edf5" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">SIDECHAIN DYNAMICS</text>
 <circle cx="10" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7" stroke="#444" stroke-width="1.6"/>
