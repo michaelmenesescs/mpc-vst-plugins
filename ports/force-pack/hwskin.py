@@ -134,7 +134,7 @@ THEMES = {
                  plate="44484b", plate_line="25272a", title="eeeeec",
                  title_bg=["d33a2c", "2f9a55", "2f6fc9", "1a1a1a", "8a6a3a"], knob="cap", knob_ring="1b1c1e",
                  knob_dot="d33a2c", knob_line="f4f4f2", toggle="led", logo="4K EQ", sub="CHANNEL EQUALISER",
-                 tag="E / G SERIES", head_bg="25272a", head_ink="eeeeec", band_knobs=True),
+                 tag="E / G SERIES", head_bg="25272a", head_ink="eeeeec", lcd="1a1b1c"),
     "ducker": dict(finish="flat", bg="18202a", ink="e4edf5", ink_dim="94a6b8", accent="2ec4d6", accent_hi="52d8e8",
                    plate="1f2935", plate_line="2f3d4d", title="2ec4d6", knob="drawn", toggle="led", logo="DUCKER",
                    sub="SIDECHAIN DYNAMICS", tag="", head_bg=None, head_ink="e4edf5", knob_face="2a3644",

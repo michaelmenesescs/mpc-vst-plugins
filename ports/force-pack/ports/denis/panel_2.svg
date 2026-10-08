@@ -1,55 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
-<defs>
-<filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.002 0.9"
- numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.16 0"/></filter>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9"
- numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.10 0"/></filter>
-<filter id="woodf" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.25"
- numOctaves="3" seed="11"/><feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.20  0 0 0 0 0.09  0 0 0 0.9 0"/></filter>
-<linearGradient id="screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eee"/><stop offset="1" stop-color="#777"/></linearGradient>
-<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/>
- <stop offset="1" stop-color="#000" stop-opacity="0.12"/></linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628"><defs>
+<linearGradient id="hw-screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+<filter id="hw-brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="5"/>
+ <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.20 0"/></filter>
+<filter id="hw-brushd" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="9"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter>
+<filter id="hw-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.07 0"/></filter>
+<filter id="hw-wood" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.18" numOctaves="4" seed="21"/>
+ <feColorMatrix values="0 0 0 0 0.30  0 0 0 0 0.15  0 0 0 0 0.05  0 0 0 0.85 0"/></filter>
+<filter id="hw-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="hw-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.45"/></filter>
+<linearGradient id="hw-vshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="1" stop-color="#000" stop-opacity="0.14"/></linearGradient>
 </defs>
-<rect width="1280" height="628" fill="#13161c"/>
-<rect width="1280" height="628" filter="url(#grain)"/>
-<rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="217" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
-<rect x="18" y="64" width="97" height="26" rx="3" fill="#c2372e"/>
-<circle cx="32" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="72" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="112" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="152" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<rect x="239" y="58" width="562" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
-<rect x="245" y="64" width="72" height="26" rx="3" fill="#2f6fc9"/>
-<circle cx="259" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="299" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="339" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="379" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<circle cx="419" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="459" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="499" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="539" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<circle cx="579" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="619" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="659" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="699" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<circle cx="739" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<rect x="811" y="58" width="456" height="562" rx="6" fill="#1a1f27" stroke="#3a4250" stroke-width="1.5"/>
-<rect x="817" y="64" width="97" height="26" rx="3" fill="#2f9a55"/>
-<circle cx="831" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="871" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="911" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="951" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<circle cx="991" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="1031" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<circle cx="1071" cy="611" r="6" fill="#0a0a0a" stroke="#2f9a55" stroke-width="2.5"/>
-<circle cx="1111" cy="611" r="6" fill="#0a0a0a" stroke="#d9b02a" stroke-width="2.5"/>
-<circle cx="1151" cy="611" r="6" fill="#0a0a0a" stroke="#c2372e" stroke-width="2.5"/>
-<circle cx="1191" cy="611" r="6" fill="#0a0a0a" stroke="#2f6fc9" stroke-width="2.5"/>
-<rect x="0" y="0" width="1280" height="54" fill="#0d0f13"/>
-<text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e6e9ef" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">DENIS</text>
-<text x="160" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e6e9ef" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">WEST COAST MONOPHONIC</text>
-<text x="1250" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#e6e9ef" text-anchor="end" dominant-baseline="central" style="letter-spacing:0.2em;" opacity="0.75">COMPLEX OSCILLATOR / LOW PASS GATE</text>
-<circle cx="10" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7" stroke="#444" stroke-width="1.6"/>
-<circle cx="1270" cy="10" r="4.5" fill="url(#screw)" stroke="#333" stroke-width="1"/><line x1="1267.3" y1="7.3" x2="1272.7" y2="12.7" stroke="#444" stroke-width="1.6"/>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#7a4a22"/><rect x="0" y="0" width="1280" height="628" filter="url(#hw-wood)"/>
+<rect x="10" y="10" width="1260" height="608" rx="4" fill="#2a1a10"/>
+<rect x="14" y="18" width="420" height="592" rx="0" fill="#e8e1c9"/>
+<rect x="14" y="18" width="420" height="592" filter="url(#hw-grain)"/>
+<rect x="14" y="18" width="420" height="592" rx="0" fill="none" stroke="#9a937f" stroke-width="1"/>
+<rect x="20" y="26" width="408" height="30" rx="2" fill="#181818"/>
+<text x="224" y="41" font-size="13" fill="#e8e1c9" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PRESET</text>
+<circle cx="24" cy="600" r="3.5" fill="#8a8370"/>
+<circle cx="424" cy="600" r="3.5" fill="#8a8370"/>
+<text x="224" y="120" font-size="13" fill="#181818" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">PATCH</text>
+<rect x="438" y="18" width="380" height="592" rx="0" fill="#e8e1c9"/>
+<rect x="438" y="18" width="380" height="592" filter="url(#hw-grain)"/>
+<rect x="438" y="18" width="380" height="592" rx="0" fill="none" stroke="#9a937f" stroke-width="1"/>
+<rect x="444" y="26" width="368" height="30" rx="2" fill="#181818"/>
+<text x="628" y="41" font-size="13" fill="#e8e1c9" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">PLAY</text>
+<circle cx="448" cy="600" r="3.5" fill="#8a8370"/>
+<circle cx="808" cy="600" r="3.5" fill="#8a8370"/>
+<text x="720" y="120" font-size="12" fill="#181818" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LEGATO</text>
+<text x="720" y="300" font-size="12" fill="#181818" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">PADS</text>
+<rect x="822" y="18" width="444" height="592" rx="0" fill="#e8e1c9"/>
+<rect x="822" y="18" width="444" height="592" filter="url(#hw-grain)"/>
+<rect x="822" y="18" width="444" height="592" rx="0" fill="none" stroke="#9a937f" stroke-width="1"/>
+<rect x="828" y="26" width="432" height="30" rx="2" fill="#181818"/>
+<text x="1044" y="41" font-size="13" fill="#e8e1c9" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.08em;">RANDOM</text>
+<circle cx="832" cy="600" r="3.5" fill="#8a8370"/>
+<circle cx="1256" cy="600" r="3.5" fill="#8a8370"/>
+<text x="540" y="122" font-size="13" fill="#181818" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">PORTAMENTO</text>
 </svg>
