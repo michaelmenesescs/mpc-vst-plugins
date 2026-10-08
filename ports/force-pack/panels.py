@@ -25,6 +25,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import hwskin  # noqa: E402
+import hwpanel  # noqa: E402
+import json  # noqa: E402
 
 X0, X1 = 10, 1270
 YT, YB = 92 + hwskin.HEAD, 708
@@ -107,6 +109,9 @@ class Ctl:
 def render(pages, params):
     out = []
     for pg in pages:
+        if isinstance(pg, hwpanel.Page):   # a free-placed hardware page: its own positions and artwork
+            out.append("\n".join(["[tab %s]" % pg.name] + pg.lines(params) + pg.qlink_lines()))
+            continue
         bands = pg["bands"]
         for b in bands:
             for s in b["sections"]:
@@ -224,12 +229,21 @@ def build(pid):
     vdir = os.path.join(WORK, hwskin.PORTS[pid])
     params = load_params(vdir)
     pages = PANELS[pid](params) if callable(PANELS[pid]) else PANELS[pid]
-    used = {c for pg in pages for b in pg["bands"] for s in b["sections"] for row in s["rows"] for c0 in (row if isinstance(row, list) else [row])
+    used = {k for pg in pages if isinstance(pg, hwpanel.Page) for k in pg.keys()}
+    used |= {c for pg in pages if not isinstance(pg, hwpanel.Page) for b in pg["bands"] for s in b["sections"] for row in s["rows"] for c0 in (row if isinstance(row, list) else [row])
             for c in [c0.partition("=")[0].partition(":")[0]] if c != "-"}
     missing = [k for k in params if k not in used and not k.endswith("__open")]
     text = "# hwpanel: hardware layout written by skins/panels.py (edit panel_specs.py, not this file)\n\n" + render(pages, params)
     os.makedirs(hwskin.BASE, exist_ok=True)
     open(os.path.join(hwskin.BASE, pid + ".conf"), "w").write(text)
+    art = {"pages": {str(i): pg.svg() for i, pg in enumerate(pages) if isinstance(pg, hwpanel.Page)},
+           "assets": {k: v for pg in pages if isinstance(pg, hwpanel.Page) for k, v in pg.assets.items()},
+           "seg_text": all(pg.seg_text for pg in pages if isinstance(pg, hwpanel.Page))}
+    ap = os.path.join(hwskin.BASE, pid + ".art.json")
+    if art["pages"]:
+        json.dump(art, open(ap, "w"))
+    elif os.path.exists(ap):
+        os.remove(ap)
     print("%-10s %d pages%s" % (pid, len(pages), ("; not placed: " + " ".join(missing)) if missing else ""))
 
 
