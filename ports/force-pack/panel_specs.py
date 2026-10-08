@@ -383,3 +383,7 @@ PANELS = {"303": P303, "8w8": p808, "6w6": p606, "9w9": p909, "cw78": pcr78, "br
           "mrhyde": pmrhyde, "denis": pdenis, "hush1": PHUSH, "hank": PHANK, "chiptune": PCHIP, "libpo32": ppo32,
           "weird": pweird, "midiverb": PMIDIVERB, "psxverb": PPSX, "tapedelay": PTAPE, "juno": PJUNO, "busdriver": PBUS,
           "4keq": P4K, "ducker": PDUCK, "filter": PFILTER, "tapescam": PTAPESCAM, "ml185": PML185}
+
+# ---- hardware pages (hwpanel.Page): controls at the machine's own positions, with its panel artwork ------------
+import m_roland  # noqa: E402
+PANELS.update({"303": m_roland.p303, "8w8": m_roland.p808, "9w9": m_roland.p909, "6w6": m_roland.p606, "hush1": m_roland.p101})
