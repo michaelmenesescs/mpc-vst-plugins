@@ -1,0 +1,583 @@
+{
+ "name": "ML-185",
+ "params": [
+  {
+   "key": "pitch1",
+   "name": "Pitch 1",
+   "min": 0,
+   "max": 21,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses1",
+   "name": "Pulses 1",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate1",
+   "name": "Gate 1",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Single"
+  },
+  {
+   "key": "slide1",
+   "name": "Slide 1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent1",
+   "name": "Accent 1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "pitch2",
+   "name": "Pitch 2",
+   "min": 0,
+   "max": 21,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses2",
+   "name": "Pulses 2",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate2",
+   "name": "Gate 2",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Single"
+  },
+  {
+   "key": "slide2",
+   "name": "Slide 2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent2",
+   "name": "Accent 2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch3",
+   "name": "Pitch 3",
+   "min": 0,
+   "max": 21,
+   "default": 4,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses3",
+   "name": "Pulses 3",
+   "min": 1,
+   "max": 8,
+   "default": 2,
+   "display": "int"
+  },
+  {
+   "key": "gate3",
+   "name": "Gate 3",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Multi"
+  },
+  {
+   "key": "slide3",
+   "name": "Slide 3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent3",
+   "name": "Accent 3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch4",
+   "name": "Pitch 4",
+   "min": 0,
+   "max": 21,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses4",
+   "name": "Pulses 4",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate4",
+   "name": "Gate 4",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "slide4",
+   "name": "Slide 4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent4",
+   "name": "Accent 4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch5",
+   "name": "Pitch 5",
+   "min": 0,
+   "max": 21,
+   "default": 7,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses5",
+   "name": "Pulses 5",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate5",
+   "name": "Gate 5",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Hold"
+  },
+  {
+   "key": "slide5",
+   "name": "Slide 5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent5",
+   "name": "Accent 5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch6",
+   "name": "Pitch 6",
+   "min": 0,
+   "max": 21,
+   "default": 4,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses6",
+   "name": "Pulses 6",
+   "min": 1,
+   "max": 8,
+   "default": 2,
+   "display": "int"
+  },
+  {
+   "key": "gate6",
+   "name": "Gate 6",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Single"
+  },
+  {
+   "key": "slide6",
+   "name": "Slide 6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "accent6",
+   "name": "Accent 6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch7",
+   "name": "Pitch 7",
+   "min": 0,
+   "max": 21,
+   "default": 5,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses7",
+   "name": "Pulses 7",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate7",
+   "name": "Gate 7",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Single"
+  },
+  {
+   "key": "slide7",
+   "name": "Slide 7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent7",
+   "name": "Accent 7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "pitch8",
+   "name": "Pitch 8",
+   "min": 0,
+   "max": 21,
+   "default": 3,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pulses8",
+   "name": "Pulses 8",
+   "min": 1,
+   "max": 8,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "gate8",
+   "name": "Gate 8",
+   "options": [
+    "Off",
+    "Single",
+    "Multi",
+    "Hold"
+   ],
+   "default": "Single"
+  },
+  {
+   "key": "slide8",
+   "name": "Slide 8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "accent8",
+   "name": "Accent 8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "length",
+   "name": "Length",
+   "min": 1,
+   "max": 8,
+   "default": 8,
+   "display": "int"
+  },
+  {
+   "key": "direction",
+   "name": "Direction",
+   "options": [
+    "Forward",
+    "Reverse",
+    "Pendulum",
+    "Random"
+   ],
+   "default": "Forward"
+  },
+  {
+   "key": "rate",
+   "name": "Rate",
+   "options": [
+    "1/32",
+    "1/16T",
+    "1/16",
+    "1/8T",
+    "1/8",
+    "1/4"
+   ],
+   "default": "1/16"
+  },
+  {
+   "key": "swing",
+   "name": "Swing",
+   "min": 0,
+   "max": 75,
+   "default": 0,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "gate_len",
+   "name": "Gate Len",
+   "min": 5,
+   "max": 100,
+   "default": 50,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "scale",
+   "name": "Scale",
+   "options": [
+    "Chromatic",
+    "Major",
+    "Minor",
+    "Dorian",
+    "Phrygian",
+    "Lydian",
+    "Mixolydian",
+    "Harm Minor",
+    "Pent Major",
+    "Pent Minor",
+    "Blues"
+   ],
+   "default": "Minor"
+  },
+  {
+   "key": "root",
+   "name": "Root",
+   "options": [
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B"
+   ],
+   "default": "C"
+  },
+  {
+   "key": "octave",
+   "name": "Octave",
+   "min": 0,
+   "max": 7,
+   "default": 2,
+   "display": "int"
+  },
+  {
+   "key": "channel",
+   "name": "MIDI Ch",
+   "min": 1,
+   "max": 16,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "velocity",
+   "name": "Velocity",
+   "min": 1,
+   "max": 127,
+   "default": 90,
+   "display": "int"
+  },
+  {
+   "key": "accent_vel",
+   "name": "Accent Vel",
+   "min": 1,
+   "max": 127,
+   "default": 127,
+   "display": "int"
+  },
+  {
+   "key": "randomize",
+   "name": "Randomize",
+   "momentary": true
+  },
+  {
+   "key": "status",
+   "name": "Port",
+   "display": "string",
+   "poll": false
+  }
+ ],
+ "sections": [
+  {
+   "label": "Pitch",
+   "keys": [
+    "pitch1",
+    "pitch2",
+    "pitch3",
+    "pitch4",
+    "pitch5",
+    "pitch6",
+    "pitch7",
+    "pitch8"
+   ]
+  },
+  {
+   "label": "Pulses",
+   "keys": [
+    "pulses1",
+    "pulses2",
+    "pulses3",
+    "pulses4",
+    "pulses5",
+    "pulses6",
+    "pulses7",
+    "pulses8"
+   ]
+  },
+  {
+   "label": "Gates",
+   "keys": [
+    "gate1",
+    "gate2",
+    "gate3",
+    "gate4",
+    "gate5",
+    "gate6",
+    "gate7",
+    "gate8"
+   ]
+  },
+  {
+   "label": "Slide / Accent",
+   "keys": [
+    "slide1",
+    "slide2",
+    "slide3",
+    "slide4",
+    "slide5",
+    "slide6",
+    "slide7",
+    "slide8",
+    "accent1",
+    "accent2",
+    "accent3",
+    "accent4",
+    "accent5",
+    "accent6",
+    "accent7",
+    "accent8"
+   ]
+  },
+  {
+   "label": "Global",
+   "keys": [
+    "length",
+    "direction",
+    "rate",
+    "swing",
+    "gate_len",
+    "scale",
+    "root",
+    "octave",
+    "channel",
+    "velocity",
+    "accent_vel",
+    "randomize",
+    "status"
+   ]
+  }
+ ]
+}

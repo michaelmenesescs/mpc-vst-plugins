@@ -1259,3 +1259,14 @@ A Force user saw `No drive under /media is mounted noexec` on the first `status`
 - `status` only lists mounts that `/proc/self/mountinfo` shows as `noexec` (`candidates`), so `662522` is the drive MPC mounted `noexec` at that time; `SSD - Force` was not a `noexec` mount then (not mounted, or mounted `exec`). `edisksd` names the mount point after the volume label, or a number when there is none; a leftover folder in `/media` is not proof of a mounted drive. Which of the two is the SSD was not shown by the output: needs `mount | grep /media` from the user (not yet received).
 - Why the first run found nothing is not established (the drive was probably not mounted yet or was remounted; the user's mount lines were not captured).
 - Change (offline only, tested against fake mountinfo and `tools/test_drive_exec.py`): `status` now also prints every mount under `/media` with filesystem, device and `exec`/`noexec`, so the output says which name is which drive.
+
+## 2026-10-08: Q-Links in Track mode on a Force (device, MPC OS 3.x, ML-185 as a track's instrument)
+- In Screen mode the Force's 8 knobs follow the plugin's page as above (bank 1 = Q-Links 13,9,5,1,14,10,6,2) and every
+  turn reaches the plugin: a `WRAP_TRACE` build logged one setParameter per event (read-back + 1/128 of the range) and the
+  value moved.
+- In Track mode the knob displays show the skin's `Program Mode Q-Links` map read straight across: knob N = `Q-Link N`
+  (seen on video: knobs 1-3 labelled Pitch 4, Pitch 8, Pulses 4, i.e. the column-ordered map `program_qlinks()` writes).
+  Turning them changed nothing, and the same trace build logged no setParameter at all for those turns. So Track mode
+  does not reach a VST2 plugin's parameters here; use Screen mode. Not yet compared with a stock plugin in Track mode.
+- `ports/ml185/vst/force_qlinks.py` rewrites `Program Mode Q-Links` in straight order (knob N = the Nth control) so the
+  labels at least read in order on a Force; whether Track mode then drives the plugin is untested.
