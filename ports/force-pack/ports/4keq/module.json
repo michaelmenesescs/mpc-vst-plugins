@@ -1,0 +1,280 @@
+{
+ "id": "4k-eq",
+ "name": "4K EQ",
+ "capabilities": {
+  "chain_params": [
+   {
+    "key": "lf_gain",
+    "name": "GAIN",
+    "type": "float",
+    "min": -15.0,
+    "max": 15.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "lm_gain",
+    "name": "GAIN",
+    "type": "float",
+    "min": -15.0,
+    "max": 15.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "hm_gain",
+    "name": "GAIN",
+    "type": "float",
+    "min": -15.0,
+    "max": 15.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "hf_gain",
+    "name": "GAIN",
+    "type": "float",
+    "min": -15.0,
+    "max": 15.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "hpf_freq",
+    "name": "HPF",
+    "type": "float",
+    "min": 16.0,
+    "max": 350.0,
+    "default": 16.0,
+    "unit": "Hz",
+    "display_format": ".0f"
+   },
+   {
+    "key": "lpf_freq",
+    "name": "LPF",
+    "type": "float",
+    "min": 3000.0,
+    "max": 15201.0,
+    "default": 15201.0,
+    "unit": "Hz",
+    "display_format": ".0f"
+   },
+   {
+    "key": "input_gain",
+    "name": "IN",
+    "type": "float",
+    "min": -12.0,
+    "max": 12.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "output_gain",
+    "name": "OUT",
+    "type": "float",
+    "min": -12.0,
+    "max": 12.0,
+    "default": 0.0,
+    "unit": "dB",
+    "display_format": ".1f"
+   },
+   {
+    "key": "lf_freq",
+    "name": "FREQ",
+    "type": "float",
+    "min": 30.0,
+    "max": 450.0,
+    "default": 200.0,
+    "unit": "Hz",
+    "display_format": ".0f"
+   },
+   {
+    "key": "lm_freq",
+    "name": "FREQ",
+    "type": "float",
+    "min": 200.0,
+    "max": 2500.0,
+    "default": 1000.0,
+    "unit": "Hz",
+    "display_format": ".0f",
+    "viz": false
+   },
+   {
+    "key": "hm_freq",
+    "name": "FREQ",
+    "type": "float",
+    "min": 600.0,
+    "max": 7000.0,
+    "default": 3000.0,
+    "unit": "Hz",
+    "display_format": ".0f",
+    "viz": false
+   },
+   {
+    "key": "hf_freq",
+    "name": "FREQ",
+    "type": "float",
+    "min": 1500.0,
+    "max": 16000.0,
+    "default": 8000.0,
+    "unit": "Hz",
+    "display_format": ".0f"
+   },
+   {
+    "key": "lm_q",
+    "name": "Q",
+    "type": "float",
+    "min": 0.5,
+    "max": 3.0,
+    "default": 1.5,
+    "display_format": ".2f",
+    "viz": false
+   },
+   {
+    "key": "hm_q",
+    "name": "Q",
+    "type": "float",
+    "min": 0.5,
+    "max": 3.0,
+    "default": 1.5,
+    "display_format": ".2f",
+    "viz": false
+   },
+   {
+    "key": "lf_bell",
+    "name": "BELL",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "hf_bell",
+    "name": "BELL",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "hpf_enabled",
+    "name": "HPF ON",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "lpf_enabled",
+    "name": "LPF ON",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "eq_type",
+    "name": "TYPE",
+    "type": "enum",
+    "options": [
+     "Brown",
+     "Black"
+    ],
+    "default": "Brown"
+   },
+   {
+    "key": "auto_gain",
+    "name": "A.GAIN",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "oversampling",
+    "name": "OVRSMP",
+    "type": "enum",
+    "options": [
+     "1x",
+     "2x",
+     "4x"
+    ],
+    "default": "2x"
+   },
+   {
+    "key": "bypass",
+    "name": "BYPASS",
+    "type": "enum",
+    "options": [
+     "Off",
+     "On"
+    ],
+    "default": "Off",
+    "viz": {
+     "kind": "switch"
+    }
+   },
+   {
+    "key": "in_peak_l",
+    "name": "in_peak_l",
+    "type": "float",
+    "access": "read"
+   },
+   {
+    "key": "in_peak_r",
+    "name": "in_peak_r",
+    "type": "float",
+    "access": "read"
+   },
+   {
+    "key": "out_peak_l",
+    "name": "out_peak_l",
+    "type": "float",
+    "access": "read"
+   },
+   {
+    "key": "out_peak_r",
+    "name": "out_peak_r",
+    "type": "float",
+    "access": "read"
+   },
+   {
+    "key": "clip",
+    "name": "clip",
+    "type": "int",
+    "access": "read"
+   }
+  ],
+  "ui_hierarchy": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "name": "Ducker",
+ "vendor": "charlesvestal",
+ "uid": "Duck",
+ "version": 105,
+ "so": "ducker.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/ducker.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

@@ -1,0 +1,35 @@
+{
+ "name": "Braids",
+ "vendor": "Emilie Gillet (port charlesvestal)",
+ "uid": "Brai",
+ "version": 208,
+ "so": "braids.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/braids/macro_oscillator.cc",
+   "src/dsp/braids/analog_oscillator.cc",
+   "src/dsp/braids/digital_oscillator.cc",
+   "src/dsp/braids/resources.cc",
+   "src/dsp/braids/quantizer.cc",
+   "src/dsp/stmlib/utils/random.cc",
+   "src/dsp/braids_plugin.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/dsp/braids",
+   "-Isrc/dsp/stmlib/utils",
+   "-Isrc/chain_patches",
+   "-Isrc/presets",
+   "-Isrc/dsp/stmlib",
+   "-std=gnu++14"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

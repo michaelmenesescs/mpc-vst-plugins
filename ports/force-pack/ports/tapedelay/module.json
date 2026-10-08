@@ -1,0 +1,156 @@
+{
+ "id": "tapedelay",
+ "name": "TapeDelay",
+ "capabilities": {
+  "chain_params": [
+   {
+    "key": "time",
+    "name": "Time",
+    "type": "int",
+    "min": 20,
+    "max": 2000,
+    "step": 1
+   },
+   {
+    "key": "division",
+    "name": "Division",
+    "type": "enum",
+    "options": [
+     "free",
+     "1/1",
+     "1/2",
+     "1/2d",
+     "1/4",
+     "1/4d",
+     "1/4t",
+     "1/8",
+     "1/8d",
+     "1/8t",
+     "1/16",
+     "1/16t"
+    ],
+    "default": 0
+   },
+   {
+    "key": "feedback",
+    "name": "Feedback",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+   },
+   {
+    "key": "mix",
+    "name": "Mix",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+   },
+   {
+    "key": "tone",
+    "name": "Tone",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+   },
+   {
+    "key": "stereo_width",
+    "name": "Stereo Width",
+    "type": "int",
+    "min": 0,
+    "max": 100,
+    "step": 1
+   }
+  ],
+  "ui_hierarchy": {
+   "levels": {
+    "root": {
+     "name": "TapeDelay",
+     "params": [
+      {
+       "key": "time",
+       "label": "Time",
+       "type": "int",
+       "min": 20,
+       "max": 2000,
+       "default": 400,
+       "step": 1,
+       "unit": "ms"
+      },
+      {
+       "key": "division",
+       "label": "Division",
+       "type": "enum",
+       "options": [
+        "free",
+        "1/1",
+        "1/2",
+        "1/2d",
+        "1/4",
+        "1/4d",
+        "1/4t",
+        "1/8",
+        "1/8d",
+        "1/8t",
+        "1/16",
+        "1/16t"
+       ],
+       "default": 0
+      },
+      {
+       "key": "feedback",
+       "label": "Feedback",
+       "type": "float",
+       "min": 0.0,
+       "max": 1.0,
+       "default": 0.4,
+       "step": 0.01,
+       "unit": "%"
+      },
+      {
+       "key": "mix",
+       "label": "Mix",
+       "type": "float",
+       "min": 0.0,
+       "max": 1.0,
+       "default": 0.35,
+       "step": 0.01,
+       "unit": "%"
+      },
+      {
+       "key": "tone",
+       "label": "Tone",
+       "type": "float",
+       "min": 0.0,
+       "max": 1.0,
+       "default": 0.6,
+       "step": 0.01,
+       "unit": "%"
+      },
+      {
+       "key": "stereo_width",
+       "short_name": "WIDTH",
+       "label": "Stereo Width",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "default": 0,
+       "step": 1,
+       "unit": "%"
+      }
+     ],
+     "knobs": [
+      "time",
+      "division",
+      "feedback",
+      "mix",
+      "tone",
+      "stereo_width"
+     ]
+    }
+   }
+  }
+ }
+}

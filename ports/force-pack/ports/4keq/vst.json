@@ -1,0 +1,32 @@
+{
+ "name": "4K EQ",
+ "vendor": "4K EQ 2 by Dusk Audio (GPL-3.0); port athousanddetails",
+ "uid": "4KEQ",
+ "version": 10003,
+ "so": "4k-eq.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/fourk_eq_plugin.cpp",
+   "src/ported/shared-daf/dsp/FourKEQDSP.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/ported/shared-daf/dsp",
+   "-Isrc/host",
+   "-Isrc/ported",
+   "-Isrc/ported/daf-plugin",
+   "-Isrc/ported/shared-daf",
+   "-std=gnu++14"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}
