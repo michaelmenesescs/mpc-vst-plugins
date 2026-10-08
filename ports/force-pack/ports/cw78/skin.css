@@ -6,3 +6,4 @@
 .box { fill: #2a241e; stroke: #5b4b38; }
 .box-label { fill: #bfae8c; }
 .text { fill: #efe3c8; }
+.seg.look-image .seg-tx { display: none; }

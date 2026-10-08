@@ -412,7 +412,8 @@ class Page:
                     extra += " cols=%d cw=%d" % (cols, min(c["w"], (1240 - 12) // cols - 2))
                 if c.get("img"):
                     extra += " img=%s" % c["img"]
-                o.append('popup cx=%d cy=%d w=%d h=%d label="%s" key=%s%s' % (c["x"], Y(c["y"]), c["w"], c["h"], lab, key, extra))
+                o.append('popup cx=%d cy=%d w=%d h=%d label="%s" key=%s%s' % (c["x"], Y(c["y"]), c["w"], c["h"], lab, key, extra)
+                         + (" when=%s" % c["when"] if c.get("when") else ""))
             elif k == "button":
                 wh = " w=%d h=%d" % (c["w"], c["h"]) if c.get("w") else ""
                 col = " color=%s" % c["color"].lstrip("#") if c.get("color") else ""

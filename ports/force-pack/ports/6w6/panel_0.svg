@@ -127,10 +127,7 @@
 <text x="1182.5" y="534" font-size="12" fill="#e8452a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">16</text>
 <rect x="1168.5" y="552" width="28" height="18" rx="1" fill="#e8e8e8"/>
 <text x="1182.5" y="561" font-size="10" fill="#111" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">INS</text>
-<rect x="196" y="526" width="64" height="16" rx="0" fill="none" stroke="#e8452a" stroke-width="1"/>
-
 <rect x="1230" y="326" width="28" height="280" rx="0" fill="#2c2c2c"/>
-<text x="150" y="590" font-size="1" fill="#000" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;"></text>
 <g stroke="#1a1a1a" stroke-width="1.7" stroke-linecap="round"><line x1="227.3" y1="102.7" x2="223.0" y2="107.0"/><line x1="218.7" y1="88.8" x2="213.0" y2="90.7"/><line x1="217.4" y1="72.5" x2="211.5" y2="71.6"/><line x1="223.7" y1="57.4" x2="218.8" y2="53.9"/><line x1="236.1" y1="46.8" x2="233.4" y2="41.5"/><line x1="252.0" y1="43.0" x2="252.0" y2="37.0"/><line x1="267.9" y1="46.8" x2="270.6" y2="41.5"/><line x1="280.3" y1="57.4" x2="285.2" y2="53.9"/><line x1="286.6" y1="72.5" x2="292.5" y2="71.6"/><line x1="285.3" y1="88.8" x2="291.0" y2="90.7"/><line x1="276.7" y1="102.7" x2="281.0" y2="107.0"/></g>
 <path d="M252 40.8 L248.8 46.56 L255.2 46.56 Z" fill="#111"/>
 <text x="252" y="20" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:400;letter-spacing:0.01em;"><tspan font-size="15">A</tspan><tspan font-size="15">C</tspan><tspan font-size="10.5">C</tspan><tspan font-size="10.5">E</tspan><tspan font-size="10.5">N</tspan><tspan font-size="10.5">T</tspan></text>

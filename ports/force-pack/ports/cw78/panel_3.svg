@@ -1,50 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
-<defs>
-<filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.002 0.9"
- numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.16 0"/></filter>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9"
- numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.10 0"/></filter>
-<filter id="woodf" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.25"
- numOctaves="3" seed="11"/><feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.20  0 0 0 0 0.09  0 0 0 0.9 0"/></filter>
-<linearGradient id="screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eee"/><stop offset="1" stop-color="#777"/></linearGradient>
-<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.07"/>
- <stop offset="1" stop-color="#000" stop-opacity="0.12"/></linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628"><defs>
+<linearGradient id="hw-screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+<filter id="hw-brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="5"/>
+ <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.20 0"/></filter>
+<filter id="hw-brushd" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="9"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter>
+<filter id="hw-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.07 0"/></filter>
+<filter id="hw-wood" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.18" numOctaves="4" seed="21"/>
+ <feColorMatrix values="0 0 0 0 0.30  0 0 0 0 0.15  0 0 0 0 0.05  0 0 0 0.85 0"/></filter>
+<filter id="hw-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="hw-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.45"/></filter>
+<linearGradient id="hw-vshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="1" stop-color="#000" stop-opacity="0.14"/></linearGradient>
 </defs>
-<rect width="1280" height="628" fill="#1c1916"/>
-<rect width="1280" height="628" filter="url(#grain)"/>
-<rect width="1280" height="628" fill="url(#shade)"/>
-<rect x="12" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="18" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="109" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="115" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="206" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="212" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="304" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="310" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="401" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="407" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="498" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="504" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="596" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="602" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="693" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="699" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="791" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="797" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="888" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="894" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="985" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="991" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="1083" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="1089" y="64" width="37" height="26" rx="3" fill="#e07b2c"/>
-<rect x="1180" y="58" width="87" height="562" rx="6" fill="#2a241e" stroke="#5b4b38" stroke-width="1.5"/>
-<rect x="1186" y="64" width="37" height="26" rx="3" fill="#e8d7b0"/>
-<rect x="0" y="0" width="1280" height="54" fill="#1c1916"/>
-<text x="26" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="38" font-weight="700" fill="#e8d7b0" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.04em;">CW-78</text>
-<rect x="160" y="16" width="400" height="10" fill="#e07b2c"/>
-<rect x="160" y="27" width="400" height="10" fill="#b4562a"/>
-<text x="580" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="17" font-weight="600" fill="#e8d7b0" text-anchor="start" dominant-baseline="central" style="letter-spacing:0.18em;">COMPURHYTHM</text>
-<text x="1250" y="30" font-family="Titillium Web, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#e8d7b0" text-anchor="end" dominant-baseline="central" style="letter-spacing:0.2em;" opacity="0.75">RHYTHM COMPUTER</text>
-<rect x="0" y="0" width="9" height="628" fill="#6b3f1d"/><rect x="0" y="0" width="9" height="628" filter="url(#woodf)"/>
-<rect x="1271" y="0" width="9" height="628" fill="#6b3f1d"/><rect x="1271" y="0" width="9" height="628" filter="url(#woodf)"/>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#0c0c0c"/>
+<rect x="10" y="6" width="1260" height="616" rx="4" fill="#191919"/>
+<rect x="10" y="6" width="1260" height="616" filter="url(#hw-grain)"/>
+<text x="1250" y="50" font-size="40" fill="#f0872c" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.02em;font-style:italic;">CW-78</text>
+<line x1="920" y1="76" x2="1250" y2="76" stroke="#f0872c" stroke-width="2"/>
+<text x="1250" y="94" font-size="14" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">RHYTHM COMPUTER</text>
+<text x="30" y="50" font-size="16" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">DRIVE PER INSTRUMENT</text>
+<text x="50" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BASS</text>
+<text x="50" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DRUM</text>
+<text x="140.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SNARE</text>
+<text x="231.4" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">RIM</text>
+<text x="231.4" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHOT</text>
+<text x="322.1" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI-HAT</text>
+<text x="412.8" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CYMBAL</text>
+<text x="503.5" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MARACAS</text>
+<text x="594.2" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CLAVES</text>
+<text x="684.9" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI</text>
+<text x="684.9" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<text x="775.6" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
+<text x="775.6" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<text x="866.3" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
+<text x="866.3" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CONGA</text>
+<text x="957" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">COWBELL</text>
+<text x="1047.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">TAMB</text>
+<text x="1138.4" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GUIRO</text>
+<text x="1229.1" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">METAL</text>
+<text x="1229.1" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BEAT</text>
+<text x="50" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="140.7" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="231.4" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="322.1" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="412.8" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="503.5" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="594.2" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="684.9" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="775.6" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="866.3" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="957" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="1047.7" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="1138.4" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<text x="1229.1" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
 </svg>
