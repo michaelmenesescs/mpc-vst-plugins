@@ -1342,3 +1342,14 @@ GROUP and SETUP screenshots in `ports/maschine/docs/` (`tools/screenshot.sh --pl
 
 ### 2026-10-10: installer app Apply / Undo on the Force (device, user-reported; PR #260)
 The Force (MPC 3.9.1.2, drum-pad layout patch already applied, stock backup present, `status` read over SSH before the test) was driven through the 0.0.0-applytest build of the desktop app, step 7. The user reported that it "works well". What was and was not checked by us: before the test, `status` printed `STATE state=patched supported=1 backup=1 checksum=7cf96599ec61b1079688f253f3b65b9f` over SSH (read only); the click-through itself (Undo then Apply, typed `UNDO` / `APPLY`) was done by the user, and the checksums after each step were not read back by us. Only the drum-pad patch was tried; the drive exec and button remap patches have no Apply/Undo run yet, and the app offers default settings only (no per-patch options).
+
+## 2026-10-08: Q-Links in Track mode on a Force (device, MPC OS 3.x, ML-185 as a track's instrument)
+- In Screen mode the Force's 8 knobs follow the plugin's page as above (bank 1 = Q-Links 13,9,5,1,14,10,6,2) and every
+  turn reaches the plugin: a `WRAP_TRACE` build logged one setParameter per event (read-back + 1/128 of the range) and the
+  value moved.
+- In Track mode the knob displays show the skin's `Program Mode Q-Links` map read straight across: knob N = `Q-Link N`
+  (seen on video: knobs 1-3 labelled Pitch 4, Pitch 8, Pulses 4, i.e. the column-ordered map `program_qlinks()` writes).
+  Turning them changed nothing, and the same trace build logged no setParameter at all for those turns. So Track mode
+  does not reach a VST2 plugin's parameters here; use Screen mode. Not yet compared with a stock plugin in Track mode.
+- `ports/ml185/vst/force_qlinks.py` rewrites `Program Mode Q-Links` in straight order (knob N = the Nth control) so the
+  labels at least read in order on a Force; whether Track mode then drives the plugin is untested.
