@@ -55,10 +55,10 @@ THEMES = {
                 title_bg=["d93a2b", "ee7a2a", "f2c12e", "ece4d1"], knob="cap", knob_ring="d8d1bf", knob_dot="ece6d6",
                 knob_line="1b1b1b", toggle="led", logo="8W8", sub="RHYTHM COMPOSER", tag="ANALOG DRUM MODELS",
                 head_bg="161616", head_ink="f1ece0", stripes=["d93a2b", "ee7a2a", "f2c12e", "ece4d1"]),
-    "6w6": dict(title_size=12, title_sp=0.04, finish="brushed", bg="b9bcbe", ink="161616", ink_dim="3a3c3e", accent="e0452a", accent_hi="f05a3a",
-                plate="2a2b2d", plate_line="0f0f0f", title="f0f0ee", title_bg=["e0452a"], plate_ink="f0f0ee",
-                knob="moog", toggle="led", logo="6W6", sub="DRUMATIX", tag="RHYTHM MACHINE", head_bg="b9bcbe",
-                head_ink="161616", stripes=["e0452a", "161616"]),
+    "6w6": dict(title_size=12, title_sp=0.04, finish="brushed", bg="b9bcbe", ink="1a1a1a", ink_dim="3a3c3e", accent="c33a22", accent_hi="e04a30",
+                plate="d0d2d3", plate_line="55585a", title="1a1a1a", plate_ink="1a1a1a", lcd="1e1f20",
+                knob="moog", toggle="led", logo="6W6", sub="RHYTHM MACHINE", tag="", head_bg="b9bcbe",
+                head_ink="161616", stripes=["c33a22", "161616"]),
     "9w9": dict(title_size=12, title_sp=0.04, finish="flat", bg="8e9192", ink="141414", ink_dim="2e3031", accent="f2701c", accent_hi="ff8a33",
                 plate="a3a6a7", plate_line="2a2b2c", title="141414", title_bg=["f2701c"], knob="cap",
                 knob_ring="2b2b2b", knob_dot="3a3a3a", knob_line="f2f2f2", toggle="led", logo="9W9",
@@ -475,20 +475,31 @@ def build(pid):
     if t["knob"] != "drawn":
         out.append("knob_look=%s" % t["knob"])
     out.append("toggle_look=%s" % t.get("toggle", "led"))
-    for f in os.listdir(vdir):   # drawings of pages a previous layout had
-        if re.match(r"panel_\d+\.svg$", f):
+    for f in os.listdir(vdir):   # drawings of pages a previous layout had, and its hardware images
+        if re.match(r"panel_\d+\.svg$", f) or f.startswith("hw_"):
             os.remove(os.path.join(vdir, f))
+    ap = os.path.join(BASE, pid + ".art.json")
+    hart = json.load(open(ap)) if hw and os.path.exists(ap) else {"pages": {}, "assets": {}, "seg_text": True}
+    for name, body in hart["assets"].items():
+        open(os.path.join(vdir, name), "w").write(body)
     for n, tab in enumerate(tabs):
         body = list(tab[1:]) if hw else centre(tidy([squeeze(l) for l in tab[1:]], names))
         frames = frame_rects(body)
         svg = "panel_%d.svg" % n
-        open(os.path.join(vdir, svg), "w").write(panel_svg(t, frames))
+        if str(n) in hart["pages"]:   # a hardware page (hwpanel.Page): its own artwork
+            import hwpanel
+            art = '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">%s\n%s\n</svg>' % (
+                hwpanel.DEFS, hart["pages"][str(n)])
+        else:
+            art = panel_svg(t, frames)
+        open(os.path.join(vdir, svg), "w").write(art)
         out += ["", tab[0], "art file=%s" % svg]
         if t.get("band_knobs"):
             body = band_knob_lines(body, vdir)
         out += [l for l in body if l.strip()]
     open(os.path.join(vdir, "layout.conf"), "w").write("\n".join(out) + "\n")
-    open(os.path.join(vdir, "skin.css"), "w").write(css(t))
+    open(os.path.join(vdir, "skin.css"), "w").write(css(t) + ("" if hart.get("seg_text", True) else
+                                                            ".seg.look-image .seg-tx { display: none; }\n"))
     vj["layout"] = "layout.conf"
     vj["art"] = "html"
     json.dump(vj, open(vj_path, "w"), indent=1)
