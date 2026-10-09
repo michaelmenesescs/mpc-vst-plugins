@@ -50,8 +50,8 @@ def plibpo32(params):
     p.asset("po_k.svg", po_knob())
     po_board(p, "TONIC DRUM SYNTH")
     p.add(T(230, 62, "KIT", 13, "#2a302a", 700, anchor="start", font=MONO))
-    p.readout("kit", 440, 108, 300, 64, "")
-    p.knob("kit", 590, 108, 24, "KIT", img="hw_po_k.svg", vs=14, dup=True, bw=100)
+    p.readout("kit", 404, 108, 290, 64, "")
+    p.knob("kit", 616, 102, 24, "KIT", img="hw_po_k.svg", vs=14, dup=True, bw=100)
     # A / B
     for x, k, l in ((800, "level", "A  LEVEL"), (950, "decay", "B  DECAY")):
         p.add(T(x, 46, l, 13, PO_INK, 700), circle(x, 108, 40, "none", "#4a504c", 1.5))
