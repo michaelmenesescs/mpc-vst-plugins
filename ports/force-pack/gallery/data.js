@@ -10,7 +10,7 @@ window.PLUGINS = [
 "img": "img/303_0.jpg",
 "banks": [
 {
-"name": "303 A",
+"name": "303",
 "b1": [
 "WAVEFORM",
 "TUNING",
@@ -22,23 +22,15 @@ window.PLUGINS = [
 "VOLUME"
 ],
 "b2": [
-"NORMAL DECAY",
-"ACCENT DECAY",
-"FEEDBACK HPF",
+"NORM DECAY",
+"ACC DECAY",
+"FDBK HPF",
 "SOFT ATTACK",
 "SLIDE TIME",
-"DEVIL MOD",
-"MODEL",
-"DRIVE"
-]
-},
-{
-"name": "303 B",
-"b1": [
+"DRIVE",
 "MIX",
 "SHAPER"
-],
-"b2": []
+]
 }
 ]
 }
@@ -69,41 +61,26 @@ window.PLUGINS = [
 "b2": [
 "LEVEL",
 "LEVEL",
-"LEVEL"
+"LEVEL",
+"LEVEL",
+"MASTER VOLUME"
 ]
 },
 {
 "name": "808 B",
 "b1": [
 "TONE",
+"TUNING",
+"TUNING",
+"TUNING",
+"TUNING",
 "TONE",
-"TUNING",
-"TUNING",
-"TUNING",
-"TUNING",
-"TUNING",
-"TUNING"
+"",
+""
 ],
 "b2": [
-"TONE",
-"TUNING",
-"TUNING"
-]
-},
-{
-"name": "808 C",
-"b1": [
 "DECAY",
 "SNAPPY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY"
-],
-"b2": [
-"DECAY",
 "DECAY",
 "DECAY"
 ]
@@ -111,54 +88,85 @@ window.PLUGINS = [
 ]
 },
 {
-"name": "CONGA / CLAVES",
+"name": "808 MORE",
 "img": "img/8w8_1.jpg",
 "banks": [
 {
-"name": "CONGA / CLAVES A",
+"name": "808 MORE A",
 "b1": [
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"BD TUNING",
-"CHOKE",
-""
-],
-"b2": [
 "TUNING",
 "TUNING",
 "TUNING",
 "TUNING",
 "TUNING",
-"BD ATTACK"
-]
-},
-{
-"name": "CONGA / CLAVES B",
-"b1": [
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"SD DECAY",
+"TUNING",
 "",
 ""
 ],
 "b2": [
-"ATTACK"
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY"
 ]
+},
+{
+"name": "808 MORE B",
+"b1": [
+"ATTACK"
+],
+"b2": []
+}
+]
+},
+{
+"name": "CONGAS",
+"img": "img/8w8_2.jpg",
+"banks": [
+{
+"name": "CONGAS A",
+"b1": [
+"LEVEL",
+"LEVEL",
+"LEVEL",
+"LEVEL",
+"LEVEL",
+"",
+"",
+""
+],
+"b2": [
+"TUNING",
+"TUNING",
+"TUNING",
+"TUNING",
+"TUNING"
+]
+},
+{
+"name": "CONGAS B",
+"b1": [
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"MA ATTACK"
+],
+"b2": []
 }
 ]
 },
 {
 "name": "DRIVE",
-"img": "img/8w8_2.jpg",
+"img": "img/8w8_3.jpg",
 "banks": [
 {
-"name": "DRIVE A",
+"name": "DRIVE",
 "b1": [
 "DRIVE",
 "DRIVE",
@@ -170,126 +178,90 @@ window.PLUGINS = [
 "DRIVE"
 ],
 "b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
-]
-},
-{
-"name": "DRIVE B",
-"b1": [
 "DRIVE",
 "DRIVE",
 "DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE"
-],
-"b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
+"LO CONGA DRIVE",
+"MID CONGA DRIVE",
+"HI CONGA DRIVE",
+"CLAVES DRIVE",
+"MARACAS DRIVE"
 ]
 }
 ]
 },
 {
 "name": "SENDS",
-"img": "img/8w8_3.jpg",
+"img": "img/8w8_4.jpg",
 "banks": [
 {
-"name": "SENDS A",
+"name": "REVERB",
 "b1": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV"
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB"
 ],
 "b2": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
+"REVERB",
+"REVERB",
+"LO CONGA REV",
+"MID CONGA REV",
+"HI CONGA REV",
+"CLAVES REV",
+"MARACAS REV"
 ]
 },
 {
-"name": "SENDS B",
+"name": "DELAY",
 "b1": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-""
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY"
 ],
 "b2": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
+"DELAY",
+"DELAY",
+"LO CONGA DLY",
+"MID CONGA DLY",
+"HI CONGA DLY",
+"CLAVES DLY",
+"MARACAS DLY"
 ]
 }
 ]
 },
 {
 "name": "MASTER",
-"img": "img/8w8_4.jpg",
+"img": "img/8w8_5.jpg",
 "banks": [
 {
-"name": "MASTER A",
+"name": "MASTER",
 "b1": [
-"VOLUME",
 "COMP",
-"VEL DEPTH",
+"DRIVE",
 "DECAY",
 "TONE",
-"TIME",
-"FEEDBACK",
-""
-],
-"b2": [
-"MASTER DIST",
-"DRIVE",
-"NOTE MAP",
 "HPF",
 "LEVEL",
-"TONE",
+"FEEDBACK",
+"TONE"
+],
+"b2": [
 "HPF",
-"LEVEL"
-]
-},
-{
-"name": "MASTER B",
-"b1": [
+"LEVEL",
 "FOCUS",
 "MUTES"
-],
-"b2": []
+]
 }
 ]
 }
@@ -308,42 +280,57 @@ window.PLUGINS = [
 {
 "name": "606 A",
 "b1": [
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL"
+"ACcent",
+"BassDrum",
+"SnareDrum",
+"LowTom",
+"HiTom",
+"CYmbal",
+"OpenHihat",
+"Cls'dHihat"
 ],
 "b2": [
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE"
+"handClaP"
 ]
 },
 {
 "name": "606 B",
 "b1": [
-"DECAY",
-"TONE",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY"
+"BD TUNE",
+"SD TUNE",
+"LT TUNE",
+"HT TUNE",
+"CY TUNE",
+"OH TUNE",
+"CH TUNE",
+"CP TUNE"
+],
+"b2": [
+"VOLUME"
+]
+}
+]
+},
+{
+"name": "606 MORE",
+"img": "img/6w6_1.jpg",
+"banks": [
+{
+"name": "606 MORE",
+"b1": [
+"BassDrum",
+"SnareDrum",
+"LowTom",
+"HiTom",
+"CYmbal",
+"OpenHihat",
+"Cls'dHihat",
+"handClaP"
 ],
 "b2": [
 "ATTACK",
+"TONE",
 "SNAPPY",
-"CHOKE",
 "NOISE"
 ]
 }
@@ -351,96 +338,77 @@ window.PLUGINS = [
 },
 {
 "name": "DRIVE",
-"img": "img/6w6_1.jpg",
+"img": "img/6w6_2.jpg",
 "banks": [
 {
 "name": "DRIVE",
 "b1": [
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE",
-"DRIVE"
+"BassDrum",
+"SnareDrum",
+"LowTom",
+"HiTom",
+"CYmbal",
+"OpenHihat",
+"Cls'dHihat",
+"handClaP"
 ],
 "b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
+"MASTER"
 ]
 }
 ]
 },
 {
 "name": "SENDS",
-"img": "img/6w6_2.jpg",
+"img": "img/6w6_3.jpg",
 "banks": [
 {
 "name": "SENDS",
 "b1": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV"
+"BassDrum",
+"SnareDrum",
+"LowTom",
+"HiTom",
+"CYmbal",
+"OpenHihat",
+"Cls'dHihat",
+"handClaP"
 ],
 "b2": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
+"BD DLY",
+"SD DLY",
+"LT DLY",
+"HT DLY",
+"CY DLY",
+"OH DLY",
+"CH DLY",
+"CP DLY"
 ]
 }
 ]
 },
 {
 "name": "MASTER",
-"img": "img/6w6_3.jpg",
+"img": "img/6w6_4.jpg",
 "banks": [
 {
-"name": "MASTER A",
+"name": "MASTER",
 "b1": [
-"VOLUME",
 "COMP",
-"VEL DEPTH",
-"SD DECAY",
-"DECAY",
-"TONE",
-"TIME",
-"FEEDBACK"
+"REV DECAY",
+"REV TONE",
+"REV HPF",
+"REV LEVEL",
+"DLY FEEDBACK",
+"DLY TONE",
+""
 ],
 "b2": [
-"MASTER DIST",
-"DRIVE",
-"NOTE MAP",
-"HPF",
-"LEVEL",
-"TONE",
-"HPF",
-"LEVEL"
-]
-},
-{
-"name": "MASTER B",
-"b1": [
+"DLY HPF",
+"DLY LEVEL",
 "FOCUS",
 "MUTES"
-],
-"b2": []
+]
 }
 ]
 }
@@ -459,59 +427,45 @@ window.PLUGINS = [
 {
 "name": "909 A",
 "b1": [
-"ACCENT",
 "TUNE",
 "LEVEL",
 "TUNE",
 "LEVEL",
 "TUNE",
 "LEVEL",
-"TUNE"
+"TUNE",
+"LEVEL"
 ],
 "b2": [
-"LEVEL",
 "TUNE",
 "LEVEL",
 "LEVEL",
 "LEVEL",
-"CH LVL",
-"OH LVL",
+"CH LEVEL",
+"OH LEVEL",
+"LEVEL",
 "LEVEL"
 ]
 },
 {
 "name": "909 B",
 "b1": [
-"LEVEL",
-"VOLUME",
-"",
-"",
-"",
-"",
-"",
-""
-],
-"b2": [
+"ACCENT",
 "ATTACK",
 "DECAY",
 "TONE",
 "SNAPPY",
 "DECAY",
 "DECAY",
-"DECAY",
-"TUNE"
-]
-},
-{
-"name": "909 C",
-"b1": [
-"DECAY",
-"CH DEC",
-"OH DEC",
-"TUNE",
-"TUNE"
+"DECAY"
 ],
-"b2": []
+"b2": [
+"CH DECAY",
+"OH DECAY",
+"CRASH TUNE",
+"RIDE TUNE",
+"VOLUME"
+]
 }
 ]
 },
@@ -520,22 +474,30 @@ window.PLUGINS = [
 "img": "img/9w9_1.jpg",
 "banks": [
 {
-"name": "909 MORE",
+"name": "909 MORE A",
 "b1": [
+"VELOCITY",
 "SWEEP",
 "PITCH MOD",
-"LT ATTACK",
-"MT ATTACK",
-"HT ATTACK",
-"RIM SAT",
-"CLAP TUNE",
-"CH TUNE"
+"ATTACK",
+"ATTACK",
+"ATTACK",
+"RIM TUNE",
+"CLAP TUNE"
 ],
 "b2": [
+"CH TUNE",
 "OH TUNE",
 "CRASH DEC",
 "RIDE DEC"
 ]
+},
+{
+"name": "909 MORE B",
+"b1": [
+"CLAP DECAY"
+],
+"b2": []
 }
 ]
 },
@@ -544,44 +506,22 @@ window.PLUGINS = [
 "img": "img/9w9_2.jpg",
 "banks": [
 {
-"name": "DRIVE A",
+"name": "DRIVE",
 "b1": [
 "DRIVE",
 "DRIVE",
 "DRIVE",
 "DRIVE",
 "DRIVE",
+"SAT",
 "DRIVE",
-"DRIVE",
-""
+"DRIVE"
 ],
 "b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
-]
-},
-{
-"name": "DRIVE B",
-"b1": [
 "DRIVE",
 "DRIVE",
 "DRIVE",
-"",
-"",
-"",
-"",
-""
-],
-"b2": [
-"TYPE",
-"TYPE",
-"TYPE"
+"MASTER DRIVE"
 ]
 }
 ]
@@ -591,37 +531,37 @@ window.PLUGINS = [
 "img": "img/9w9_3.jpg",
 "banks": [
 {
-"name": "SENDS A",
+"name": "REVERB",
 "b1": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV"
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB"
 ],
 "b2": [
-"REV",
-"REV"
+"REVERB",
+"REVERB"
 ]
 },
 {
-"name": "SENDS B",
+"name": "DELAY",
 "b1": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY"
 ],
 "b2": [
-"DLY",
-"DLY"
+"DELAY",
+"DELAY"
 ]
 }
 ]
@@ -634,21 +574,15 @@ window.PLUGINS = [
 "name": "MASTER",
 "b1": [
 "COMP",
-"VEL DEPTH",
-"NOTE MAP",
 "DECAY",
 "TONE",
-"TIME",
-"FEEDBACK",
-""
-],
-"b2": [
-"MASTER DIST",
-"DRIVE",
 "HPF",
 "LEVEL",
+"FEEDBACK",
 "TONE",
-"HPF",
+"HPF"
+],
+"b2": [
 "LEVEL"
 ]
 }
@@ -667,52 +601,64 @@ window.PLUGINS = [
 "img": "img/cw78_0.jpg",
 "banks": [
 {
-"name": "CR-78 A",
+"name": "CR-78",
 "b1": [
-"RHYTHM I",
-"RHYTHM II",
-"A / B",
-"MODE",
+"RHY STYLE",
+"RHY STYLE2",
+"RHY AB",
 "VOLUME",
-"ACCENT COMP",
-"",
-""
+"ACCENT",
+"COMP",
+"DRIVE",
+"HAT CHOKE"
 ],
 "b2": [
-"BD",
-"SD",
-"RS",
-"HH",
-"CY",
-"MA",
-"CL",
-"HB"
+"START / STOP",
+"DISTORTION",
+"NOTE MAP",
+"FOCUS",
+"MUTES"
+]
+}
 ]
 },
 {
-"name": "CR-78 B",
+"name": "LEVELS",
+"img": "img/cw78_1.jpg",
+"banks": [
+{
+"name": "LEVELS",
 "b1": [
-"LB",
-"LC",
-"CB",
-"TB",
-"GU",
-"MB"
+"BASS DRUM",
+"SNARE",
+"RIM SHOT",
+"HI-HAT",
+"CYMBAL",
+"MARACAS",
+"CLAVES",
+"HI BONGO"
 ],
-"b2": []
+"b2": [
+"LO BONGO",
+"LO CONGA",
+"COWBELL",
+"TAMB",
+"GUIRO",
+"METAL BEAT"
+]
 }
 ]
 },
 {
 "name": "VOICES",
-"img": "img/cw78_1.jpg",
+"img": "img/cw78_2.jpg",
 "banks": [
 {
 "name": "VOICES A",
 "b1": [
 "TUNE",
 "TUNE",
-"SNAPPY",
+"TUNE",
 "TUNE",
 "TUNE",
 "TUNE",
@@ -720,26 +666,25 @@ window.PLUGINS = [
 "TUNE"
 ],
 "b2": [
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY",
-"DECAY"
+"TUNE",
+"TUNE",
+"TUNE",
+"TUNE",
+"TUNE",
+"TUNE"
 ]
 },
 {
 "name": "VOICES B",
 "b1": [
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"TUNE",
-"RATE",
-"TUNE"
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY",
+"DECAY"
 ],
 "b2": [
 "DECAY",
@@ -748,17 +693,18 @@ window.PLUGINS = [
 "DECAY",
 "DECAY",
 "DECAY",
-"DECAY"
+"SNAPPY",
+"RATE"
 ]
 }
 ]
 },
 {
 "name": "DRIVE",
-"img": "img/cw78_2.jpg",
+"img": "img/cw78_3.jpg",
 "banks": [
 {
-"name": "DRIVE A",
+"name": "DRIVE",
 "b1": [
 "DRIVE",
 "DRIVE",
@@ -770,116 +716,71 @@ window.PLUGINS = [
 "DRIVE"
 ],
 "b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
-]
-},
-{
-"name": "DRIVE B",
-"b1": [
 "DRIVE",
 "DRIVE",
 "DRIVE",
 "DRIVE",
 "DRIVE",
-"DRIVE",
-"",
-""
-],
-"b2": [
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE",
-"TYPE"
+"DRIVE"
 ]
 }
 ]
 },
 {
 "name": "SENDS",
-"img": "img/cw78_3.jpg",
+"img": "img/cw78_4.jpg",
 "banks": [
 {
 "name": "SENDS A",
 "b1": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV",
-"REV"
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB"
 ],
 "b2": [
-"REV",
-"REV",
-"REV",
-"REV",
-"REV"
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB",
+"REVERB"
 ]
 },
 {
 "name": "SENDS B",
 "b1": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY"
 ],
 "b2": [
-"DLY",
-"DLY",
-"DLY",
-"DLY",
-"DLY"
-]
-}
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY",
+"DELAY"
 ]
 },
 {
-"name": "MASTER",
-"img": "img/cw78_4.jpg",
-"banks": [
-{
-"name": "MASTER A",
+"name": "SENDS C",
 "b1": [
-"VEL DEPTH",
-"NOTE MAP",
-"CHOKE",
-"DECAY",
-"TONE",
-"TIME",
-"FEEDBACK",
-""
-],
-"b2": [
-"MASTER DIST",
-"DRIVE",
-"HPF",
-"LEVEL",
-"TONE",
-"HPF",
-"LEVEL"
-]
-},
-{
-"name": "MASTER B",
-"b1": [
-"FOCUS",
-"MUTES"
+"REV DECAY",
+"REV TONE",
+"REV HPF",
+"REV LEVEL",
+"DLY FDBK",
+"DLY TONE",
+"DLY HPF",
+"DLY LEVEL"
 ],
 "b2": []
 }
@@ -900,22 +801,22 @@ window.PLUGINS = [
 {
 "name": "BRAIDS A",
 "b1": [
-"MODEL",
-"ATTACK",
-"DECAY",
-"CUTOFF",
-"ATTACK",
-"DECAY",
-"",
-""
-],
-"b2": [
+"ENGINE",
 "COARSE",
 "FM",
+"TIMBRE",
+"COLOR",
+"FREQUENCY",
+"RESONANCE",
+"ENV AMOUNT"
+],
+"b2": [
+"ATTACK",
+"DECAY",
 "SUSTAIN",
 "RELEASE",
-"RESONANCE",
-"ENV AMT",
+"ATTACK",
+"DECAY",
 "SUSTAIN",
 "RELEASE"
 ]
@@ -923,9 +824,7 @@ window.PLUGINS = [
 {
 "name": "BRAIDS B",
 "b1": [
-"TIMBRE",
-"COLOR",
-"VOLUME"
+"LEVEL"
 ],
 "b2": []
 }
@@ -944,42 +843,24 @@ window.PLUGINS = [
 "img": "img/plaits_0.jpg",
 "banks": [
 {
-"name": "PLAITS A",
+"name": "PLAITS",
 "b1": [
-"MODEL",
-"DECAY",
-"COLOUR",
-"FM PRESET",
-"",
-"",
-"",
-""
-],
-"b2": [
+"ENGINE",
 "FREQUENCY",
 "HARMONICS",
-"ATTACK",
-"AUX MIX",
-"LEGATO",
-"VELOCITY"
-]
-},
-{
-"name": "PLAITS B",
-"b1": [
 "TIMBRE",
 "MORPH",
-"",
-"",
-"",
-"",
-"",
-""
+"TIMBRE",
+"FM",
+"MORPH"
 ],
 "b2": [
-"TIMBRE ATT",
-"FM ATT",
-"MORPH ATT"
+"DECAY",
+"COLOUR",
+"ATTACK",
+"AUX MIX",
+"VELOCITY",
+"FM PRESET"
 ]
 }
 ]
@@ -999,41 +880,39 @@ window.PLUGINS = [
 {
 "name": "PANEL A",
 "b1": [
-"TYPE",
+"GLIDE",
+"MODEL",
 "WAVE",
 "TIMBRE",
 "SHAPE",
-"CUTOFF",
-"RESONANCE",
-"TYPE",
-"RISE"
+"VOICE MODE",
+"",
+""
 ],
 "b2": [
+"PITCH",
+"FM",
+"CUTOFF",
+"RESONANCE",
+"RATE",
+"RISE",
 "FALL",
-"SHAPE",
-"ATTACK",
-"DECAY",
-"SUSTAIN",
-"RELEASE"
+"ATTACK"
 ]
 },
 {
 "name": "PANEL B",
 "b1": [
-"RATE",
-"SHAPE",
-"SYNC",
-"GLIDE",
-"PITCH",
-"FM",
 "AUX MIX",
-"DECAY"
+"DECAY",
+"SUSTAIN",
+"RELEASE",
+"MASTER",
+"FILTER MODE",
+"LFO SHAPE",
+"CYCLE SHAPE"
 ],
-"b2": [
-"COLOR",
-"VOLUME",
-"VOICE"
-]
+"b2": []
 }
 ]
 },
@@ -1044,65 +923,64 @@ window.PLUGINS = [
 {
 "name": "MATRIX A",
 "b1": [
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE",
+"PITCH MOD LFO AMT",
+"HARMONICS MOD LFO AMT",
+"TIMBRE MOD LFO AMT",
+"CUTOFF MOD LFO AMT",
+"ASSIGN1 MOD LFO AMT",
+"ASSIGN2 MOD LFO AMT",
 "",
 ""
 ],
 "b2": [
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE"
+"PITCH MOD ENV AMT",
+"HARMONICS MOD ENV AMT",
+"TIMBRE MOD ENV AMT",
+"CUTOFF MOD ENV AMT",
+"ASSIGN1 MOD ENV AMT",
+"ASSIGN2 MOD ENV AMT"
 ]
 },
 {
 "name": "MATRIX B",
 "b1": [
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE",
+"PITCH MOD CYCLE ENV AMT",
+"HARMONICS MOD CYCLE ENV AMT",
+"TIMBRE MOD CYCLE ENV AMT",
+"CUTOFF MOD CYCLE ENV AMT",
+"ASSIGN1 MOD CYCLE ENV AMT",
+"ASSIGN2 MOD CYCLE ENV AMT",
 "",
 ""
 ],
 "b2": [
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE"
+"PITCH MOD RANDOM AMT",
+"HARMONICS MOD RANDOM AMT",
+"TIMBRE MOD RANDOM AMT",
+"CUTOFF MOD RANDOM AMT",
+"ASSIGN1 MOD RANDOM AMT",
+"ASSIGN2 MOD RANDOM AMT"
 ]
 },
 {
 "name": "MATRIX C",
 "b1": [
-"ASSIGN 1",
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE",
+"PITCH MOD VELOCITY AMT",
+"HARMONICS MOD VELOCITY AMT",
+"TIMBRE MOD VELOCITY AMT",
+"CUTOFF MOD VELOCITY AMT",
+"ASSIGN1 MOD VELOCITY AMT",
+"ASSIGN2 MOD VELOCITY AMT",
+"",
 ""
 ],
 "b2": [
-"ASSIGN 2",
-"LFO",
-"ENV",
-"CYC ENV",
-"RANDOM",
-"VELOCITY",
-"PRESSURE"
+"PITCH MOD POLY AFTERTOUCH AMT",
+"HARMONICS MOD POLY AFTERTOUCH AMT",
+"TIMBRE MOD POLY AFTERTOUCH AMT",
+"CUTOFF MOD POLY AFTERTOUCH AMT",
+"ASSIGN1 MOD POLY AFTERTOUCH AMT",
+"ASSIGN2 MOD POLY AFTERTOUCH AMT"
 ]
 }
 ]
@@ -1112,37 +990,26 @@ window.PLUGINS = [
 "img": "img/mrhyde_2.jpg",
 "banks": [
 {
-"name": "MORE A",
+"name": "MORE",
 "b1": [
-"SYNC",
-"RETRIG",
-"BIPOLAR",
-"RETRIG",
+"DECAY",
+"COLOR",
 "PHASE",
-"RETRIG",
+"VELOCITY",
+"PRESSURE",
+"",
 "",
 ""
 ],
 "b2": [
-"MODE",
 "RATE",
-"SYNC",
 "SLEW",
-"RETRIG",
-"VEL CURVE",
-"AT CURVE"
-]
-},
-{
-"name": "MORE B",
-"b1": [
 "POLYPHONY",
 "UNISON",
 "DETUNE",
 "SPREAD",
 "PAN"
-],
-"b2": []
+]
 }
 ]
 }
@@ -1161,34 +1028,32 @@ window.PLUGINS = [
 {
 "name": "DENIS A",
 "b1": [
-"FREQ",
+"FREQUENCY",
+"TIMBRE",
 "PITCH",
+"HARMONICS",
 "OSC MIX",
+"NOISE",
 "DEPTH",
-"CUTOFF",
-"A",
-"D",
-"LFO RATE"
+"SYMMETRY"
 ],
 "b2": [
-"TIMBRE",
-"HARMONICS",
-"NOISE",
-"TYPE",
+"FREQUENCY",
 "Q",
-"S",
-"R",
-"S&H RATE"
+"RISE",
+"FALL",
+"SUSTAIN",
+"RELEASE",
+"VEL > FILTER",
+"LFO RATE"
 ]
 },
 {
 "name": "DENIS B",
 "b1": [
-"NOISE TYPE",
-"TYPE",
-"VEL>FILT",
-"ENV",
-"NOISE"
+"S&H RATE",
+"ENV DEPTH",
+"NOISE DEPTH"
 ],
 "b2": []
 }
@@ -1201,47 +1066,47 @@ window.PLUGINS = [
 {
 "name": "MATRIX A",
 "b1": [
-"PITCH 1",
-"TIMBRE",
-"PITCH 2",
-"HARM",
-"FOLD",
-"F TYPE",
-"CUTOFF",
-"LEVEL"
+"MAT 0 0",
+"MAT 0 1",
+"MAT 0 2",
+"MAT 0 3",
+"MAT 0 4",
+"MAT 0 5",
+"MAT 0 6",
+"MAT 0 7"
 ],
 "b2": [
-"PITCH 1",
-"TIMBRE",
-"PITCH 2",
-"HARM",
-"FOLD",
-"F TYPE",
-"CUTOFF",
-"LEVEL"
+"MAT 1 0",
+"MAT 1 1",
+"MAT 1 2",
+"MAT 1 3",
+"MAT 1 4",
+"MAT 1 5",
+"MAT 1 6",
+"MAT 1 7"
 ]
 },
 {
 "name": "MATRIX B",
 "b1": [
-"PITCH 1",
-"TIMBRE",
-"PITCH 2",
-"HARM",
-"FOLD",
-"F TYPE",
-"CUTOFF",
-"LEVEL"
+"MAT 2 0",
+"MAT 2 1",
+"MAT 2 2",
+"MAT 2 3",
+"MAT 2 4",
+"MAT 2 5",
+"MAT 2 6",
+"MAT 2 7"
 ],
 "b2": [
-"PITCH 1",
-"TIMBRE",
-"PITCH 2",
-"HARM",
-"FOLD",
-"F TYPE",
-"CUTOFF",
-"LEVEL"
+"MAT 3 0",
+"MAT 3 1",
+"MAT 3 2",
+"MAT 3 3",
+"MAT 3 4",
+"MAT 3 5",
+"MAT 3 6",
+"MAT 3 7"
 ]
 }
 ]
@@ -1253,10 +1118,10 @@ window.PLUGINS = [
 {
 "name": "PATCH",
 "b1": [
+"PORTAMENTO",
 "PRESET",
-"GLIDE",
 "LEGATO",
-"PADS"
+"PATCH MODE"
 ],
 "b2": []
 }
@@ -1277,108 +1142,62 @@ window.PLUGINS = [
 {
 "name": "SH-101 A",
 "b1": [
+"TUNE",
 "RATE",
 "MOD",
-"PW",
+"RANGE",
+"PULSE WIDTH",
 "PULSE",
 "SAW",
-"SUB",
-"NOISE",
-"FREQ"
+"SUB OSC"
 ],
 "b2": [
+"NOISE",
+"FREQ",
 "RES",
 "ENV",
 "MOD",
-"KYBD",
-"LEVEL",
-"A",
-"D",
-"S"
+"KYBD"
 ]
 },
 {
 "name": "SH-101 B",
 "b1": [
+"A",
+"D",
+"S",
 "R",
-"",
-"",
-"",
-"",
-"",
-"",
-""
-],
-"b2": [
-"WAVE",
-"RANGE",
-"PWM",
-"SUB",
-"WHITE",
-"VEL",
-"ENV INV",
-"MODE"
-]
-},
-{
-"name": "SH-101 C",
-"b1": [
-"GATE/TRIG",
-"VEL"
+"VOLUME",
+"PORTAMENTO",
+"TRANSPOSE",
+"BEND"
 ],
 "b2": []
 }
 ]
 },
 {
-"name": "CONTROLLER",
+"name": "MORE",
 "img": "img/hush1_1.jpg",
 "banks": [
 {
-"name": "CONTROLLER A",
-"b1": [
-"GLIDE",
-"MODE",
-"LINEAR",
-"RANGE",
-"TRANSPOSE",
-"FINE",
-"PRIORITY",
-"RETRIG"
-],
-"b2": [
-"HOLD",
-"SAME NOTE"
-]
-},
-{
-"name": "CONTROLLER B",
+"name": "MORE",
 "b1": [
 "A",
 "D",
 "S",
 "R",
-"FULL",
-"LFO DEPTH",
-"ENV DEPTH",
-"TRIG"
+"LFO",
+"ENV",
+"PWM MOD",
+"VCF"
 ],
 "b2": [
-"SYNC",
-"INVERT",
-"SNAP",
-"PWM MOD"
-]
-},
-{
-"name": "CONTROLLER C",
-"b1": [
+"VCA",
 "PRESET",
-"VELOCITY",
 "DECLICK",
 "VOL COMP"
-],
-"b2": []
+]
 }
 ]
 }
@@ -1387,7 +1206,7 @@ window.PLUGINS = [
 {
 "id": "hank",
 "name": "Hank",
-"model": "2-operator FM synth",
+"model": "2-operator FM, drawn as a Yamaha DX",
 "group": "Synths",
 "pages": [
 {
@@ -1397,22 +1216,21 @@ window.PLUGINS = [
 {
 "name": "HANK",
 "b1": [
+"VOLUME",
+"DATA ENTRY",
 "RATIO",
+"PRESET",
 "BRIGHT",
 "BITE",
 "TONE",
+"NOISE"
+],
+"b2": [
 "ATTACK",
 "DECAY",
 "SUSTAIN",
-""
-],
-"b2": [
-"NOISE",
 "VOICES",
-"GLIDE",
-"PITCH",
-"VOLUME",
-"PRESET"
+"PORTAMENTO"
 ]
 }
 ]
@@ -1430,35 +1248,26 @@ window.PLUGINS = [
 "img": "img/chiptune_0.jpg",
 "banks": [
 {
-"name": "CHIPTUNE A",
+"name": "CHIPTUNE",
 "b1": [
-"CHIP",
-"VOICES",
-"NOISE",
 "DUTY",
 "WAVE",
-"ATTACK",
-"DECAY",
-"SUSTAIN"
-],
-"b2": [
-"RELEASE"
-]
-},
-{
-"name": "CHIPTUNE B",
-"b1": [
 "SWEEP",
-"VIB DEPTH",
-"VIB RATE",
-"P ENV",
-"P SPEED",
 "DETUNE",
 "CHANNELS",
-"OCTAVE"
+"VOLUME",
+"OCTAVE",
+"ALLOC MODE"
 ],
 "b2": [
-"VOLUME"
+"ATTACK",
+"DECAY",
+"SUSTAIN",
+"RELEASE",
+"VIB DEPTH",
+"VIB RATE",
+"PENV DEPTH",
+"PENV SPEED"
 ]
 }
 ]
@@ -1478,14 +1287,14 @@ window.PLUGINS = [
 {
 "name": "PO-32 A",
 "b1": [
-"KIT",
-"LEVEL",
-"LEVEL",
-"LEVEL",
-"LEVEL",
 "A  LEVEL",
 "B  DECAY",
-"LEVEL"
+"KIT",
+"",
+"",
+"",
+"",
+""
 ],
 "b2": [
 "LEVEL",
@@ -1503,6 +1312,11 @@ window.PLUGINS = [
 "b1": [
 "LEVEL",
 "LEVEL",
+"LEVEL",
+"LEVEL",
+"LEVEL",
+"LEVEL",
+"LEVEL",
 "LEVEL"
 ],
 "b2": []
@@ -1516,20 +1330,19 @@ window.PLUGINS = [
 {
 "name": "1",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1542,20 +1355,19 @@ window.PLUGINS = [
 {
 "name": "2",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1568,20 +1380,19 @@ window.PLUGINS = [
 {
 "name": "3",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1594,20 +1405,19 @@ window.PLUGINS = [
 {
 "name": "4",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1620,20 +1430,19 @@ window.PLUGINS = [
 {
 "name": "5",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1646,20 +1455,19 @@ window.PLUGINS = [
 {
 "name": "6",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1672,20 +1480,19 @@ window.PLUGINS = [
 {
 "name": "7",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1698,20 +1505,19 @@ window.PLUGINS = [
 {
 "name": "8",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1724,20 +1530,19 @@ window.PLUGINS = [
 {
 "name": "9",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1750,20 +1555,19 @@ window.PLUGINS = [
 {
 "name": "10",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1776,20 +1580,19 @@ window.PLUGINS = [
 {
 "name": "11",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1802,20 +1605,19 @@ window.PLUGINS = [
 {
 "name": "12",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1828,20 +1630,19 @@ window.PLUGINS = [
 {
 "name": "13",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1854,20 +1655,19 @@ window.PLUGINS = [
 {
 "name": "14",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1880,20 +1680,19 @@ window.PLUGINS = [
 {
 "name": "15",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1906,20 +1705,19 @@ window.PLUGINS = [
 {
 "name": "16",
 "b1": [
-"FREQ",
+"PITCH",
 "MOD RATE",
 "MOD AMT",
-"FILT FREQ",
-"FILT Q",
+"NOISE MIX",
 "ATTACK",
 "DECAY",
-""
+"NOISE FREQ",
+"NOISE Q"
 ],
 "b2": [
-"ATTACK",
-"DECAY",
-"MIX",
-"DIST",
+"N ATTACK",
+"N DECAY",
+"DISTORT",
 "LEVEL"
 ]
 }
@@ -1930,7 +1728,7 @@ window.PLUGINS = [
 {
 "id": "weird",
 "name": "Weird Dreams",
-"model": "WeirdDrums 8-voice drum machine",
+"model": "WeirdDrums: a boutique 8-voice analog drum machine (no hardware)",
 "group": "Drum machines",
 "pages": [
 {
@@ -1950,12 +1748,6 @@ window.PLUGINS = [
 "VOL"
 ],
 "b2": [
-"MASTER"
-]
-},
-{
-"name": "MIXER B",
-"b1": [
 "PAN",
 "PAN",
 "PAN",
@@ -1964,13 +1756,10 @@ window.PLUGINS = [
 "PAN",
 "PAN",
 "PAN"
-],
-"b2": [
-"COMP"
 ]
 },
 {
-"name": "MIXER C",
+"name": "MIXER B",
 "b1": [
 "REV",
 "REV",
@@ -1982,12 +1771,6 @@ window.PLUGINS = [
 "REV"
 ],
 "b2": [
-"DJ FILTER"
-]
-},
-{
-"name": "MIXER D",
-"b1": [
 "DLY",
 "DLY",
 "DLY",
@@ -1996,6 +1779,14 @@ window.PLUGINS = [
 "DLY",
 "DLY",
 "DLY"
+]
+},
+{
+"name": "MIXER C",
+"b1": [
+"MASTER",
+"COMP",
+"DJ FILTER"
 ],
 "b2": []
 }
@@ -2006,7 +1797,7 @@ window.PLUGINS = [
 "img": "img/weird_1.jpg",
 "banks": [
 {
-"name": "VOICE 1 A",
+"name": "VOICE 1",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2015,26 +1806,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 1 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2043,7 +1826,7 @@ window.PLUGINS = [
 "img": "img/weird_2.jpg",
 "banks": [
 {
-"name": "VOICE 2 A",
+"name": "VOICE 2",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2052,26 +1835,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 2 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2080,7 +1855,7 @@ window.PLUGINS = [
 "img": "img/weird_3.jpg",
 "banks": [
 {
-"name": "VOICE 3 A",
+"name": "VOICE 3",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2089,26 +1864,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 3 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2117,7 +1884,7 @@ window.PLUGINS = [
 "img": "img/weird_4.jpg",
 "banks": [
 {
-"name": "VOICE 4 A",
+"name": "VOICE 4",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2126,26 +1893,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 4 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2154,7 +1913,7 @@ window.PLUGINS = [
 "img": "img/weird_5.jpg",
 "banks": [
 {
-"name": "VOICE 5 A",
+"name": "VOICE 5",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2163,26 +1922,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 5 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2191,7 +1942,7 @@ window.PLUGINS = [
 "img": "img/weird_6.jpg",
 "banks": [
 {
-"name": "VOICE 6 A",
+"name": "VOICE 6",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2200,26 +1951,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 6 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2228,7 +1971,7 @@ window.PLUGINS = [
 "img": "img/weird_7.jpg",
 "banks": [
 {
-"name": "VOICE 7 A",
+"name": "VOICE 7",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2237,26 +1980,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 7 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2265,7 +2000,7 @@ window.PLUGINS = [
 "img": "img/weird_8.jpg",
 "banks": [
 {
-"name": "VOICE 8 A",
+"name": "VOICE 8",
 "b1": [
 "FREQ",
 "WAVE",
@@ -2274,26 +2009,18 @@ window.PLUGINS = [
 "MIX",
 "ATTACK",
 "DECAY",
-""
+"CUTOFF"
 ],
 "b2": [
-"TYPE",
-"CUTOFF",
 "RES",
 "ATTACK",
 "DECAY",
 "DIST",
 "LEVEL",
-"AMOUNT"
-]
-},
-{
-"name": "VOICE 8 B",
-"b1": [
+"AMOUNT",
 "RATE",
 "PRESET"
-],
-"b2": []
+]
 }
 ]
 },
@@ -2304,38 +2031,32 @@ window.PLUGINS = [
 {
 "name": "FX A",
 "b1": [
-"TYPE",
 "SIZE",
 "DECAY",
 "MIX",
 "RATE",
 "FEEDBACK",
 "TONE",
-"MIX"
+"MIX",
+"REV TYPE"
 ],
 "b2": [
 "LOW",
+"FREQ",
+"Q",
 "MID",
-"HIGH"
+"FREQ",
+"Q",
+"HIGH",
+"FREQ"
 ]
 },
 {
 "name": "FX B",
 "b1": [
-"LO FREQ",
-"MID FREQ",
-"HI FREQ",
-"",
-"",
-"",
-"",
-""
+"Q"
 ],
-"b2": [
-"LO Q",
-"MID Q",
-"HI Q"
-]
+"b2": []
 }
 ]
 },
@@ -2347,7 +2068,7 @@ window.PLUGINS = [
 "name": "KIT",
 "b1": [
 "KIT",
-"SAVE"
+"SAVE KIT"
 ],
 "b2": []
 }
@@ -2360,33 +2081,31 @@ window.PLUGINS = [
 {
 "name": "SELECTED A",
 "b1": [
-"VOL",
-"PAN",
 "FREQ",
 "WAVE",
 "P ENV",
 "P RATE",
+"MIX",
 "ATTACK",
-""
+"DECAY",
+"CUTOFF"
 ],
 "b2": [
+"RES",
+"ATTACK",
 "DECAY",
-"NOISE MIX",
-"N ATTACK",
-"N DECAY",
-"F TYPE",
-"CUTOFF",
-"RES"
+"DIST",
+"LEVEL",
+"AMOUNT",
+"RATE",
+"PRESET"
 ]
 },
 {
 "name": "SELECTED B",
 "b1": [
-"LFO AMT",
-"LFO RATE",
-"DIST",
-"LEVEL",
-"PRESET",
+"VOL",
+"PAN",
 "REV",
 "DLY"
 ],
@@ -2407,34 +2126,37 @@ window.PLUGINS = [
 "img": "img/midiverb_0.jpg",
 "banks": [
 {
-"name": "MIDIVERB A",
+"name": "MIDIVERB",
 "b1": [
 "INPUT",
-"UNIT",
-"PROGRAM",
 "MIX",
 "OUTPUT",
-"",
-"",
-""
+"PROGRAM",
+"UNIT"
 ],
-"b2": [
-"FEEDBACK",
-"PRE-DELAY",
-"LOW CUT",
-"HIGH CUT",
-"DAMPING",
-"TILT",
-"WIDTH",
-"LFO RATE"
+"b2": []
+}
 ]
 },
 {
-"name": "MIDIVERB B",
+"name": "EXPANDER",
+"img": "img/midiverb_1.jpg",
+"banks": [
+{
+"name": "EXPANDER",
 "b1": [
-"LFO DEPTH"
+"FEEDBACK",
+"PRE-DELAY",
+"DAMPING",
+"LOW CUT",
+"HIGH CUT",
+"TILT",
+"WIDTH",
+"LFO RATE"
 ],
-"b2": []
+"b2": [
+"LFO DEPTH"
+]
 }
 ]
 }
@@ -2451,25 +2173,13 @@ window.PLUGINS = [
 "img": "img/psxverb_0.jpg",
 "banks": [
 {
-"name": "PSX VERB A",
+"name": "PSX VERB",
 "b1": [
-"MODE",
 "DECAY",
 "MIX",
-"",
-"",
-"",
-"",
-""
-],
-"b2": [
-"INPUT"
-]
-},
-{
-"name": "PSX VERB B",
-"b1": [
-"LEVEL"
+"INPUT",
+"LEVEL",
+"MODEL"
 ],
 "b2": []
 }
@@ -2484,18 +2194,18 @@ window.PLUGINS = [
 "group": "Effects",
 "pages": [
 {
-"name": "SPACE ECHO",
+"name": "TAPE ECHO",
 "img": "img/tapedelay_0.jpg",
 "banks": [
 {
-"name": "SPACE ECHO",
+"name": "TAPE ECHO",
 "b1": [
-"MODE SELECTOR",
+"DIVISION",
+"TONE",
+"WIDTH",
 "REPEAT RATE",
 "INTENSITY",
-"ECHO VOLUME",
-"TONE",
-"WIDTH"
+"ECHO VOLUME"
 ],
 "b2": []
 }
@@ -2516,9 +2226,9 @@ window.PLUGINS = [
 {
 "name": "CHORUS",
 "b1": [
-"CHORUS",
+"MODE",
 "MIX",
-"BRIGHT"
+"BRIGHTNESS"
 ],
 "b2": []
 }
@@ -2537,33 +2247,23 @@ window.PLUGINS = [
 "img": "img/busdriver_0.jpg",
 "banks": [
 {
-"name": "DRUM BUSS A",
+"name": "DRUM BUSS",
 "b1": [
 "DRIVE",
+"TRIM",
 "CRUNCH",
+"DAMP",
+"TRANSIENTS",
 "BOOM",
-"OUTPUT",
-"",
-"",
-"",
-""
+"FREQ",
+"DECAY"
 ],
 "b2": [
-"TYPE",
-"DAMP",
-"FREQ",
-"DECAY",
-"DRY/WET"
+"OUTPUT",
+"DRY/WET",
+"DRIVE TYPE",
+"COMP"
 ]
-},
-{
-"name": "DRUM BUSS B",
-"b1": [
-"COMP",
-"TRIM",
-"TRANSIENTS"
-],
-"b2": []
 }
 ]
 }
@@ -2580,55 +2280,26 @@ window.PLUGINS = [
 "img": "img/4keq_0.jpg",
 "banks": [
 {
-"name": "EQ A",
+"name": "EQ",
 "b1": [
-"HPF",
+"HP Hz",
 "GAIN",
 "GAIN",
 "GAIN",
 "GAIN",
 "INPUT",
-"",
+"OUTPUT",
 ""
 ],
 "b2": [
-"HPF IN",
-"FREQ",
-"FREQ",
-"FREQ",
-"FREQ",
-"OUTPUT"
-]
-},
-{
-"name": "EQ B",
-"b1": [
-"LPF",
-"BELL",
+"LP kHz",
+"kHz",
+"kHz",
 "Q",
+"kHz",
 "Q",
-"BELL",
-"E / G",
-"IN",
-""
-],
-"b2": [
-"LPF IN"
+"Hz"
 ]
-}
-]
-},
-{
-"name": "SETUP",
-"img": "img/4keq_1.jpg",
-"banks": [
-{
-"name": "SETUP",
-"b1": [
-"AUTO GAIN",
-"OVERSAMPLE"
-],
-"b2": []
 }
 ]
 }
@@ -2637,7 +2308,7 @@ window.PLUGINS = [
 {
 "id": "ducker",
 "name": "Ducker",
-"model": "Sidechain ducker",
+"model": "Sidechain ducker as a 2U gain-reduction rack unit",
 "group": "Effects",
 "pages": [
 {
@@ -2645,28 +2316,16 @@ window.PLUGINS = [
 "img": "img/ducker_0.jpg",
 "banks": [
 {
-"name": "DUCKER A",
+"name": "DUCKER",
 "b1": [
-"CHANNEL",
 "DEPTH",
-"CURVE",
-"VEL SENS",
-"",
-"",
-"",
-""
-],
-"b2": [
-"NOTE",
 "ATTACK",
 "HOLD",
-"RELEASE"
-]
-},
-{
-"name": "DUCKER B",
-"b1": [
-"MODE"
+"RELEASE",
+"VEL SENS",
+"CURVE",
+"MODE",
+"MIDI CH"
 ],
 "b2": []
 }
@@ -2677,7 +2336,7 @@ window.PLUGINS = [
 {
 "id": "filter",
 "name": "FILTER",
-"model": "Multimode state-variable filter",
+"model": "Oberheim SEM-style state-variable filter",
 "group": "Effects",
 "pages": [
 {
@@ -2685,34 +2344,26 @@ window.PLUGINS = [
 "img": "img/filter_0.jpg",
 "banks": [
 {
-"name": "FILTER A",
+"name": "FILTER",
 "b1": [
-"MODEL",
-"MODE",
-"DRIVE",
-"AMOUNT",
-"AMOUNT",
-"SHAPE",
-"",
-""
-],
-"b2": [
-"CUTOFF",
+"FREQUENCY",
 "RESONANCE",
-"MIX",
+"MODE",
+"AMOUNT",
 "ATTACK",
 "RELEASE",
-"SYNC",
+"AMOUNT",
 "RATE"
-]
-},
-{
-"name": "FILTER B",
-"b1": [
-"OUTPUT",
-"DIVISION"
 ],
-"b2": []
+"b2": [
+"DRIVE",
+"MIX",
+"OUTPUT",
+"MODEL",
+"LFO SHAPE",
+"LFO SYNC",
+"DIVISION"
+]
 }
 ]
 }
@@ -2721,7 +2372,7 @@ window.PLUGINS = [
 {
 "id": "tapescam",
 "name": "TAPESCAM",
-"model": "Cassette deck",
+"model": "Hi-fi cassette deck",
 "group": "Effects",
 "pages": [
 {
@@ -2731,23 +2382,19 @@ window.PLUGINS = [
 {
 "name": "TAPESCAM",
 "b1": [
-"TAPE AGE",
-"SPEED",
-"COMP",
-"WIDEN",
-"",
-"",
-"",
-""
-],
-"b2": [
-"INPUT",
+"REC LEVEL",
 "DRIVE",
 "COLOR",
 "WOBBLE",
-"NOISE",
+"HISS",
 "TONE",
-"OUTPUT"
+"OUTPUT LEVEL",
+"AGE"
+],
+"b2": [
+"SPEED",
+"COMPRESSION",
+"WIDEN"
 ]
 }
 ]
@@ -2765,7 +2412,7 @@ window.PLUGINS = [
 "img": "img/ml185_0.jpg",
 "banks": [
 {
-"name": "STAGES A",
+"name": "STAGES",
 "b1": [
 "PITCH",
 "PITCH",
@@ -2777,12 +2424,6 @@ window.PLUGINS = [
 "PITCH"
 ],
 "b2": [
-"LENGTH"
-]
-},
-{
-"name": "STAGES B",
-"b1": [
 "PULSES",
 "PULSES",
 "PULSES",
@@ -2791,48 +2432,6 @@ window.PLUGINS = [
 "PULSES",
 "PULSES",
 "PULSES"
-],
-"b2": [
-"RATE"
-]
-},
-{
-"name": "STAGES C",
-"b1": [
-"GATE",
-"GATE",
-"GATE",
-"GATE",
-"GATE",
-"GATE",
-"GATE",
-"GATE"
-],
-"b2": [
-"DIRECTION"
-]
-},
-{
-"name": "STAGES D",
-"b1": [
-"SLIDE",
-"SLIDE",
-"SLIDE",
-"SLIDE",
-"SLIDE",
-"SLIDE",
-"SLIDE",
-"SLIDE"
-],
-"b2": [
-"ACCENT",
-"ACCENT",
-"ACCENT",
-"ACCENT",
-"ACCENT",
-"ACCENT",
-"ACCENT",
-"ACCENT"
 ]
 }
 ]
@@ -2845,19 +2444,15 @@ window.PLUGINS = [
 "name": "GLOBAL",
 "b1": [
 "SWING",
-"GATE LEN",
+"GATE LENGTH",
 "SCALE",
 "ROOT",
 "OCTAVE",
-"",
-"",
-""
-],
-"b2": [
 "CHANNEL",
 "VELOCITY",
 "ACCENT VEL"
-]
+],
+"b2": []
 }
 ]
 }
