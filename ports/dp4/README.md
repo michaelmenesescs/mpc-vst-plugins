@@ -30,14 +30,17 @@ algorithm's parameters (with real value readouts: Hz, ms, dB, note values).
 The ROUTE tab wires the units: AB pair routing, CD pair routing, the AB→CD
 link, feedback amount, and master mix.
 
-**Skin:** the PANEL tab redraws the DP/4's front panel — dark faceplate, the
-2-line LCD with live readouts (each unit's algorithm on line 1, the three
-routing values on line 2), the DATA wheel bound to the master mix, and the four
-unit mixes on the top knob row with peak/signal LEDs. The A/B/C/D buttons are
-the tab bar; on each unit tab the algorithm popup sits in the LCD bezel, the
-six parameter knobs rename themselves per algorithm, and the DATA wheel edits
-that unit's mix. The ROUTE tab puts the three routing popups in the bezel and
-binds the DATA wheel to feedback.
+**Skin:** the PANEL tab redraws the DP/4's front panel — dark faceplate with a
+grain finish, the 2-line LCD with live readouts (each unit's algorithm on line
+1 under small printed A/B/C/D letters, the three routing values on line 2), the
+hardware's function buttons printed under the display, the DATA wheel bound to
+the master mix, and the four unit mixes on the top knob row with peak/signal
+LEDs. Knob names are printed on the panel (`ns=0`). The A/B/C/D buttons are
+the tab bar; on each unit tab the algorithm popup sits in the LCD bezel under a
+live "UNIT — <algo>" header, the six P1–P6 knobs are printed on the panel (their
+per-algorithm names show on the MPC display via `dynamic_name`), and the DATA
+wheel edits that unit's mix. The ROUTE tab has its own faceplate with a printed
+signal-flow diagram and binds the DATA wheel to feedback.
 
 **The Phaser-DDL** (the marquee algorithm): a 12-stage LFO-swept allpass chain
 with bipolar feedback, notch-depth control (from pure doppler swirl to deep

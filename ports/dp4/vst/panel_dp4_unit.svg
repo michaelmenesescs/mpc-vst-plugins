@@ -27,10 +27,15 @@
 <rect x="362" y="117" width="576" height="126" fill="#17102e"/>
 <rect x="362" y="117" width="576" height="126" fill="none" stroke="#2c2148" stroke-width="1"/>
 <text x="380" y="100" font-size="10" fill="#62626c" text-anchor="start" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.14em;">DISPLAY</text>
+<text x="380" y="133" font-size="11" fill="#8f8ab8" text-anchor="start" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.18em;">UNIT</text>
 <!-- data wheel ring + label -->
 <circle cx="1080" cy="180" r="66" fill="none" stroke="#333338" stroke-width="2"/>
 <text x="1080" y="262" font-size="13" fill="#9a9aa4" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.28em;">DATA</text>
-<!-- knob tick rings (no printed labels: widget draws dynamic names) -->
+<!-- knob tick rings + printed P1..P6 (knobs are ns=0; per-algorithm names show on the MPC display) -->
+<g font-size="13" fill="#c9c9d2" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.08em;">
+<text x="130" y="476">P1</text><text x="330" y="476">P2</text><text x="530" y="476">P3</text><text x="730" y="476">P4</text>
+<text x="130" y="601">P5</text><text x="330" y="601">P6</text>
+</g>
 <g fill="none" stroke="#4c4c54" stroke-width="1.5">
 <circle cx="130" cy="430" r="34" stroke-dasharray="5 7"/><circle cx="330" cy="430" r="34" stroke-dasharray="5 7"/>
 <circle cx="530" cy="430" r="34" stroke-dasharray="5 7"/><circle cx="730" cy="430" r="34" stroke-dasharray="5 7"/>
