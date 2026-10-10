@@ -298,64 +298,136 @@ def pmrhyde(params):
     def K(p, k, x, y, r, c, label, lab=-48, **kw):
         p.knob(k, x, y, r, label, img="hw_mf_%s.svg" % c, lab=lab, **kw)
 
+    # PANEL: the MicroFreak's top panel (a retailer's top-view product photo, panel x 195-1815 / y 70-660 scaled to the
+    # plugin area): matrix grid, Paraphonic, the display, Master; DIGITAL OSCILLATOR, ANALOG FILTER, CYCLING ENVELOPE;
+    # the ARP/SEQ corner (the plugin has no arpeggiator: its oscillator mods sit there), LFO, ENVELOPE.
+    def X(x):
+        return (x - 195) * 0.790
+
+    def Y(y):
+        return (y - 70) * 1.064
     p = mf_page("PANEL")
-    # top row
-    K(p, "glide_ms", 64, 112, 28, "bk", "GLIDE")
-    p.add(T(64, 196, "OCTAVE", 11, MF_INK, 700), circle(44, 222, 11, "#4a525a", "#111"), circle(84, 222, 11, "#4a525a", "#111"),
-          T(44, 222, "‹", 14, MF_INK), T(84, 222, "›", 14, MF_INK))
-    mf_section(p, 130, 640, 44, "DIGITAL OSCILLATOR")
-    p.rotary("model", 196, 112, 30, 17, lambda a: mf_knob(MF_OR, "#2a1a10").replace('<line', '<g transform="rotate(%g 48 48)"><line' % a).replace('round"/>', 'round"/></g>'),
-             a0=-150, a1=150, field_w=124, field_dy=54, label="TYPE")
-    p.add(T(196, 66, "TYPE", 12, MF_INK, 700))
-    for k, x, l in (("harmonics", 318, "WAVE"), ("timbre", 436, "TIMBRE"), ("morph", 554, "SHAPE")):
-        K(p, k, x, 112, 30, "or", l, lab=-46)
-    # matrix grid (printed)
-    gx, gy = 670, 64
-    p.add(T(gx + 150, 44, "MATRIX", 13, MF_INK, 700, sp=0.12))
-    for j, (_, dl) in enumerate(dests):
-        p.add(T(gx + 82 + j * 38, gy + 4, dl.split()[0] if j < 4 else "ASGN%d" % (j - 3), 9, MF_INK, 700))
-    for i, (_, sl) in enumerate(srcs):
-        y = gy + 24 + i * 22
-        p.add(T(gx + 54, y, sl, 9, MF_INK, 700, anchor="end"))
-        for j in range(6):
-            p.add(circle(gx + 82 + j * 38, y, 3.5, "#4a525a"), line(gx + 60, y, gx + 290, y, "#41484f", 0.8))
-    # display + voice mode
-    p.add(rect(980, 52, 200, 96, "#0b0d0f", rx=6, stroke="#555"), rect(990, 62, 180, 76, "#03080c", rx=3))
-    p.readout("model", 1080, 100, 170, 56, "")
-    p.add(T(1080, 170, "PARAPHONIC", 11, MF_BLUE, 700))
-    p.switch("voice_mode", 1080, 210, 3, vertical=False, sw=70, sh=22, img="hw_mf_led.svg", img_on="hw_mf_ledon.svg")
-    for i, s in enumerate(("MONO", "POLY", "LEGATO")):
-        p.add(T(1080 + (i - 1) * 72 + 8, 230, s, 9, MF_INK, 700))
-    p.add(line(20, 262, 1260, 262, "#41484f", 1.5))
-    # lower row
-    mf_section(p, 20, 220, 296, "OSC MOD")
-    K(p, "pitch", 70, 380, 26, "wh", "PITCH", lab=-44)
-    K(p, "fm_amount", 170, 380, 26, "wh", "FM", lab=-44)
-    K(p, "aux_mix", 120, 520, 26, "wh", "AUX MIX", lab=-44)
-    mf_section(p, 240, 500, 296, "ANALOG FILTER")
-    mf_ledsw(p, "filter_mode", 290, 400, ["LPF", "BPF", "HPF"], "TYPE")
-    K(p, "filter_cutoff", 410, 380, 36, "bk", "CUTOFF", lab=-54)
-    K(p, "filter_resonance", 410, 530, 26, "bk", "RESONANCE", lab=-44)
-    mf_section(p, 520, 740, 296, "LFO")
-    mf_ledsw(p, "lfo_shape", 570, 420, ["SINE", "TRI", "SAW", "SQR", "RAND", "SMTH"], "SHAPE")
-    K(p, "lfo_rate", 680, 380, 30, "wh", "RATE", lab=-48)
-    p.add(T(680, 470, "SYNC", 11, MF_DIM, 700))
-    p.switch("lfo_rate_mode", 690, 512, 2, vertical=True, sw=70, sh=22, img="hw_mf_led.svg", img_on="hw_mf_ledon.svg")
-    p.add(T(676, 501, "FREE", 10, MF_INK, 700, anchor="start"), T(676, 525, "SYNC", 10, MF_INK, 700, anchor="start"))
-    mf_section(p, 760, 980, 296, "CYCLING ENVELOPE")
-    mf_ledsw(p, "cycle_shape", 806, 400, ["LIN", "EXP", "LOG"], "SHAPE")
-    K(p, "cycle_attack_ms", 920, 380, 28, "bk", "RISE", lab=-46)
-    K(p, "cycle_decay_ms", 920, 530, 28, "bk", "FALL", lab=-46)
-    mf_section(p, 1000, 1180, 296, "ENVELOPE")
-    K(p, "env_attack_ms", 1040, 380, 26, "bk", "ATTACK", lab=-44)
-    K(p, "env_decay_ms", 1136, 380, 26, "bk", "DECAY", lab=-44)
-    K(p, "env_sustain", 1040, 530, 26, "bk", "SUSTAIN", lab=-44)
-    K(p, "env_release_ms", 1136, 530, 26, "bk", "RELEASE", lab=-44)
-    K(p, "volume", 1230, 380, 26, "bk", "MASTER", lab=-44)
-    p.add(T(640, 604, "MrHyde", 18, MF_DIM, 700, sp=0.3))
-    p.qrow("glide_ms", "model", "harmonics", "timbre", "morph", "voice_mode")
-    p.qrow("pitch", "fm_amount", "filter_cutoff", "filter_resonance", "lfo_rate", "cycle_attack_ms", "cycle_decay_ms", "env_attack_ms")
-    p.qrow("aux_mix", "env_decay_ms", "env_sustain", "env_release_ms", "volume", "filter_mode", "lfo_shape", "cycle_shape")
+    p.asset("mf_l.svg", svg_doc(28, 22, circle(9, 11, 4.5, "#3a4148", "#111")))
+    p.asset("mf_lon.svg", svg_doc(28, 22, circle(9, 11, 8, MF_BLUE, extra=' opacity="0.35"') + circle(9, 11, 4.5, MF_BLUE, "#123")))
+
+    def arc(x, y, r):
+        a0, a1 = pt(x, y, r, -140), pt(x, y, r, 140)
+        return path("M%g %g A %g %g 0 1 1 %g %g" % (a0[0], a0[1], r, r, a1[0], a1[1]), stroke="#c9ced3", sw=1.6)
+
+    def lbl(x, y, s_, c=MF_INK, size=15):
+        p.add(T(x, y, s_, size, c, 700, font=NARROW, stretch=0.88))
+
+    def head(x0, x1, y, name):
+        p.add(T((X(x0) + X(x1)) / 2, Y(y), name, 19, MF_INK, 700, font=NARROW, sp=0.02, stretch=0.85),
+              line(X(x0), Y(y) + 12, X(x1), Y(y) + 12, MF_INK, 1.6))
+
+    def KK(k, x, y, r, c, label, ring=True):
+        cx, cy = X(x), Y(y)
+        if ring:
+            p.add(arc(cx, cy, r + 7))
+        p.knob(k, cx, cy, r, label, img="hw_mf_%s.svg" % c, lab=None)
+        lbl(cx, cy + r + 46, label)
+
+    def printed_knob(x, y, r, c="#151719", label="", lc="#f2f2f2"):
+        cx, cy = X(x), Y(y)
+        p.add(arc(cx, cy, r + 7), circle(cx, cy + 2, r + 2, "#000", extra=' opacity="0.4"'), circle(cx, cy, r, c, "#000", 1),
+              line(*pt(cx, cy, r * 0.4, -60), *pt(cx, cy, r * 0.95, -60), lc, 3.5))
+        if label:
+            lbl(cx, cy + r + 46, label, MF_DIM)
+
+    def button(x, y, r=18, ring=None, label=""):
+        cx, cy = X(x), Y(y)
+        p.add(circle(cx, cy + 2, r + 1, "#000", extra=' opacity="0.4"'), circle(cx, cy, r, "#4a525a", "#111", 1.2),
+              circle(cx - r * .3, cy - r * .3, r * .5, "#fff", extra=' opacity="0.12"'))
+        if ring:
+            p.add(circle(cx, cy, r + 3, "none", ring, 2.5))
+        if label:
+            lbl(cx, cy + r + 18, label, MF_DIM)
+
+    def leds(key, pts, names, icons=False):
+        q = [(round(X(x)), round(Y(y))) for x, y in pts]
+        p.switch(key, q[0][0], q[0][1], len(q), vertical=False, sw=28, sh=22, img="hw_mf_l.svg", img_on="hw_mf_lon.svg", at=q)
+        for (x, y), n in zip(q, names):
+            p.add(T(x + 10, y, n, 12, MF_INK, 700, anchor="start", font=NARROW))
+
+    # top: the matrix grid (printed: the MATRIX page holds its amounts)
+    rows = [("CycEnv", 185), ("Env", 207), ("LFO", 228), ("Press", 249), ("Key / Arp", 270)]
+    cols = [("Pitch", 315), ("Wave", 368), ("Timbre", 420), ("Cutoff", 473), ("Assign 1", 527), ("Assign 2", 580), ("Assign 3", 632)]
+    for n, y in rows:
+        p.add(T(X(275), Y(y), n, 11, MF_INK, 700, anchor="end", font=NARROW), line(X(280), Y(y), X(660), Y(y), "#59616a", 0.8))
+        for _, x in cols:
+            p.add(circle(X(x), Y(y), 3.2, "#454c54", "#111", 0.6))
+    for i, (n, x) in enumerate(cols):
+        p.add(line(X(x - 25), Y(270), X(x - 25), Y(165), "#8a929a", 0.8), line(X(x - 25), Y(165), X(x + 15), Y(122), "#8a929a", 0.8),
+              T(X(x - 2), Y(150), n, 11, MF_INK, 700, font=NARROW, extra=' transform="rotate(-50 %g %g)"' % (X(x - 2), Y(150))))
+        if i >= 4:
+            p.add(circle(X(x + 44), Y(124), 6, "#4a525a", "#111"))
+    printed_knob(757, 205, 26, "#e9e9ea", "Matrix", "#333")
+    # Paraphonic = the voice mode; Panel; the display (oscillator type) and Preset; Save, Utility; Master
+    button(905, 200, 20, ring="#e8e8e8")
+    p.add(rect(X(860), Y(238), X(952) - X(860), 22, "none", rx=3, stroke=MF_INK, sw=1.2), T(X(906), Y(250), "Paraphonic", 14, MF_INK, 700, font=NARROW))
+    leds("voice_mode", [(958, 168), (958, 196), (958, 224)], ["Mono", "Poly", "Legato"])
+    button(1042, 200, 18, label="Panel")
+    p.add(rect(X(1118), Y(122), X(1643) - X(1118), Y(280) - Y(122), "#24282d", rx=4, stroke="#111"),
+          rect(X(1138), Y(165), X(1262) - X(1138), Y(230) - Y(165), "#020406", rx=2),
+          T(X(1550), Y(150), ")))  MrHyde  (((", 11, MF_INK, 400, italic=True, font=NARROW))
+    printed_knob(1330, 195, 27, "#e9e9ea", "Preset", "#333")
+    button(1462, 200, 18, label="Save")
+    button(1580, 200, 18, label="Utility")
+    KK("volume", 1722, 195, 26, "bk", "Master")
+    # DIGITAL OSCILLATOR: Glide, Type (the model, a rotary), Wave, Timbre, Shape
+    head(395, 868, 300, "DIGITAL OSCILLATOR")
+    head(880, 1212, 300, "ANALOG FILTER")
+    head(1227, 1800, 300, "CYCLING ENVELOPE")
+    KK("glide_ms", 295, 385, 28, "bk", "Glide")
+    p.rotary("model", round(X(462)), round(Y(385)), 26, 17,
+             lambda a: mf_knob(MF_OR, "#2a1a10").replace('<line', '<g transform="rotate(%g 48 48)"><line' % a).replace('round"/>', 'round"/></g>'),
+             a0=-150, a1=150, field_w=110, field_dy=48, label="Type")
+    lbl(X(462), Y(385) + 72, "Type")
+    p.readout("model", round(X(1200)), round(Y(198)), round(X(1260) - X(1140)), 30, "")
+    for k, x, l in (("harmonics", 573, "Wave"), ("timbre", 685, "Timbre"), ("morph", 797, "Shape")):
+        KK(k, x, 385, 26, "or", l, ring=False)
+    # ANALOG FILTER: Type button + LEDs, Cutoff, Resonance
+    button(905, 385, 17, label="Type")
+    leds("filter_mode", [(952, 357), (952, 384), (952, 410)], ["LPF", "BPF", "HPF"])
+    KK("filter_cutoff", 1043, 385, 28, "bk", "Cutoff")
+    KK("filter_resonance", 1160, 385, 28, "bk", "Resonance")
+    # CYCLING ENVELOPE: the shape on Mode's LEDs, Rise, Fall; Hold / Sustain and Amount printed
+    button(1260, 380, 17, label="Mode")
+    leds("cycle_shape", [(1307, 357), (1307, 384), (1307, 410)], ["Lin", "Exp", "Log"])
+    KK("cycle_attack_ms", 1392, 385, 28, "bk", "Rise")
+    KK("cycle_decay_ms", 1508, 385, 28, "bk", "Fall")
+    printed_knob(1625, 385, 28, label="Hold / Sustain")
+    printed_knob(1742, 385, 28, label="Amount")
+    # lower row: OCTAVE / Shift printed; the ARP/SEQ corner holds the oscillator mods
+    head(210, 410, 485, "OCTAVE")
+    head(540, 868, 485, "OSC MOD")
+    head(880, 1212, 485, "LFO")
+    head(1243, 1800, 485, "ENVELOPE")
+    p.add(rect(X(212), Y(500), X(410) - X(212), Y(650) - Y(500), "#16191c"),
+          path("M%g %g h%g" % (X(268), Y(567), X(352) - X(268)), stroke="#c9ced3", sw=1.6))
+    for x in (268, 352):
+        button(x, 567, 18, ring="#c9ced3")
+    p.add(T(X(268), Y(615), "←", 14, MF_INK), T(X(352), Y(615), "→", 14, MF_INK))
+    button(462, 567, 18, ring="#3fa9f5", label="Shift")
+    KK("pitch", 573, 570, 24, "wh", "Pitch")
+    KK("fm_amount", 670, 570, 24, "wh", "FM")
+    KK("aux_mix", 797, 570, 26, "wh", "Aux Mix")
+    # LFO: Shape button + six LEDs (two columns, as the panel), Rate, Sync
+    button(932, 567, 17, label="Shape")
+    leds("lfo_shape", [(980, 542), (980, 568), (980, 594), (1042, 542), (1042, 568), (1042, 594)],
+         ["∿", "Λ", "╱", "⊓", "⨅", "∼"])
+    KK("lfo_rate", 1160, 570, 28, "wh", "Rate")
+    p.add(T(X(1215), Y(510), "Sync", 9, MF_INK, 400, font=NARROW))
+    p.toggle("lfo_rate_mode", round(X(1215)), round(Y(530)), "SYNC", img="hw_mf_l.svg", img_on="hw_mf_lon.svg", w=28, h=22)
+    # ENVELOPE: Amp Mod printed, Attack, Decay, Sustain, and Release where the panel has Filter Amt
+    button(1287, 567, 17, label="Amp Mod")
+    for k, x, l in (("env_attack_ms", 1393, "Attack"), ("env_decay_ms", 1510, "Decay"), ("env_sustain", 1627, "Sustain"),
+                    ("env_release_ms", 1743, "Release")):
+        KK(k, x, 570, 28, "bk", l)
+    p.qrow("glide_ms", "model", "harmonics", "timbre", "morph", "filter_cutoff", "filter_resonance", "volume")
+    p.qrow("pitch", "fm_amount", "aux_mix", "lfo_rate", "env_attack_ms", "env_decay_ms", "env_sustain", "env_release_ms")
+    p.qrow("cycle_attack_ms", "cycle_decay_ms", "filter_mode", "cycle_shape", "lfo_shape", "voice_mode", "lfo_rate_mode")
     pages = [p]
 
     # MATRIX: the panel's grid

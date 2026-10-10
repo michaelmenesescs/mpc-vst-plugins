@@ -25,12 +25,15 @@
 <circle cx="139" cy="192" r="12" fill="#ff2a1a" opacity="0.25"/><circle cx="139" cy="192" r="9" fill="#ff2a1a" stroke="#3a0a06" stroke-width="0.8"/>
 <text x="139" y="222" font-size="12" fill="#e9eee6" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">PEAK</text>
 <text x="139" y="238" font-size="12" fill="#e9eee6" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LEVEL</text>
-<rect x="196" y="140" width="168" height="112" rx="3" fill="#2b2b2b"/>
-<rect x="202" y="146" width="156" height="100" rx="2" fill="#e9e2c8"/>
-<path d="M222 222 A 70 70 0 0 1 338 222" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
-<path d="M300 178 A 70 70 0 0 1 338 222" fill="none" stroke="#c8261a" stroke-width="5"/>
-<text x="280" y="228" font-size="13" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VU</text>
-<line x1="280" y1="244" x2="236" y2="176" stroke="#111" stroke-width="2"/>
+<rect x="196" y="140" width="168" height="112" rx="3" fill="#8f9294"/>
+<rect x="202" y="146" width="156" height="100" rx="2" fill="#3a3f42"/>
+<rect x="202" y="146" width="156" height="100" rx="2" fill="url(#hw-vshade)"/>
+<path d="M220 206 A 82 82 0 0 1 306 166" fill="none" stroke="#3fae5a" stroke-width="5"/>
+<path d="M306 166 A 82 82 0 0 1 344 186" fill="none" stroke="#d23a2a" stroke-width="5"/>
+<path d="M220 214 A 82 82 0 0 1 344 194" fill="none" stroke="#cfd6d0" stroke-width="1"/>
+<text x="282" y="206" font-size="12" fill="#cfd6d0" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">V.U</text>
+<text x="282" y="222" font-size="8" fill="#c8261a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;font-style:italic;">TAPE DELAY</text>
+<line x1="282" y1="252" x2="236" y2="170" stroke="#f2f2f2" stroke-width="2"/>
 <text x="110" y="316" font-size="12" fill="#e9eee6" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MIC</text>
 <text x="110" y="332" font-size="12" fill="#e9eee6" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VOLUME</text>
 <g stroke="#9fb0a0" stroke-width="1.6" stroke-linecap="round"><line x1="80.3" y1="439.7" x2="75.4" y2="444.6"/><line x1="70.1" y1="423.0" x2="63.4" y2="425.1"/><line x1="68.5" y1="403.4" x2="61.6" y2="402.3"/><line x1="76.0" y1="385.3" x2="70.4" y2="381.2"/><line x1="90.9" y1="372.6" x2="87.8" y2="366.3"/><line x1="110.0" y1="368.0" x2="110.0" y2="361.0"/><line x1="129.1" y1="372.6" x2="132.2" y2="366.3"/><line x1="144.0" y1="385.3" x2="149.6" y2="381.2"/><line x1="151.5" y1="403.4" x2="158.4" y2="402.3"/><line x1="149.9" y1="423.0" x2="156.6" y2="425.1"/><line x1="139.7" y1="439.7" x2="144.6" y2="444.6"/></g>
