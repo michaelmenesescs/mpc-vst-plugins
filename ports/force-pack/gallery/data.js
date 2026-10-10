@@ -181,11 +181,11 @@ window.PLUGINS = [
 "DRIVE",
 "DRIVE",
 "DRIVE",
-"LO CONGA DRIVE",
-"MID CONGA DRIVE",
-"HI CONGA DRIVE",
-"CLAVES DRIVE",
-"MARACAS DRIVE"
+"LO CONGA",
+"MID CONGA",
+"HI CONGA",
+"CLAVES",
+"MARACAS"
 ]
 }
 ]
@@ -258,9 +258,7 @@ window.PLUGINS = [
 ],
 "b2": [
 "HPF",
-"LEVEL",
-"FOCUS",
-"MUTES"
+"LEVEL"
 ]
 }
 ]
@@ -405,9 +403,7 @@ window.PLUGINS = [
 ],
 "b2": [
 "DLY HPF",
-"DLY LEVEL",
-"FOCUS",
-"MUTES"
+"DLY LEVEL"
 ]
 }
 ]
@@ -513,14 +509,14 @@ window.PLUGINS = [
 "DRIVE",
 "DRIVE",
 "DRIVE",
-"SAT",
-"DRIVE",
-"DRIVE"
+"RIM SAT",
+"CLAP DRIVE",
+"CH DRIVE"
 ],
 "b2": [
-"DRIVE",
-"DRIVE",
-"DRIVE",
+"OH DRIVE",
+"CRASH DRIVE",
+"RIDE DRIVE",
 "MASTER DRIVE"
 ]
 }
@@ -537,14 +533,14 @@ window.PLUGINS = [
 "REVERB",
 "REVERB",
 "REVERB",
-"REVERB",
-"REVERB",
-"REVERB",
-"REVERB"
+"RIM REVERB",
+"CLAP REVERB",
+"CH REVERB",
+"OH REVERB"
 ],
 "b2": [
-"REVERB",
-"REVERB"
+"CRASH REVERB",
+"RIDE REVERB"
 ]
 },
 {
@@ -554,14 +550,14 @@ window.PLUGINS = [
 "DELAY",
 "DELAY",
 "DELAY",
-"DELAY",
-"DELAY",
-"DELAY",
-"DELAY"
+"RIM DELAY",
+"CLAP DELAY",
+"CH DELAY",
+"OH DELAY"
 ],
 "b2": [
-"DELAY",
-"DELAY"
+"CRASH DELAY",
+"RIDE DELAY"
 ]
 }
 ]
@@ -604,27 +600,40 @@ window.PLUGINS = [
 "name": "CR-78",
 "b1": [
 "RHY STYLE",
-"RHY STYLE2",
 "RHY AB",
 "VOLUME",
-"ACCENT",
 "COMP",
-"DRIVE",
-"HAT CHOKE"
+"METAL BEAT",
+"TAMB",
+"GUIRO",
+"ACCENT"
 ],
 "b2": [
-"START / STOP",
-"DISTORTION",
-"NOTE MAP",
-"FOCUS",
-"MUTES"
+"DRIVE",
+"START / STOP"
 ]
 }
 ]
 },
 {
-"name": "LEVELS",
+"name": "RHYTHM II",
 "img": "img/cw78_1.jpg",
+"banks": [
+{
+"name": "RHYTHM II",
+"b1": [
+"RHY STYLE2",
+"HAT CHOKE",
+"NOTE MAP",
+"MASTER DIST"
+],
+"b2": []
+}
+]
+},
+{
+"name": "LEVELS",
+"img": "img/cw78_2.jpg",
 "banks": [
 {
 "name": "LEVELS",
@@ -651,7 +660,7 @@ window.PLUGINS = [
 },
 {
 "name": "VOICES",
-"img": "img/cw78_2.jpg",
+"img": "img/cw78_3.jpg",
 "banks": [
 {
 "name": "VOICES A",
@@ -701,7 +710,7 @@ window.PLUGINS = [
 },
 {
 "name": "DRIVE",
-"img": "img/cw78_3.jpg",
+"img": "img/cw78_4.jpg",
 "banks": [
 {
 "name": "DRIVE",
@@ -728,7 +737,7 @@ window.PLUGINS = [
 },
 {
 "name": "SENDS",
-"img": "img/cw78_4.jpg",
+"img": "img/cw78_5.jpg",
 "banks": [
 {
 "name": "SENDS A",
@@ -880,37 +889,36 @@ window.PLUGINS = [
 {
 "name": "PANEL A",
 "b1": [
-"GLIDE",
+"Glide",
 "MODEL",
-"WAVE",
-"TIMBRE",
-"SHAPE",
-"VOICE MODE",
-"",
-""
+"Wave",
+"Timbre",
+"Shape",
+"Cutoff",
+"Resonance",
+"Master"
 ],
 "b2": [
-"PITCH",
+"Pitch",
 "FM",
-"CUTOFF",
-"RESONANCE",
-"RATE",
-"RISE",
-"FALL",
-"ATTACK"
+"Aux Mix",
+"Rate",
+"Attack",
+"Decay",
+"Sustain",
+"Release"
 ]
 },
 {
 "name": "PANEL B",
 "b1": [
-"AUX MIX",
-"DECAY",
-"SUSTAIN",
-"RELEASE",
-"MASTER",
+"Rise",
+"Fall",
 "FILTER MODE",
+"CYCLE SHAPE",
 "LFO SHAPE",
-"CYCLE SHAPE"
+"VOICE MODE",
+"SYNC"
 ],
 "b2": []
 }
