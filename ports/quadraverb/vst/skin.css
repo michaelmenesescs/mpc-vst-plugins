@@ -1,0 +1,9 @@
+/* quadraverb: Alesis QuadraVerb-inspired hardware faceplate (hand-written) */
+.frame-border { stroke: none; fill: none; }
+.frame-rule { display: none; }
+.frame-title { fill: #e8e8ea; font-size: 17px; letter-spacing: 0.12em; }
+.look-line { stroke: #f4f4f2; }
+.box { fill: #0e2a0e; stroke: #1e4a1e; }
+.box-label { fill: #3f7a3f; }
+.text { fill: #e8e8ea; }
+.look-notch { stroke: #1a1a1a; }

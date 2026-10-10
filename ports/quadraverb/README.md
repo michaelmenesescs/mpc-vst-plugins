@@ -14,6 +14,13 @@ Chorus>Dly>Verb, Flange>Dly>Verb, Phaser>Verb, Trem>Dly>Verb, or Reso+Ring>Verb 
 then shape each block on its own tab. Every config starts with the input 3-band
 EQ and ends with the master wet/dry mix. Delay syncs to the host tempo.
 
+**Skin:** the PANEL tab redraws the QuadraVerb's front panel — black faceplate,
+the green 2-line LCD with a live config readout plus reverb type and delay
+sync readouts, the DATA wheel bound to the master mix, and the printed block
+buttons (PROG/VERB/DLY/PTCH/EQ/STOR/CONF/MIX/MIDI/BYP). Configs switch via the
+config popup under the LCD; the other tabs keep the same controls on a matching
+black strip.
+
 **Parameters (36):** config; EQ low/mid/mid-freq/high; reverb type (Room/Hall/
 Plate/Small), size, decay, damp, mix; delay sync (Off–1/2), time, feedback,
 damp, mix; chorus rate/depth/mix; flanger rate/depth/feedback/mix; phaser

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
+<defs>
+<linearGradient id="qvf" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#161619"/><stop offset="1" stop-color="#0c0c0e"/>
+</linearGradient>
+<radialGradient id="qvsc" cx="0.4" cy="0.35" r="0.8">
+<stop offset="0" stop-color="#e8e8e8"/><stop offset="1" stop-color="#4a4a4e"/>
+</radialGradient>
+<filter id="qvg" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11"/>
+<feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1280" height="628" fill="#060607"/>
+<rect x="0" y="0" width="44" height="628" fill="#09090b"/>
+<rect x="1236" y="0" width="44" height="628" fill="#09090b"/>
+<circle cx="22" cy="34" r="9" fill="url(#qvsc)"/>
+<circle cx="22" cy="594" r="9" fill="url(#qvsc)"/>
+<circle cx="1258" cy="34" r="9" fill="url(#qvsc)"/>
+<circle cx="1258" cy="594" r="9" fill="url(#qvsc)"/>
+<rect x="44" y="10" width="1192" height="608" rx="8" fill="url(#qvf)" stroke="#26262c" stroke-width="1"/>
+<rect x="44" y="10" width="1192" height="608" filter="url(#qvg)"/>
+<!-- title block -->
+<text x="78" y="54" font-size="36" fill="#4a9eff" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:800;font-style:italic;letter-spacing:0.03em;">QUADRAVERB</text>
+<text x="78" y="80" font-size="11" fill="#62626c" text-anchor="start" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.18em;">MULTI EFFECTS PROCESSOR</text>
+<!-- signal LED ladder -->
+<g>
+<circle cx="120" cy="130" r="6" fill="#5a1210" stroke="#2a0806"/><text x="136" y="130" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">CLIP</text>
+<circle cx="120" cy="152" r="6" fill="#0f3a12" stroke="#06200a"/><text x="136" y="152" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-6dB</text>
+<circle cx="120" cy="174" r="6" fill="#0f3a12" stroke="#06200a"/><text x="136" y="174" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-12dB</text>
+<circle cx="120" cy="196" r="6" fill="#3a3410" stroke="#201c06"/><text x="136" y="196" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-20dB</text>
+</g>
+<text x="120" y="222" font-size="10" fill="#62626c" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.14em;">SIGNAL</text>
+<!-- LCD bezel -->
+<rect x="300" y="120" width="400" height="120" rx="6" fill="#040404" stroke="#2c2c32" stroke-width="1.5"/>
+<rect x="312" y="132" width="376" height="96" fill="#0e2a0e"/>
+<rect x="312" y="132" width="376" height="96" fill="none" stroke="#1e4a1e" stroke-width="1"/>
+<text x="500" y="140" font-size="9" fill="#3f7a3f" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.2em;">PROGRAM</text>
+<!-- PAGE / VALUE buttons -->
+<g>
+<rect x="724" y="130" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="724" y="184" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="772" y="130" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="772" y="184" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+</g>
+<g fill="#c9c9d2">
+<polygon points="744,142 758,158 730,158"/><polygon points="744,218 758,202 730,202"/>
+<polygon points="792,142 806,158 778,158"/><polygon points="792,218 806,202 778,202"/>
+</g>
+<g font-size="10" fill="#8a8a94" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.1em;">
+<text x="744" y="248">PAGE</text><text x="792" y="248">VALUE</text>
+</g>
+<!-- effect block buttons -->
+<g font-size="9" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">
+<rect x="836" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="857" y="151">PROG</text>
+<rect x="884" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="905" y="151">VERB</text>
+<rect x="932" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="953" y="151">DLY</text>
+<rect x="980" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1001" y="151">PTCH</text>
+<rect x="1028" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1049" y="151">EQ</text>
+<rect x="836" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="857" y="201">STOR</text>
+<rect x="884" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="905" y="201">CONF</text>
+<rect x="932" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="953" y="201">MIX</text>
+<rect x="980" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1001" y="201">MIDI</text>
+<rect x="1028" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1049" y="201">BYP</text>
+</g>
+<!-- data wheel -->
+<circle cx="1155" cy="180" r="63" fill="none" stroke="#2c2c32" stroke-width="2"/>
+<text x="1155" y="258" font-size="13" fill="#8a8a94" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.28em;">DATA</text>
+<!-- lower printed legend -->
+<text x="640" y="420" font-size="11" fill="#4a4a54" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.3em;">DIGITAL MULTI EFFECTS · 41.67 kHz CHARACTER</text>
+</svg>
