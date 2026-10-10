@@ -53,7 +53,7 @@ def sec(title, *rows, w=None):
 def load_params(vdir):
     s = open(os.path.join(vdir, "build", "params.h")).read()
     out = {}
-    for m in re.finditer(r'\{\s*"([^"]+)",\s*"([^"]*)",\s*"[^"]*",\s*([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+),\s*([^,]+),\s*(\d+)', s):
+    for m in re.finditer(r'(?m)^\s*\{\s*"([^"]+)",\s*"([^"]*)",\s*"[^"]*",\s*([^,]+),\s*([^,]+),\s*([^,]+),\s*(\d+),\s*([^,]+),\s*(\d+)', s):
         key, name, lo, hi, _, nopts, _, mom = m.groups()
         out[key] = {"name": name, "nopts": int(nopts), "momentary": mom == "1"}
     return out

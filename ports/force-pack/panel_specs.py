@@ -21,5 +21,5 @@ PANELS = {
     "braids": m_euro.pbraids, "plaits": m_euro.pplaits, "mrhyde": m_euro.pmrhyde, "denis": m_euro.pdenis, "ml185": m_euro.pml185,
     "libpo32": m_misc.plibpo32, "chiptune": m_misc.pchip, "psxverb": m_misc.ppsx, "busdriver": m_misc.pbus,
     "ducker": m_misc.pduck, "filter": m_misc.pfilter, "tapescam": m_misc.ptapescam, "hank": m_misc.phank,
-    "weird": m_misc.pweird,
+    "weird": m_misc.pweird, "breakslicer": m_misc.pbreak,
 }

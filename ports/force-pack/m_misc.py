@@ -624,3 +624,82 @@ def pweird(params):
 
     pages.append(voice_page("SELECTED", "cv_", None, "SELECTED VOICE", extra=True))
     return pages
+
+
+# ---- BreakSlicer (breakslicer) ----------------------------------------------------------------------------------------
+# No hardware: a boutique desktop unit of our own design, in the spirit of the other panels. A cream enamel face in a
+# walnut case, a toasted header band with the name and a sliced-loaf print, three boxed sections: CUT (the big lit
+# SLICE button and the SIZE rotary, 1/4 to 1/32 bar), SHAPE (GATE, MIX) and RANDOMISE (six chance knobs: SHUFFLE,
+# REVERSE, ROLL over PITCH, PAN, FX). Black bakelite knobs with a cream pointer, a red-orange accent. The Force's eight
+# knobs read the panel's two rows of four (GATE SHUFFLE REVERSE ROLL, MIX PITCH PAN FX); bank 2 = SIZE, SLICE.
+def bs_knob(angle=None):
+    s = knob_img(body="#1d1916", edge="#000", knurl="#2f2924", knurl_n=28, cap="#262019", cap_r=0.78, cap_edge="#0a0807",
+                 line_c="#f4ead6", line=(0.15, 0.95), line_w=7, shine=0.22, rr=0.9)
+    if angle is None:
+        return s
+    i = s.rindex("<line")
+    return s[:i] + '<g transform="rotate(%g 48 48)">' % angle + s[i:-6] + "</g></svg>"
+
+
+def pbreak(params):
+    INK, DIM, ACC, FACE = "#2a1c12", "#6a5644", "#e0582a", "#efe6d2"
+    p = Page("BREAKSLICER", vink=INK, lab=dict(size=14, fill=INK, font=SANS, weight=700, sp=0.12), seg_text=False)
+    p.asset("bs_k.svg", bs_knob())
+    # case and face
+    p.add(wood(0, 0, 1280, 628, "#4a2a16"), rect(26, 18, 1228, 592, "#000", rx=10, extra=' opacity="0.35"'),
+          rect(22, 14, 1236, 592, FACE, rx=10), grain(22, 14, 1236, 592), rect(22, 14, 1236, 592, "url(#hw-vshade)", rx=10))
+    for x, y in ((42, 34), (1238, 34), (42, 586), (1238, 586)):
+        p.add(screw(x, y, 6))
+    # header: toasted band, the name, a loaf cut into slices
+    p.add('<defs><linearGradient id="bs-toast" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8662a"/>'
+          '<stop offset="1" stop-color="#7a3a14"/></linearGradient></defs>',
+          rect(22, 58, 1236, 66, "url(#bs-toast)"), rect(22, 58, 1236, 2, "#5a2a0e"), rect(22, 122, 1236, 2, "#5a2a0e"),
+          T(60, 92, "BREAKSLICER", 40, "#fbefd8", 700, anchor="start", font=SANS, sp=0.06, stretch=1.05),
+          T(468, 98, "TEMPO-SYNCED BREAK CHOPPER", 12, "#f6d9b4", 700, anchor="start", sp=0.3))
+    # the loaf: a domed crust cut into eight slices, two of them turned round (orange)
+    lx, ly, lw = 930, 112, 290
+    p.add(path("M%g %g v-22 q0 -30 40 -30 h%g q40 0 40 30 v22 z" % (lx, ly, lw - 80), fill="#f3d7a8", stroke="#fbefd8", sw=2.5),
+          path("M%g %g q10 -22 40 -24 h%g q30 2 40 24" % (lx + 6, ly - 26, lw - 92), stroke="#c98a4a", sw=2))
+    for i in range(8):
+        x0 = lx + i * lw / 8
+        if i in (3, 6):
+            p.add(rect(x0 + 3, ly - 40, lw / 8 - 6, 38, "#e0582a", extra=' opacity="0.55"'))
+        if i:
+            p.add(line(x0, ly - 50, x0, ly, "#7a3a14", 2.2))
+    def section(x0, x1, title):
+        p.add(rect(x0, 150, x1 - x0, 430, "none", rx=8, stroke="#b9a582", sw=2),
+              rect((x0 + x1) / 2 - len(title) * 7 - 14, 140, len(title) * 14 + 28, 22, FACE),
+              T((x0 + x1) / 2, 151, title, 15, ACC, 700, sp=0.3))
+    section(48, 318, "CUT")
+    section(338, 578, "SHAPE")
+    section(598, 1232, "RANDOMISE")
+    # CUT: SLICE (a big lit key), SIZE (rotary over 1/4 .. 1/32 bar)
+    key = svg_doc(160, 160, rect(4, 6, 152, 152, "#000", rx=14, extra=' opacity="0.35"') +
+                  rect(4, 2, 152, 152, "#c9bda4", rx=14) + rect(14, 12, 132, 132, "#efe6d2", rx=10, stroke="#8a7a5c", sw=2) +
+                  rect(20, 18, 120, 30, "#fff", rx=8, extra=' opacity="0.45"') +
+                  T(80, 74, "SLICE", 26, INK, 700, sp=0.12) + circle(80, 116, 9, "#5a1a0a", "#2a0a04", 1.5))
+    keyon = svg_doc(160, 160, rect(0, 0, 160, 160, ACC, rx=16, extra=' opacity="0.35"') +
+                    rect(4, 2, 152, 152, "#c9bda4", rx=14) + rect(14, 12, 132, 132, "#ffd9b8", rx=10, stroke=ACC, sw=3) +
+                    rect(20, 18, 120, 30, "#fff", rx=8, extra=' opacity="0.55"') + T(80, 74, "SLICE", 26, INK, 700, sp=0.12) +
+                    circle(80, 116, 16, "#ff5a2a", extra=' opacity="0.4"') + circle(80, 116, 9, "#ff4a1a", "#7a1a0a", 1.5))
+    p.toggle("slice", 183, 272, "SLICE", img=p.asset("bs_key.svg", key), img_on=p.asset("bs_keyon.svg", keyon), w=160, h=160)
+    ang = [-90, -30, 30, 90]
+    p.add(T(183, 386, "SIZE", 14, INK, 700, sp=0.2), ticks(183, 470, 46, 54, 4, INK, 2.2, -90, 90),
+          numbers(183, 470, 68, ["1/4", "1/8", "1/16", "1/32"], 12, INK, -90, 90), T(183, 528, "OF A BAR", 9, DIM, 700, sp=0.2))
+    p.rotary("size", 183, 470, 38, 4, bs_knob, angles=ang, field_w=110, field_dy=82, accent=ACC)
+    # SHAPE: GATE, MIX
+    for k, y, l, lo, hi in (("gate", 270, "GATE", "STUTTER", "FULL"), ("mix", 470, "MIX", "DRY", "WET")):
+        p.add(ticks(458, y, 50, 58, 11, INK, 2, -135, 135), T(458 - 58, y + 42, lo, 8.5, DIM, 700, anchor="end"),
+              T(458 + 58, y + 42, hi, 8.5, DIM, 700, anchor="start"))
+        p.knob(k, 458, y, 42, l, img="hw_bs_k.svg", lab=-74, bw=210)
+    # RANDOMISE: the chance of each change, per slice
+    for i, (k, l) in enumerate((("shuffle", "SHUFFLE"), ("reverse", "REVERSE"), ("roll", "ROLL"),
+                                ("pitch", "PITCH"), ("pan", "PAN"), ("fx", "FX"))):
+        x, y = 726 + (i % 3) * 190, 270 + (i // 3) * 200
+        p.add(ticks(x, y, 50, 58, 11, INK, 2, -135, 135), T(x - 58, y + 42, "NEVER", 8, DIM, 700, anchor="end"),
+              T(x + 58, y + 42, "ALWAYS", 8, DIM, 700, anchor="start"))
+        p.knob(k, x, y, 42, l, img="hw_bs_k.svg", lab=-74, bw=180)
+    p.add(T(915, 566, "CHANCE PER SLICE", 10, DIM, 700, sp=0.3))
+    p.qrow("gate", "shuffle", "reverse", "roll", "mix", "pitch", "pan", "fx")
+    p.qrow("size", "slice")
+    return [p]

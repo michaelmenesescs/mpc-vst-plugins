@@ -2465,5 +2465,36 @@ window.PLUGINS = [
 ]
 }
 ]
+},
+{
+"id": "breakslicer",
+"name": "BreakSlicer",
+"model": "BreakSlicer: our own break slicer, drawn as a desktop unit (no hardware)",
+"group": "Effects",
+"pages": [
+{
+"name": "BREAKSLICER",
+"img": "img/breakslicer_0.jpg",
+"banks": [
+{
+"name": "BREAKSLICER",
+"b1": [
+"GATE",
+"SHUFFLE",
+"REVERSE",
+"ROLL",
+"MIX",
+"PITCH",
+"PAN",
+"FX"
+],
+"b2": [
+"SIZE",
+"SLICE"
+]
+}
+]
+}
+]
 }
 ];

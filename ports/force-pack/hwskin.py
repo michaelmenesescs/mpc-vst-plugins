@@ -39,6 +39,7 @@ PORTS = {   # id -> vst folder
     "juno": "modules/schwung-junologue-chorus/vst", "busdriver": "modules/schwung-busdriver/vst",
     "4keq": "modules/schwung-4keq/vst", "ducker": "modules/schwung-ducker/vst", "filter": "modules/schwung-filter/vst",
     "tapescam": "modules/schwung-tapescam/vst", "ml185": "ml185/vst",
+    "breakslicer": "mpc-vst-plugins/ports/breakslicer/vst",
 }
 
 # ---- themes --------------------------------------------------------------------------------------------------
@@ -139,6 +140,10 @@ THEMES = {
                    plate="1f2935", plate_line="2f3d4d", title="2ec4d6", knob="drawn", toggle="led", logo="DUCKER",
                    sub="SIDECHAIN DYNAMICS", tag="", head_bg=None, head_ink="e4edf5", knob_face="2a3644",
                    knob_ring="0d1218", knob_dot="2ec4d6"),
+    "breakslicer": dict(finish="flat", bg="efe6d2", ink="2a1c12", ink_dim="6a5644", accent="e0582a", accent_hi="f07040",
+                        plate="e6dbc3", plate_line="b9a582", title="2a1c12", knob="drawn", toggle="led", logo="BREAKSLICER",
+                        sub="BREAK CHOPPER", tag="", head_bg=None, head_ink="2a1c12", knob_face="1d1916",
+                        knob_ring="0a0807", knob_dot="f4ead6"),
     "filter": dict(finish="flat", cheeks=True, bg="141414", ink="f0ede6", ink_dim="aaa69e", accent="e0a83a",
                    accent_hi="f0bf55", plate="1c1c1c", plate_line="3a3a3a", title="f0ede6", knob="moog",
                    toggle="switch", logo="FILTER", sub="MULTIMODE STATE VARIABLE", tag="", head_bg="141414",

@@ -11,6 +11,7 @@ rm -f "$FP"/base/*.conf "$FP"/base/*.art.json
 cp base/*.conf "$FP/base/"
 cp base/*.art.json "$FP/base/" 2>/dev/null || true
 while read -r id dir; do
+  case "$dir" in mpc-vst-plugins/*) continue ;; esac   # a port that lives in the repo already
   src="../$dir"
   if [ "$id" = ml185 ]; then dst="$R/ports/ml185/vst"; else dst="$FP/ports/$id"; fi
   mkdir -p "$dst"
