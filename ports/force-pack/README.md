@@ -9,18 +9,18 @@ The panels carry the plugins' own names, never a manufacturer's logo. The module
 
 | Plugin | Drawn as | Reference |
 |---|---|---|
-| 303 | TB-303 top panel and keyboard section, Devil Fish pots | Commons "Roland TB-303 Panel.jpg" |
-| 8W8 | TR-808 instrument columns, plates, step keys | Commons "Roland TR-808 (large).jpg" |
-| 9W9 | TR-909 section bars, 2x2 knob grids, cream keys | Commons "Roland TR-909 (large).jpg" |
-| 6W6 | TR-606 level row, middle strip, black step section | Commons "Roland TR-606.jpg" |
+| 303 | TB-303 top panel and keyboard section (TIME MODE, selector chips), Devil Fish pots | Commons "Roland TB-303 Panel.jpg" |
+| 8W8 | TR-808 at the photo's geometry: programming block, twelve columns, step section with note rows | Commons "Roland TR-808 (large).jpg" |
+| 9W9 | TR-909 at the photo's geometry: section bars, button row, step section | Commons "Roland TR-909 (large).jpg" |
+| 6W6 | TR-606 level row, middle strip, the step section as the photo (note rows, SCALE, PATTERN GROUP) | Commons "Roland TR-606.jpg" |
 | HUSH ONE | SH-101 slider sections, switches, performance panel | Commons "Roland SH-101.jpg" |
-| CW-78 | CR-78 faders, master box, coloured rhythm selector | polynominal.com photo, published control list |
+| CW-78 | CR-78 panel: sliders, PROGRAMMER box, ACCENT, the rhythm buttons on their two rows | Soundgas CR-78 product photo (front) |
 | TapeDelay | RE-201 face: VU, MODE SELECTOR rotary, chrome knobs | Commons "RE201 Face.JPG" |
 | Junologue Chorus | Juno-60 chorus section, wood cheeks | Commons "Roland Juno-60.jpg" |
 | 4K EQ | SSL E/G channel EQ, turned on its side | the SL4000 channel module layout |
 | Midiverb | Midiverb with its printed program chart (per unit) | Commons "Alesis MIDIVerb.jpg" |
 | Braids, Plaits | the modules in a rack, sister panels for extras | Mutable Instruments manual drawings |
-| MrHyde | MicroFreak panel and matrix grid | Commons "MicroFreak.jpg" |
+| MrHyde | MicroFreak top panel, every section at the photo's place; matrix grid page | a retailer's top-view MicroFreak product photo |
 | Denis | Serge paperface row in a wooden boat, patch matrix | Commons "Serge Modular.jpg" |
 | ML-185 | M185 / Metropolis-style stage columns | RYK M185, Intellijel Metropolis panels |
 | Libpo32 | PO-32 circuit board, LCD, key grid | PO-32 descriptions (Sound On Sound) |
@@ -51,11 +51,19 @@ The panels carry the plugins' own names, never a manufacturer's logo. The module
    `gallery_data.py` collects the previews and Q-Link banks into `gallery/`; `sync_repo.sh` copies the toolkit and
    each port's generated files here (`ports/<id>/`, `ports/ml185/vst/`).
 
+`compare.py <id> <photo> [page] [crop]` puts a reference photo (scaled to the plugin area) over a preview and blends
+the two, to check positions. Reference photos stay out of the repo (`ref/`, not committed).
+
+Tests (offline, no Docker): `python3 ports/force-pack/test_force_pack.py` checks the committed layouts (controls inside
+the plugin area, knob sizes, Q-Links on shown controls) and the hardware placement: controls at the positions measured
+from each reference photo, so an edit can't quietly move a knob off the hardware's spot.
+
 `build-tools/` has the batch tools that made the ports (`gen_ports.py` writes vst.json/module.json; it regenerates
 vst.json without the `layout`/`art` keys these skins need, so rerun `hwskin.py` after it).
 
-## Status (2026-10-08)
-Offline: every skin builds with 0 real checker warnings; previews compared with the reference photos; installer
+## Status (2026-10-10)
+Offline: every skin builds with 0 real checker warnings; previews overlaid on the reference photos (808, 909, 606,
+CR-78 and MicroFreak redrawn at the photos' geometry on 2026-10-10); installer
 zips staged. Not yet on a device: knob positions, the rotary selectors (picture + popup field) and Q-Link order
 still need a check on the Force. Printed-only parts (sequencer keys, jacks, the 303's keyboard, the RE-201's input
 knobs, Braids' FINE / MODULATION) are artwork: they don't respond to touch.
