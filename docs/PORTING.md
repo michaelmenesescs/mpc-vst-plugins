@@ -10,6 +10,9 @@
   standalone process (control socket, shared-memory audio) gives `processReplacing` nothing to read without real
   bridge work on the engine side. The DX7 port hit this and switched to an in-process build of the same engine.
 - A port can live in its own repo next to a checkout of this one (`MPC_VST`), as mpc-vst-maze/-dx7/-acid do.
+- **Tempo-synced effect** (slicer, gate, stutter): `"effect": true` plus `"defines": {"HAS_SONGPOS": 1}`; the engine adds
+  `songpos(inst, ppq, bpm, playing)` after `process` in its `mpc_engine_t` and gets the song position at every block's start
+  (`wrapper/engine.h`). Place cuts on `ppq`, free-run at the last tempo while stopped. Example: `ports/breakslicer`.
 - **MIDI generator** (sequencer/arp): MPC ignores VST MIDI out, so send through an ALSA seq port (`poc/midiport.c`).
   Place steps from the host song position, not by counting MIDI clock pulses you synthesized: `docs/MIDI_TIMING.md`.
 - **App** (network, files, child processes): allowed, see NOTES "Beyond synths". Keep the audio thread

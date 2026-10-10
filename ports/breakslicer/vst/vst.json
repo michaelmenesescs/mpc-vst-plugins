@@ -1,0 +1,26 @@
+{
+ "name": "BreakSlicer",
+ "vendor": "Citizen Science",
+ "uid": "BkSl",
+ "version": 10000,
+ "so": "breakslicer.so",
+ "params": "params.json",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/engine.c"
+  ],
+  "cflags": [
+   "-Isrc"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "defines": {
+  "HAS_SONGPOS": 1
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

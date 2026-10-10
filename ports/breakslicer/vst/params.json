@@ -1,0 +1,97 @@
+{
+ "name": "BreakSlicer",
+ "params": [
+  {
+   "key": "slice",
+   "name": "Slice",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "size",
+   "name": "Size",
+   "options": [
+    "1/4",
+    "1/8",
+    "1/16",
+    "1/32"
+   ],
+   "default": "1/8"
+  },
+  {
+   "key": "gate",
+   "name": "Gate",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "shuffle",
+   "name": "Shuffle",
+   "min": 0,
+   "max": 100,
+   "default": 60,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "reverse",
+   "name": "Reverse",
+   "min": 0,
+   "max": 100,
+   "default": 25,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "roll",
+   "name": "Roll",
+   "min": 0,
+   "max": 100,
+   "default": 15,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "pitch",
+   "name": "Pitch",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "pan",
+   "name": "Pan",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "fx",
+   "name": "FX",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "mix",
+   "name": "Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "display": "int",
+   "unit": "%"
+  }
+ ]
+}
