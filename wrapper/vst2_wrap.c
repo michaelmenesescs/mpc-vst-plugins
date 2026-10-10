@@ -188,11 +188,12 @@ static void norm_to_str(const param_t *p, float n, char *buf, int len) {
 static float str_to_norm(const param_t *p, const char *s) {
     if (p->nopts) {
         int idx = -1;
-        if (isdigit((unsigned char)s[0])) idx = atoi(s);
-        else
-            for (int i = 0; i < p->nopts; i++)
-                if (!strcasecmp(s, p->opts[i])) idx = i;
-        if (idx < 0) idx = 0;
+        /* labels first: an option label may itself start with a digit ("1/4"), which atoi() would
+         * misread as an index (2026-10-10: broke every digit-leading label until matched by name) */
+        for (int i = 0; i < p->nopts; i++)
+            if (!strcasecmp(s, p->opts[i])) { idx = i; break; }
+        if (idx < 0 && isdigit((unsigned char)s[0])) idx = atoi(s);
+        if (idx < 0 || idx >= p->nopts) idx = 0;
         return p->nopts > 1 ? (float)idx / (p->nopts - 1) : 0;
     }
     return p->max > p->min ? clamp01((float)((atof(s) - p->min) / (p->max - p->min))) : 0;
@@ -309,7 +310,8 @@ static void setParameter(AEffect *e, int32_t i, float n) {
          * move that lands on the minimum or maximum from within that distance is a tick too, not a jump to the end. */
         float span = p->max - p->min, pos = clamp01(n) * span, cur = get_norm(w, i) * span, steps;
         float tickmax = p->nudge_pct > 0 ? fmaxf(0.5f, span * p->nudge_pct / 100.0f) : 0.5f;
-        int edge = (pos < 0.001f || pos > span - 0.001f) && fabsf(pos - cur) >= 0.5f;
+        float edge_eps = fmaxf(0.001f, span * 1e-6f);   /* span - 0.001f rounds back to span in float past ~1e5 */
+        int edge = (pos < edge_eps || pos > span - edge_eps) && fabsf(pos - cur) >= 0.5f;
         if ((p->qlink_ticks > 1 || p->nudge_pct > 0) && (fabsf(pos - roundf(pos)) > 0.001f || edge) && fabsf(pos - cur) < tickmax) {
             float d = pos - cur;
             w->last_pos[i] = pos;

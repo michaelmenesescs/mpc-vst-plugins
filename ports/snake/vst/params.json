@@ -1,0 +1,640 @@
+{
+ "name": "snake",
+ "params": [
+  {
+   "key": "pitch1",
+   "name": "Pitch 1",
+   "min": 0,
+   "max": 14,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch2",
+   "name": "Pitch 2",
+   "min": 0,
+   "max": 14,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch3",
+   "name": "Pitch 3",
+   "min": 0,
+   "max": 14,
+   "default": 3,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch4",
+   "name": "Pitch 4",
+   "min": 0,
+   "max": 14,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch5",
+   "name": "Pitch 5",
+   "min": 0,
+   "max": 14,
+   "default": 4,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch6",
+   "name": "Pitch 6",
+   "min": 0,
+   "max": 14,
+   "default": 3,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch7",
+   "name": "Pitch 7",
+   "min": 0,
+   "max": 14,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch8",
+   "name": "Pitch 8",
+   "min": 0,
+   "max": 14,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch9",
+   "name": "Pitch 9",
+   "min": 0,
+   "max": 14,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch10",
+   "name": "Pitch 10",
+   "min": 0,
+   "max": 14,
+   "default": 4,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch11",
+   "name": "Pitch 11",
+   "min": 0,
+   "max": 14,
+   "default": 5,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch12",
+   "name": "Pitch 12",
+   "min": 0,
+   "max": 14,
+   "default": 4,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch13",
+   "name": "Pitch 13",
+   "min": 0,
+   "max": 14,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch14",
+   "name": "Pitch 14",
+   "min": 0,
+   "max": 14,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch15",
+   "name": "Pitch 15",
+   "min": 0,
+   "max": 14,
+   "default": 2,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "pitch16",
+   "name": "Pitch 16",
+   "min": 0,
+   "max": 14,
+   "default": 0,
+   "display": "int",
+   "dynamic_display": true
+  },
+  {
+   "key": "gate1",
+   "name": "Gate 1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate2",
+   "name": "Gate 2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate3",
+   "name": "Gate 3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate4",
+   "name": "Gate 4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate5",
+   "name": "Gate 5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate6",
+   "name": "Gate 6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate7",
+   "name": "Gate 7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate8",
+   "name": "Gate 8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "gate9",
+   "name": "Gate 9",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate10",
+   "name": "Gate 10",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate11",
+   "name": "Gate 11",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate12",
+   "name": "Gate 12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate13",
+   "name": "Gate 13",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate14",
+   "name": "Gate 14",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "gate15",
+   "name": "Gate 15",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "gate16",
+   "name": "Gate 16",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "glide1",
+   "name": "Glide 1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide2",
+   "name": "Glide 2",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide3",
+   "name": "Glide 3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide4",
+   "name": "Glide 4",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide5",
+   "name": "Glide 5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide6",
+   "name": "Glide 6",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "On"
+  },
+  {
+   "key": "glide7",
+   "name": "Glide 7",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide8",
+   "name": "Glide 8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide9",
+   "name": "Glide 9",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide10",
+   "name": "Glide 10",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide11",
+   "name": "Glide 11",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide12",
+   "name": "Glide 12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide13",
+   "name": "Glide 13",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide14",
+   "name": "Glide 14",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide15",
+   "name": "Glide 15",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "glide16",
+   "name": "Glide 16",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": "Off"
+  },
+  {
+   "key": "x_rate",
+   "name": "X Rate",
+   "options": [
+    "1/32",
+    "1/16T",
+    "1/16",
+    "1/8T",
+    "1/8",
+    "1/4",
+    "1/2",
+    "1/1"
+   ],
+   "default": "1/16"
+  },
+  {
+   "key": "y_rate",
+   "name": "Y Rate",
+   "options": [
+    "1/32",
+    "1/16T",
+    "1/16",
+    "1/8T",
+    "1/8",
+    "1/4",
+    "1/2",
+    "1/1"
+   ],
+   "default": "1/4"
+  },
+  {
+   "key": "path",
+   "name": "Path",
+   "options": [
+    "Rows",
+    "Columns",
+    "Spiral",
+    "Zigzag"
+   ],
+   "default": "Rows"
+  },
+  {
+   "key": "scale",
+   "name": "Scale",
+   "options": [
+    "Chromatic",
+    "Major",
+    "Minor",
+    "Dorian",
+    "Phrygian",
+    "Lydian",
+    "Mixolydian",
+    "Harm Minor",
+    "Pent Major",
+    "Pent Minor",
+    "Blues"
+   ],
+   "default": "Minor"
+  },
+  {
+   "key": "root",
+   "name": "Root",
+   "options": [
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B"
+   ],
+   "default": "C"
+  },
+  {
+   "key": "gate_len",
+   "name": "Gate Len",
+   "min": 5,
+   "max": 100,
+   "default": 50,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "octave",
+   "name": "Octave",
+   "min": 0,
+   "max": 7,
+   "default": 2,
+   "display": "int"
+  },
+  {
+   "key": "channel",
+   "name": "MIDI Ch",
+   "min": 1,
+   "max": 16,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "velocity",
+   "name": "Velocity",
+   "min": 1,
+   "max": 127,
+   "default": 100,
+   "display": "int"
+  },
+  {
+   "key": "randomize",
+   "name": "Randomize",
+   "momentary": true
+  },
+  {
+   "key": "status",
+   "name": "Port",
+   "display": "string",
+   "poll": false
+  }
+ ],
+ "sections": [
+  {
+   "label": "Pitch",
+   "keys": [
+    "pitch1",
+    "pitch2",
+    "pitch3",
+    "pitch4",
+    "pitch5",
+    "pitch6",
+    "pitch7",
+    "pitch8",
+    "pitch9",
+    "pitch10",
+    "pitch11",
+    "pitch12",
+    "pitch13",
+    "pitch14",
+    "pitch15",
+    "pitch16"
+   ]
+  },
+  {
+   "label": "Gate",
+   "keys": [
+    "gate1",
+    "gate2",
+    "gate3",
+    "gate4",
+    "gate5",
+    "gate6",
+    "gate7",
+    "gate8",
+    "gate9",
+    "gate10",
+    "gate11",
+    "gate12",
+    "gate13",
+    "gate14",
+    "gate15",
+    "gate16"
+   ]
+  },
+  {
+   "label": "Glide",
+   "keys": [
+    "glide1",
+    "glide2",
+    "glide3",
+    "glide4",
+    "glide5",
+    "glide6",
+    "glide7",
+    "glide8",
+    "glide9",
+    "glide10",
+    "glide11",
+    "glide12",
+    "glide13",
+    "glide14",
+    "glide15",
+    "glide16"
+   ]
+  },
+  {
+   "label": "Clock",
+   "keys": [
+    "x_rate",
+    "y_rate",
+    "path",
+    "scale",
+    "root",
+    "gate_len",
+    "octave",
+    "channel",
+    "velocity",
+    "randomize",
+    "status"
+   ]
+  }
+ ]
+}
