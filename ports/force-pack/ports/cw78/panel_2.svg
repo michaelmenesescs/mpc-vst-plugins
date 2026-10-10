@@ -18,69 +18,179 @@
 <text x="1250" y="50" font-size="40" fill="#f0872c" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.02em;font-style:italic;">CW-78</text>
 <line x1="920" y1="76" x2="1250" y2="76" stroke="#f0872c" stroke-width="2"/>
 <text x="1250" y="94" font-size="14" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">RHYTHM COMPUTER</text>
-<text x="30" y="50" font-size="16" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">INSTRUMENT VOICING</text>
-<text x="50" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BASS</text>
-<text x="50" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DRUM</text>
-<line x1="95" y1="110" x2="95" y2="600" stroke="#333" stroke-width="1"/>
-<text x="140.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SNARE</text>
-<line x1="185.7" y1="110" x2="185.7" y2="600" stroke="#333" stroke-width="1"/>
-<text x="231.4" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">RIM</text>
-<text x="231.4" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHOT</text>
-<line x1="276.4" y1="110" x2="276.4" y2="600" stroke="#333" stroke-width="1"/>
-<text x="322.1" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI-HAT</text>
-<line x1="367.1" y1="110" x2="367.1" y2="600" stroke="#333" stroke-width="1"/>
-<text x="412.8" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CYMBAL</text>
-<line x1="457.8" y1="110" x2="457.8" y2="600" stroke="#333" stroke-width="1"/>
-<text x="503.5" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MARACAS</text>
-<line x1="548.5" y1="110" x2="548.5" y2="600" stroke="#333" stroke-width="1"/>
-<text x="594.2" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CLAVES</text>
-<line x1="639.2" y1="110" x2="639.2" y2="600" stroke="#333" stroke-width="1"/>
-<text x="684.9" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI</text>
-<text x="684.9" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
-<line x1="729.9" y1="110" x2="729.9" y2="600" stroke="#333" stroke-width="1"/>
-<text x="775.6" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
-<text x="775.6" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
-<line x1="820.6" y1="110" x2="820.6" y2="600" stroke="#333" stroke-width="1"/>
-<text x="866.3" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
-<text x="866.3" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CONGA</text>
-<line x1="911.3" y1="110" x2="911.3" y2="600" stroke="#333" stroke-width="1"/>
-<text x="957" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">COWBELL</text>
-<line x1="1002" y1="110" x2="1002" y2="600" stroke="#333" stroke-width="1"/>
-<text x="1047.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">TAMB</text>
-<line x1="1092.7" y1="110" x2="1092.7" y2="600" stroke="#333" stroke-width="1"/>
-<text x="1138.4" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GUIRO</text>
-<line x1="1183.4" y1="110" x2="1183.4" y2="600" stroke="#333" stroke-width="1"/>
-<text x="1229.1" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">METAL</text>
-<text x="1229.1" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BEAT</text>
-<line x1="1274.1" y1="110" x2="1274.1" y2="600" stroke="#333" stroke-width="1"/>
-<text x="50" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="50" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="140.7" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="140.7" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="231.4" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="231.4" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="322.1" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="322.1" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="412.8" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="412.8" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="503.5" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="503.5" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="594.2" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="594.2" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="684.9" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="684.9" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="775.6" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="775.6" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="866.3" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="866.3" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="957" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="957" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="1047.7" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="1047.7" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="1138.4" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="1138.4" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="1229.1" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
-<text x="1229.1" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
-<text x="140.7" y="422" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">SNAPPY</text>
-<text x="1138.4" y="422" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">RATE</text>
+<text x="30" y="50" font-size="16" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">INSTRUMENT LEVEL</text>
+<line x1="36" y1="190" x2="42" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="220" x2="42" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="250" x2="42" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="280" x2="42" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="310" x2="42" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="340" x2="42" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="370" x2="42" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="400" x2="42" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="430" x2="42" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="460" x2="42" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="36" y1="490" x2="42" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="60" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BASS</text>
+<text x="60" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DRUM</text>
+<line x1="125" y1="190" x2="131" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="220" x2="131" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="250" x2="131" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="280" x2="131" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="310" x2="131" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="340" x2="131" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="370" x2="131" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="400" x2="131" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="430" x2="131" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="460" x2="131" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="125" y1="490" x2="131" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="149" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SNARE</text>
+<line x1="214" y1="190" x2="220" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="220" x2="220" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="250" x2="220" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="280" x2="220" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="310" x2="220" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="340" x2="220" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="370" x2="220" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="400" x2="220" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="430" x2="220" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="460" x2="220" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="214" y1="490" x2="220" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="238" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">RIM</text>
+<text x="238" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHOT</text>
+<line x1="303" y1="190" x2="309" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="220" x2="309" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="250" x2="309" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="280" x2="309" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="310" x2="309" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="340" x2="309" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="370" x2="309" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="400" x2="309" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="430" x2="309" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="460" x2="309" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="303" y1="490" x2="309" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="327" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI-HAT</text>
+<line x1="392" y1="190" x2="398" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="220" x2="398" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="250" x2="398" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="280" x2="398" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="310" x2="398" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="340" x2="398" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="370" x2="398" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="400" x2="398" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="430" x2="398" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="460" x2="398" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="392" y1="490" x2="398" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="416" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CYMBAL</text>
+<line x1="481" y1="190" x2="487" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="220" x2="487" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="250" x2="487" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="280" x2="487" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="310" x2="487" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="340" x2="487" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="370" x2="487" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="400" x2="487" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="430" x2="487" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="460" x2="487" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="481" y1="490" x2="487" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="505" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MARACAS</text>
+<line x1="570" y1="190" x2="576" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="220" x2="576" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="250" x2="576" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="280" x2="576" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="310" x2="576" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="340" x2="576" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="370" x2="576" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="400" x2="576" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="430" x2="576" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="460" x2="576" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="570" y1="490" x2="576" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="594" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CLAVES</text>
+<line x1="659" y1="190" x2="665" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="220" x2="665" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="250" x2="665" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="280" x2="665" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="310" x2="665" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="340" x2="665" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="370" x2="665" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="400" x2="665" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="430" x2="665" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="460" x2="665" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="659" y1="490" x2="665" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="683" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI</text>
+<text x="683" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<line x1="748" y1="190" x2="754" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="220" x2="754" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="250" x2="754" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="280" x2="754" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="310" x2="754" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="340" x2="754" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="370" x2="754" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="400" x2="754" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="430" x2="754" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="460" x2="754" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="748" y1="490" x2="754" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="772" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
+<text x="772" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<line x1="837" y1="190" x2="843" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="220" x2="843" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="250" x2="843" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="280" x2="843" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="310" x2="843" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="340" x2="843" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="370" x2="843" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="400" x2="843" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="430" x2="843" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="460" x2="843" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="837" y1="490" x2="843" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="861" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
+<text x="861" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CONGA</text>
+<line x1="926" y1="190" x2="932" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="220" x2="932" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="250" x2="932" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="280" x2="932" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="310" x2="932" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="340" x2="932" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="370" x2="932" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="400" x2="932" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="430" x2="932" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="460" x2="932" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="926" y1="490" x2="932" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="950" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">COWBELL</text>
+<line x1="1015" y1="190" x2="1021" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="220" x2="1021" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="250" x2="1021" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="280" x2="1021" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="310" x2="1021" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="340" x2="1021" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="370" x2="1021" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="400" x2="1021" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="430" x2="1021" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="460" x2="1021" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1015" y1="490" x2="1021" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="1039" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">TAMB</text>
+<line x1="1104" y1="190" x2="1110" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="220" x2="1110" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="250" x2="1110" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="280" x2="1110" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="310" x2="1110" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="340" x2="1110" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="370" x2="1110" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="400" x2="1110" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="430" x2="1110" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="460" x2="1110" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1104" y1="490" x2="1110" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="1128" y="150" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GUIRO</text>
+<line x1="1193" y1="190" x2="1199" y2="190" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="220" x2="1199" y2="220" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="250" x2="1199" y2="250" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="280" x2="1199" y2="280" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="310" x2="1199" y2="310" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="340" x2="1199" y2="340" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="370" x2="1199" y2="370" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="400" x2="1199" y2="400" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="430" x2="1199" y2="430" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="460" x2="1199" y2="460" stroke="#8a8a8a" stroke-width="1"/>
+<line x1="1193" y1="490" x2="1199" y2="490" stroke="#8a8a8a" stroke-width="1"/>
+<text x="1217" y="144" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">METAL</text>
+<text x="1217" y="157" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BEAT</text>
 </svg>

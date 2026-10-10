@@ -54,10 +54,14 @@ def ptape(params):
           T(450, 62, "MULTI HEAD ECHO", 22, "#1a1a1a", 700, anchor="start", font=SANS, sp=0.04))
     # left: peak lamp, VU meter, the (printed) input volumes
     p.add(led(139, 192, 9, lit=True), T(139, 222, "PEAK", 12, INK, 700), T(139, 238, "LEVEL", 12, INK, 700))
-    p.add(rect(196, 140, 168, 112, "#2b2b2b", rx=3), rect(202, 146, 156, 100, "#e9e2c8", rx=2),
-          path("M222 222 A 70 70 0 0 1 338 222", stroke="#2a2a2a", sw=1.5),
-          path("M300 178 A 70 70 0 0 1 338 222", stroke="#c8261a", sw=5),
-          T(280, 228, "VU", 13, "#2a2a2a", 700), line(280, 244, 236, 176, "#111", 2))
+    # the VU: a dark face, the scale a green arc into red, the needle white (as the photo)
+    p.add(rect(196, 140, 168, 112, "#8f9294", rx=3), rect(202, 146, 156, 100, "#3a3f42", rx=2),
+          rect(202, 146, 156, 100, "url(#hw-vshade)", rx=2),
+          path("M220 206 A 82 82 0 0 1 306 166", stroke="#3fae5a", sw=5),
+          path("M306 166 A 82 82 0 0 1 344 186", stroke="#d23a2a", sw=5),
+          path("M220 214 A 82 82 0 0 1 344 194", stroke="#cfd6d0", sw=1),
+          T(282, 206, "V.U", 12, "#cfd6d0", 700), T(282, 222, "TAPE DELAY", 8, "#c8261a", 700, italic=True),
+          line(282, 252, 236, 170, "#f2f2f2", 2))
     for x, s in ((110, "MIC\nVOLUME"), (232, "MIC\nVOLUME"), (358, "INSTRUMENT\nVOLUME")):
         a, b = s.split("\n")
         p.add(T(x, 316, a, 12, INK, 700), T(x, 332, b, 12, INK, 700), ticks(x, 410, 42, 49, 11, "#9fb0a0", 1.6))

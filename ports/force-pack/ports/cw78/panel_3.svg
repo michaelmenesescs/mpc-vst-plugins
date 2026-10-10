@@ -18,39 +18,69 @@
 <text x="1250" y="50" font-size="40" fill="#f0872c" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.02em;font-style:italic;">CW-78</text>
 <line x1="920" y1="76" x2="1250" y2="76" stroke="#f0872c" stroke-width="2"/>
 <text x="1250" y="94" font-size="14" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">RHYTHM COMPUTER</text>
-<text x="30" y="50" font-size="16" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">DRIVE PER INSTRUMENT</text>
+<text x="30" y="50" font-size="16" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">INSTRUMENT VOICING</text>
 <text x="50" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BASS</text>
 <text x="50" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DRUM</text>
+<line x1="95" y1="110" x2="95" y2="600" stroke="#333" stroke-width="1"/>
 <text x="140.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SNARE</text>
+<line x1="185.7" y1="110" x2="185.7" y2="600" stroke="#333" stroke-width="1"/>
 <text x="231.4" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">RIM</text>
 <text x="231.4" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHOT</text>
+<line x1="276.4" y1="110" x2="276.4" y2="600" stroke="#333" stroke-width="1"/>
 <text x="322.1" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI-HAT</text>
+<line x1="367.1" y1="110" x2="367.1" y2="600" stroke="#333" stroke-width="1"/>
 <text x="412.8" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CYMBAL</text>
+<line x1="457.8" y1="110" x2="457.8" y2="600" stroke="#333" stroke-width="1"/>
 <text x="503.5" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MARACAS</text>
+<line x1="548.5" y1="110" x2="548.5" y2="600" stroke="#333" stroke-width="1"/>
 <text x="594.2" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CLAVES</text>
+<line x1="639.2" y1="110" x2="639.2" y2="600" stroke="#333" stroke-width="1"/>
 <text x="684.9" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HI</text>
 <text x="684.9" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<line x1="729.9" y1="110" x2="729.9" y2="600" stroke="#333" stroke-width="1"/>
 <text x="775.6" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
 <text x="775.6" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BONGO</text>
+<line x1="820.6" y1="110" x2="820.6" y2="600" stroke="#333" stroke-width="1"/>
 <text x="866.3" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LO</text>
 <text x="866.3" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CONGA</text>
+<line x1="911.3" y1="110" x2="911.3" y2="600" stroke="#333" stroke-width="1"/>
 <text x="957" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">COWBELL</text>
+<line x1="1002" y1="110" x2="1002" y2="600" stroke="#333" stroke-width="1"/>
 <text x="1047.7" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">TAMB</text>
+<line x1="1092.7" y1="110" x2="1092.7" y2="600" stroke="#333" stroke-width="1"/>
 <text x="1138.4" y="128" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GUIRO</text>
+<line x1="1183.4" y1="110" x2="1183.4" y2="600" stroke="#333" stroke-width="1"/>
 <text x="1229.1" y="122" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">METAL</text>
 <text x="1229.1" y="135" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BEAT</text>
-<text x="50" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="140.7" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="231.4" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="322.1" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="412.8" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="503.5" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="594.2" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="684.9" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="775.6" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="866.3" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="957" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="1047.7" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="1138.4" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
-<text x="1229.1" y="172" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DRIVE</text>
+<line x1="1274.1" y1="110" x2="1274.1" y2="600" stroke="#333" stroke-width="1"/>
+<text x="50" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="50" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="140.7" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="140.7" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="231.4" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="231.4" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="322.1" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="322.1" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="412.8" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="412.8" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="503.5" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="503.5" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="594.2" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="594.2" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="684.9" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="684.9" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="775.6" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="775.6" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="866.3" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="866.3" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="957" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="957" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="1047.7" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="1047.7" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="1138.4" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="1138.4" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="1229.1" y="162" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">TUNE</text>
+<text x="1229.1" y="292" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">DECAY</text>
+<text x="140.7" y="422" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">SNAPPY</text>
+<text x="1138.4" y="422" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.06em;">RATE</text>
 </svg>

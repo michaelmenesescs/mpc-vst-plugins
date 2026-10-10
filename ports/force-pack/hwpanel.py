@@ -250,14 +250,18 @@ class Page:
         if lab is not None and label:
             self.text(x, y + lab, label, **labkw)
 
-    def switch(self, key, x, y, n, vertical=True, sw=40, sh=30, img=None, img_on=None, label="", rows=None, options=None):
-        """Option buttons / a slide switch: one segment per option (sw x sh each, 2 px apart)."""
-        self._c(kind="enum_v" if vertical else "enum_h", key=key, x=x, y=y, n=n, sw=sw, sh=sh, img=img, img_on=img_on,
-                label=label, rows=rows, options=options)
+    def switch(self, key, x, y, n, vertical=True, sw=40, sh=30, img=None, img_on=None, label="", rows=None, options=None,
+               at=None):
+        """Option buttons / a slide switch: one segment per option (sw x sh each, 2 px apart); at=[(x, y), ..]: each
+        option's own centre instead (buttons spread over a panel, as a machine has them)."""
+        self._c(kind="enum_h" if at else ("enum_v" if vertical else "enum_h"), key=key, x=x, y=y, n=n, sw=sw, sh=sh,
+                img=img, img_on=img_on, label=label, rows=rows, options=options, at=at)
 
     def seg_rects(self, c):
         """The segments' rectangles, as shadow_skin.seg_rects lays them out (plugin coordinates)."""
         n, sw, sh, gap = c["n"], c["sw"], c["sh"], 2
+        if c.get("at"):
+            return [(x - sw // 2, y - sh // 2, sw, sh) for x, y in c["at"]]
         if c["kind"] == "enum_v":
             y0 = c["y"] - (n * (sh + gap)) // 2
             return [(c["x"] - sw // 2, y0 + i * (sh + gap), sw, sh) for i in range(n)]
@@ -396,6 +400,8 @@ class Page:
                 extra = " rows=%d" % c["rows"] if c.get("rows") else ""
                 if c.get("options"):
                     extra += ' options="%s"' % ",".join(c["options"])
+                if c.get("at"):
+                    extra += ' at="%s"' % ",".join("%d:%d" % (x, round(y + Y_OFF)) for x, y in c["at"])
                 o.append('%s cx=%d cy=%d label="%s" key=%s sw=%d sh=%d%s%s' % (
                     k, c["x"], Y(c["y"]), c["label"], key, c["sw"], c["sh"], extra, look))
             elif k == "popup":
