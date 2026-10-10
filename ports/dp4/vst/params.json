@@ -1,0 +1,395 @@
+[
+  {
+    "key": "a_algo",
+    "name": "A Algo",
+    "options": [
+      "Off",
+      "Hall Reverb",
+      "Tempo Delay",
+      "Chorus",
+      "Flanger",
+      "Phaser-DDL",
+      "Pitch Shift",
+      "Distortion",
+      "Para EQ",
+      "Tremolo"
+    ],
+    "default": "Phaser-DDL"
+  },
+  {
+    "key": "a_p1",
+    "name": "A P1",
+    "min": 0,
+    "max": 100,
+    "default": 30,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_p2",
+    "name": "A P2",
+    "min": 0,
+    "max": 100,
+    "default": 55,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_p3",
+    "name": "A P3",
+    "min": 0,
+    "max": 100,
+    "default": 65,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_p4",
+    "name": "A P4",
+    "min": 0,
+    "max": 100,
+    "default": 60,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_p5",
+    "name": "A P5",
+    "min": 0,
+    "max": 100,
+    "default": 75,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_p6",
+    "name": "A P6",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "a_mix",
+    "name": "A Mix",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "display": "int",
+    "unit": "%"
+  },
+  {
+    "key": "b_algo",
+    "name": "B Algo",
+    "options": [
+      "Off",
+      "Hall Reverb",
+      "Tempo Delay",
+      "Chorus",
+      "Flanger",
+      "Phaser-DDL",
+      "Pitch Shift",
+      "Distortion",
+      "Para EQ",
+      "Tremolo"
+    ],
+    "default": "Tempo Delay"
+  },
+  {
+    "key": "b_p1",
+    "name": "B P1",
+    "min": 0,
+    "max": 100,
+    "default": 50,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_p2",
+    "name": "B P2",
+    "min": 0,
+    "max": 100,
+    "default": 35,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_p3",
+    "name": "B P3",
+    "min": 0,
+    "max": 100,
+    "default": 40,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_p4",
+    "name": "B P4",
+    "min": 0,
+    "max": 100,
+    "default": 70,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_p5",
+    "name": "B P5",
+    "min": 0,
+    "max": 100,
+    "default": 60,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_p6",
+    "name": "B P6",
+    "min": 0,
+    "max": 100,
+    "default": 70,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "b_mix",
+    "name": "B Mix",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "display": "int",
+    "unit": "%"
+  },
+  {
+    "key": "c_algo",
+    "name": "C Algo",
+    "options": [
+      "Off",
+      "Hall Reverb",
+      "Tempo Delay",
+      "Chorus",
+      "Flanger",
+      "Phaser-DDL",
+      "Pitch Shift",
+      "Distortion",
+      "Para EQ",
+      "Tremolo"
+    ],
+    "default": "Hall Reverb"
+  },
+  {
+    "key": "c_p1",
+    "name": "C P1",
+    "min": 0,
+    "max": 100,
+    "default": 55,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_p2",
+    "name": "C P2",
+    "min": 0,
+    "max": 100,
+    "default": 60,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_p3",
+    "name": "C P3",
+    "min": 0,
+    "max": 100,
+    "default": 45,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_p4",
+    "name": "C P4",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_p5",
+    "name": "C P5",
+    "min": 0,
+    "max": 100,
+    "default": 60,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_p6",
+    "name": "C P6",
+    "min": 0,
+    "max": 100,
+    "default": 70,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "c_mix",
+    "name": "C Mix",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "display": "int",
+    "unit": "%"
+  },
+  {
+    "key": "d_algo",
+    "name": "D Algo",
+    "options": [
+      "Off",
+      "Hall Reverb",
+      "Tempo Delay",
+      "Chorus",
+      "Flanger",
+      "Phaser-DDL",
+      "Pitch Shift",
+      "Distortion",
+      "Para EQ",
+      "Tremolo"
+    ],
+    "default": "Off"
+  },
+  {
+    "key": "d_p1",
+    "name": "D P1",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_p2",
+    "name": "D P2",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_p3",
+    "name": "D P3",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_p4",
+    "name": "D P4",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_p5",
+    "name": "D P5",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_p6",
+    "name": "D P6",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "display": "int",
+    "dynamic_name": true,
+    "dynamic_display": true
+  },
+  {
+    "key": "d_mix",
+    "name": "D Mix",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "display": "int",
+    "unit": "%"
+  },
+  {
+    "key": "ab_route",
+    "name": "AB Routing",
+    "options": [
+      "Serial",
+      "Parallel",
+      "Feedback 1",
+      "Feedback 2"
+    ],
+    "default": "Serial"
+  },
+  {
+    "key": "cd_route",
+    "name": "CD Routing",
+    "options": [
+      "Serial",
+      "Parallel",
+      "Feedback 1",
+      "Feedback 2"
+    ],
+    "default": "Serial"
+  },
+  {
+    "key": "ab_cd",
+    "name": "AB-CD Link",
+    "options": [
+      "Serial",
+      "Parallel"
+    ],
+    "default": "Serial"
+  },
+  {
+    "key": "feedback",
+    "name": "Feedback",
+    "min": 0,
+    "max": 95,
+    "default": 20,
+    "display": "int",
+    "unit": "%"
+  },
+  {
+    "key": "mix",
+    "name": "Master Mix",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "display": "int",
+    "unit": "%"
+  }
+]
