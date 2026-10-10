@@ -1270,3 +1270,16 @@ A Force user saw `No drive under /media is mounted noexec` on the first `status`
   does not reach a VST2 plugin's parameters here; use Screen mode. Not yet compared with a stock plugin in Track mode.
 - `ports/ml185/vst/force_qlinks.py` rewrites `Program Mode Q-Links` in straight order (knob N = the Nth control) so the
   labels at least read in order on a Force; whether Track mode then drives the plugin is untested.
+
+## Wrapper fixes from the sting port (offline, 2026-10-10)
+Two `wrapper/vst2_wrap.c` bugs surfaced while the sting port's `test_port.sh` run exercised them
+(ML-185 never hit either: its first stepped option param is gate1, whose labels don't start with a
+digit, and no existing port has an int span past ~1000):
+- `str_to_norm()` read a leading digit as an option *index* before trying the label, so an engine
+  returning `"1/4"` became `atoi("1/4") = 1` ("1/16T"). Labels are now matched first; a pure digit
+  string still falls back to the index.
+- The nudge `edge` test used `pos > span - 0.001f`; in float that rounds back to `span` past ~1e5,
+  so a clamped set to the maximum of a long int list (sting's 0..999999 seed) jumped instead of
+  stepping one. The epsilon is now `max(0.001, span * 1e-6)` — identical for spans under ~1000.
+`tools/host_test.c`: the plain whole-number step test no longer runs on a `nudge_pct` param (the
+dedicated long-list test already covers it); the two tests contradict each other on a long range.
