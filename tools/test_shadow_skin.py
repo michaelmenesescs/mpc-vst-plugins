@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline unit tests for shadow_skin geometry/invariants that don't need the art toolchain or a device:
-seg_rects honouring sw=, the talign= defaults, the two filmstrip frame-count conventions, and html_art's inlined
+seg_rects honouring sw= and at=, the talign= defaults, the two filmstrip frame-count conventions, and html_art's inlined
 SVGs keeping their ids and classes apart. No device: python3 tools/test_shadow_skin.py"""
 import os
 import re
@@ -33,6 +33,22 @@ class SegRects(unittest.TestCase):
     def test_enum_h_honours_sw(self):
         w = {"kind": "enum_h", "options": ["A", "B"], "cx": 100, "cy": 100, "sw": 68}
         self.assertEqual(self.widths(w), {68})
+
+
+class SegRectsAt(unittest.TestCase):
+    """at=: option buttons spread over a panel, each at its own centre (a CR-78's rhythm buttons on two rows)."""
+    def test_each_option_at_its_point(self):
+        w = shadow_skin.parse_widget('enum_h cx=0 cy=0 key=k sw=58 sh=50 options="A,B,C" at="343:666,407:666,655:591"')
+        self.assertEqual(shadow_skin.seg_rects(w), [(314, 641, 58, 50), (378, 641, 58, 50), (626, 566, 58, 50)])
+
+    def test_point_count_must_match_options(self):
+        w = shadow_skin.parse_widget('enum_h cx=0 cy=0 key=k options="A,B,C" at="10:10,20:20"')
+        with self.assertRaises(SystemExit):
+            shadow_skin.seg_rects(w)
+
+    def test_without_at_rows_unchanged(self):
+        w = {"kind": "enum_h", "options": ["A", "B", "C", "D"], "cx": 200, "cy": 100, "sw": 40, "sh": 20, "rows": 2}
+        self.assertEqual([r[:2] for r in shadow_skin.seg_rects(w)], [(159, 90), (201, 90), (159, 112), (201, 112)])
 
 
 class QLinkBounds(unittest.TestCase):

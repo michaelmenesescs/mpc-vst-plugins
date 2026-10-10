@@ -208,6 +208,12 @@ a touch to the wrong control. Toggles take `bw=` and `ns=0` (the switch alone); 
 `knob ... lay=side bw= bh= vs=` puts the knob's picture at the left of a bw x bh box and its value, large, in the rest
 (no name): a step cell you drag like a knob. From `saustin2010/vst_instruments`' fork; not yet seen on a device.
 
+## Option buttons at their own places: `at=` (2026-10-10, offline)
+`enum_h ... at="x:y,x:y,.."` puts each option's segment (sw x sh) centred on its own point (screen px, one point per
+option, in option order) instead of in a row: a machine's buttons that select one value but sit apart, like a CR-78's
+rhythm buttons on two rows of different lengths (`ports/force-pack`, cw78). Built and checked offline (`skin_check`:
+no overlaps; the TUI.json bounds land on the points); not yet seen on a device.
+
 ## Coming next
 Tracked in [ROADMAP.md](ROADMAP.md) ("Skin controls" and "Porting and tooling"), including a build-and-preview
 button in the browser editor.
