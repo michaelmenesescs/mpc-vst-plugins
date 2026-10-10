@@ -1,0 +1,1 @@
+{"build":{"cflags":["-Isrc"],"libs":["-lm","-ldl"],"root":"..","sources":["src/engine.c"]},"defines":{"DISPLAY_REV_NO_UPDATE":0,"HAS_DISPLAY_REV":1,"HAS_LFO_BPM":1,"HAS_TRANSPORT":1},"layout":"layout.conf","name":"snake","params":"params.json","so":"snake.so","uid":"SNK1","vendor":"Citizen Science","version":10000}
