@@ -1,0 +1,1 @@
+{"build":{"cflags":["-Isrc","-Isrc/dsp","-std=gnu11"],"libs":["-lm"],"root":"..","sources":["src/engine.c","src/dsp/fxdsp.c"]},"defines":{"HAS_LFO_BPM":1},"effect":true,"layout":"layout.conf","name":"quadraverb","params":"params.json","so":"quadraverb.so","uid":"QDRV","vendor":"Citizen Science","version":10000}
