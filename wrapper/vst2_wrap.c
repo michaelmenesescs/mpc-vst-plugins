@@ -57,6 +57,10 @@ void wrap_trace(int kind, int idx, float value);
 #define HAS_TRANSPORT 0 /* 1: tell the DSP when the host transport plays/stops as "transport" = "1"/"0"; a jump back
                           * in song position while playing (a loop, a locate) is sent as "1" again */
 #endif
+#ifndef HAS_SONGPOS
+#define HAS_SONGPOS 0 /* 1: before each block, call the engine's songpos() with the host's song position (ppq at the
+                        * block start, -1 if unknown), tempo (0 if unknown) and play state (engine.h) */
+#endif
 #ifndef MODULE_DIR
 #define MODULE_DIR NULL /* set via vst.json "defines" for a DSP that reads its own files
                           * (ROMs, etc.) from "<module_dir>/..." (see jv880's create_instance) */
@@ -350,7 +354,14 @@ static void update_transport(wrap_t *w, const VstTimeInfo *ti) {
 
 static void update_tempo(wrap_t *w) {
     VstTimeInfo *ti = (VstTimeInfo *)w->master(&w->fx, audioMasterGetTime, 0,
-                                              kVstTempoValid | (HAS_TRANSPORT ? kVstPpqPosValid : 0), 0, 0);
+                                              kVstTempoValid | (HAS_TRANSPORT || HAS_SONGPOS ? kVstPpqPosValid : 0), 0, 0);
+    if (HAS_SONGPOS && g_api->songpos) {
+        double ppq = ti && (ti->flags & kVstPpqPosValid) ? ti->ppqPos : -1;
+        double bpm = ti && (ti->flags & kVstTempoValid) && ti->tempo > 0 ? ti->tempo : 0;
+        pthread_mutex_lock(&w->lock);
+        g_api->songpos(w->dsp, ppq, bpm, ti && (ti->flags & kVstTransportPlaying) ? 1 : 0);
+        pthread_mutex_unlock(&w->lock);
+    }
     if (!ti) return;
     if (HAS_TRANSPORT) update_transport(w, ti);
     if (!HAS_LFO_BPM || !(ti->flags & kVstTempoValid) || ti->tempo <= 0) return;
@@ -421,7 +432,7 @@ static void render_events(wrap_t *w, float **out, int32_t n, int accumulate) {
 
 static void housekeeping(AEffect *e, int32_t n) {
     wrap_t *w = e->object;
-    if (HAS_LFO_BPM || HAS_TRANSPORT) update_tempo(w);
+    if (HAS_LFO_BPM || HAS_TRANSPORT || HAS_SONGPOS) update_tempo(w);
     /* A trigger param (e.g. Generate) fired: tell the host it is back to 0 so
      * buttons bound to it drop their highlight. Done here, not inside
      * setParameter, so the host is not re-entered from its own call. */
