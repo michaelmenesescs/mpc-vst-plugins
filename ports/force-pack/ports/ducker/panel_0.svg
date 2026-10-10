@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628"><defs>
+<linearGradient id="hw-screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+<filter id="hw-brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="5"/>
+ <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.20 0"/></filter>
+<filter id="hw-brushd" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="9"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter>
+<filter id="hw-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.07 0"/></filter>
+<filter id="hw-wood" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.18" numOctaves="4" seed="21"/>
+ <feColorMatrix values="0 0 0 0 0.30  0 0 0 0 0.15  0 0 0 0 0.05  0 0 0 0.85 0"/></filter>
+<filter id="hw-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="hw-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.45"/></filter>
+<linearGradient id="hw-vshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="1" stop-color="#000" stop-opacity="0.14"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#0c0c0c"/>
+<rect x="0" y="60" width="1280" height="508" rx="0" fill="#1d1e20"/><rect x="0" y="60" width="1280" height="508" filter="url(#hw-brushd)"/>
+<rect x="0" y="60" width="1280" height="508" rx="0" fill="url(#hw-vshade)"/>
+<rect x="8" y="60" width="36" height="508" rx="0" fill="#26272a"/>
+<rect x="16" y="98" width="20" height="24" rx="10" fill="#050505"/>
+<rect x="16" y="508" width="20" height="24" rx="10" fill="#050505"/>
+<rect x="1236" y="60" width="36" height="508" rx="0" fill="#26272a"/>
+<rect x="1244" y="98" width="20" height="24" rx="10" fill="#050505"/>
+<rect x="1244" y="508" width="20" height="24" rx="10" fill="#050505"/>
+<text x="70" y="100" font-size="30" fill="#e6e6e2" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.16em;">DUCKER</text>
+<text x="70" y="128" font-size="11" fill="#9a9a9a" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">SIDECHAIN GAIN REDUCTION</text>
+<rect x="980" y="80" width="240" height="150" rx="4" fill="#111"/>
+<rect x="990" y="90" width="220" height="130" rx="3" fill="#f3d79a"/>
+<path d="M1020 196 A 100 100 0 0 1 1180 196" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+<text x="1100" y="206" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GAIN REDUCTION</text>
+<line x1="1100" y1="214" x2="1150" y2="120" stroke="#111" stroke-width="2"/>
+<text x="1170.48" y="154.864" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="1138.88" y="130.62" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">-3</text>
+<text x="1100" y="122" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">-6</text>
+<text x="1061.12" y="130.62" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">-10</text>
+<text x="1029.52" y="154.864" font-size="9" fill="#2a2a2a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">-20</text>
+<rect x="60" y="250" width="360" height="290" rx="6" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text x="240" y="268" font-size="13" fill="#f2a43a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.3em;">TRIGGER</text>
+<rect x="440" y="160" width="520" height="380" rx="6" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text x="700" y="178" font-size="13" fill="#f2a43a" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.3em;">SHAPE</text>
+<text x="240" y="410" font-size="11" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MODE</text>
+<text x="580" y="440" font-size="11" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CURVE</text>
+<text x="560" y="228" font-size="12" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">DEPTH</text>
+<text x="720" y="244" font-size="12" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">ATTACK</text>
+<text x="820" y="394" font-size="12" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">HOLD</text>
+<text x="920" y="244" font-size="12" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">RELEASE</text>
+<text x="1100" y="364" font-size="12" fill="#e6e6e2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.1em;">VEL SENS</text>
+</svg>

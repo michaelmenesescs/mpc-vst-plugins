@@ -162,11 +162,11 @@ run a uninstall.sh
 fresh; unit 'Restart=always'; ro a-w
 run a install.sh
 grep -qx "# lib: 2" "$DROP" && ok "the drop-in records its format" || bad "no lib line: $(cat "$DROP")"
-sed -i 's/^# lib: 2$/# lib: 99/' "$DROP"; cp "$DROP" "$T/drop.before"
+sed 's/^# lib: 2$/# lib: 99/' "$DROP" > "$DROP.tmp" && mv "$DROP.tmp" "$DROP"; cp "$DROP" "$T/drop.before"
 refused "a drop-in from a newer installer (install)" b -t "$T/addins/b"
 if ADDIN_INSTALL_TEST=1 SYSTEMD_ROOT="$T/root" $SH "$T/pkg-a/uninstall.sh" -y -n -t "$T/addins/a" >/dev/null 2>&1; then bad "uninstall under a newer drop-in accepted"; else ok "a drop-in from a newer installer (uninstall) refused"; fi
 cmp -s "$DROP" "$T/drop.before" && [ -f "$A" ] && ok "a newer drop-in is left as it was" || bad "a newer drop-in changed"
-sed -i '/^# lib:/d' "$DROP"
+sed '/^# lib:/d' "$DROP" > "$DROP.tmp" && mv "$DROP.tmp" "$DROP"
 run b install.sh
 grep -qx "# lib: 2" "$DROP" && grep -qx "Environment=LD_PRELOAD=$A:$B" "$DROP" && ok "a drop-in without a format line is read as format 2" || bad "old drop-in: $(cat "$DROP")"
 

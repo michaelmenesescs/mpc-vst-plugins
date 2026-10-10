@@ -1,0 +1,30 @@
+{
+ "name": "6W6",
+ "vendor": "athousanddetails; voices after 606-Inspired-Synth-Drums (Matthew Fecher AudioKit Pro)",
+ "uid": "6W6X",
+ "version": 10800,
+ "so": "6w6.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/sd606_engine.cpp",
+   "src/dsp/sd606_plugin.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/tools",
+   "-Isrc/host",
+   "-Isrc/patches",
+   "-Isrc/vendor",
+   "-Isrc/vendor/606",
+   "-std=gnu++14"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

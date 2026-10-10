@@ -7,6 +7,9 @@ set -euo pipefail
 MV="$(cd "$(dirname "$0")/.." && pwd)"
 CFG="$(cd "$(dirname "$1")" && pwd)/$(basename "$1")"
 eval "$(python3 "$MV/tools/gen_vst.py" "$CFG" --shell)"
+# CFLAGS_C: the same flags minus any C++ -std (a mixed C/C++ port compiles its .c files with gcc,
+# which rejects -std=c++NN). Host-side so it can be embedded into the container command.
+CFLAGS_C="$(echo "$CFLAGS" | sed -E 's/-std=c\+\+[^ ]*//g')"
 # an engine from another ecosystem: its adapter (adapters/<name>/) provides mpc_engine()
 ADAPTER_SRC=""
 [ -n "$ADAPTER" ] && ADAPTER_SRC="/mv/adapters/$ADAPTER/${ADAPTER}_engine.c"
@@ -71,7 +74,7 @@ else
       o=\"$PORT/build/\${f//\//_}.o\"
       case \"\$f\" in
         *.cpp|*.cc|*.cxx) g++ -O2 -Wall -Wextra -Wno-unused-parameter -fPIC -fvisibility=hidden -std=gnu++11 $CFLAGS $CFLAGS_ARM -I'$PORT/build' -I/mv/wrapper -c \"\$f\" -o \"\$o\" ;;
-        *) gcc -O2 -Wall -Wextra -Wno-unused-parameter -fPIC -fvisibility=hidden -std=gnu11 $CFLAGS $CFLAGS_ARM -I'$PORT/build' -I/mv/wrapper -c \"\$f\" -o \"\$o\" ;;
+        *) gcc -O2 -Wall -Wextra -Wno-unused-parameter -fPIC -fvisibility=hidden -std=gnu11 $CFLAGS_C $CFLAGS_ARM -I'$PORT/build' -I/mv/wrapper -c \"\$f\" -o \"\$o\" ;;
       esac
       OBJS=\"\$OBJS \$o\"
     done

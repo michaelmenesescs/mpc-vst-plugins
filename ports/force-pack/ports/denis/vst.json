@@ -1,0 +1,23 @@
+{
+ "name": "Denis",
+ "vendor": "Vincent Fillion",
+ "uid": "Deni",
+ "version": 102,
+ "so": "denis.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/denis.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

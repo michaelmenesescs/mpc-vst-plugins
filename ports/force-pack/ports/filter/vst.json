@@ -1,0 +1,29 @@
+{
+ "name": "FILTER",
+ "vendor": "charlesvestal",
+ "uid": "FILT",
+ "version": 203,
+ "so": "filter.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/filter.c",
+   "src/dsp/svf_core.c",
+   "src/dsp/smoother.c",
+   "src/dsp/modulation.c",
+   "src/dsp/model_moog.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

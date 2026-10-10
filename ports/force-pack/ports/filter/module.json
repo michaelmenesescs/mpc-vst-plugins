@@ -1,0 +1,410 @@
+{
+ "id": "filter",
+ "name": "FILTER",
+ "capabilities": {
+  "chain_params": [
+   {
+    "key": "model",
+    "name": "Model",
+    "type": "enum",
+    "options": [
+     "SVF",
+     "Schwoog"
+    ],
+    "default": "SVF"
+   },
+   {
+    "key": "mode",
+    "name": "Mode",
+    "type": "enum",
+    "options": [
+     "LP",
+     "HP",
+     "BP",
+     "Notch",
+     "Peak",
+     "AP"
+    ],
+    "default": "LP"
+   },
+   {
+    "key": "cutoff",
+    "name": "Cutoff",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "default": 0.5,
+    "step": 0.02,
+    "unit": "%"
+   },
+   {
+    "key": "resonance",
+    "name": "Resonance",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "default": 0.2,
+    "step": 0.02,
+    "unit": "%"
+   },
+   {
+    "key": "drive",
+    "name": "Drive",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "step": 0.02,
+    "unit": "%"
+   },
+   {
+    "key": "mix",
+    "name": "Mix",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "step": 0.02,
+    "unit": "%"
+   },
+   {
+    "key": "output",
+    "name": "Output",
+    "type": "float",
+    "min": -24,
+    "max": 12,
+    "default": 0,
+    "step": 0.5,
+    "unit": "dB"
+   },
+   {
+    "key": "env_amount",
+    "name": "Env Amt",
+    "type": "float",
+    "min": -1,
+    "max": 1,
+    "default": 0,
+    "step": 0.02
+   },
+   {
+    "key": "env_attack",
+    "name": "Env Atk",
+    "type": "float",
+    "min": 1,
+    "max": 500,
+    "default": 10,
+    "step": 1,
+    "unit": "ms"
+   },
+   {
+    "key": "env_release",
+    "name": "Env Rel",
+    "type": "float",
+    "min": 1,
+    "max": 500,
+    "default": 150,
+    "step": 1,
+    "unit": "ms"
+   },
+   {
+    "key": "lfo_amount",
+    "name": "LFO Amt",
+    "type": "float",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "step": 0.02,
+    "unit": "%"
+   },
+   {
+    "key": "lfo_shape",
+    "name": "LFO Shape",
+    "type": "enum",
+    "options": [
+     "Sine",
+     "Tri",
+     "Saw",
+     "Sqr",
+     "S&H"
+    ],
+    "default": "Sine"
+   },
+   {
+    "key": "lfo_sync",
+    "name": "LFO Sync",
+    "type": "enum",
+    "options": [
+     "Free",
+     "Sync"
+    ],
+    "default": "Sync"
+   },
+   {
+    "key": "lfo_rate_hz",
+    "name": "LFO Rate",
+    "type": "float",
+    "min": 0.01,
+    "max": 20,
+    "default": 1,
+    "step": 0.01,
+    "unit": "Hz"
+   },
+   {
+    "key": "lfo_rate_div",
+    "name": "LFO Div",
+    "type": "enum",
+    "options": [
+     "1/1",
+     "1/2",
+     "1/4",
+     "1/4.",
+     "1/8",
+     "1/8.",
+     "1/8T",
+     "1/16",
+     "1/16T",
+     "1/32"
+    ],
+    "default": "1/8"
+   }
+  ],
+  "ui_hierarchy": {
+   "modes": null,
+   "levels": {
+    "root": {
+     "name": "FILTER",
+     "knobs": [
+      "cutoff",
+      "resonance",
+      "drive",
+      "mix",
+      "env_amount",
+      "lfo_amount",
+      "lfo_rate_div",
+      "mode"
+     ],
+     "params": [
+      {
+       "key": "cutoff",
+       "label": "Cutoff",
+       "type": "float",
+       "min": 0,
+       "max": 1,
+       "default": 0.5,
+       "step": 0.02,
+       "unit": "%"
+      },
+      {
+       "key": "resonance",
+       "label": "Resonance",
+       "type": "float",
+       "min": 0,
+       "max": 1,
+       "default": 0.2,
+       "step": 0.02,
+       "unit": "%"
+      },
+      {
+       "key": "drive",
+       "label": "Drive",
+       "type": "float",
+       "min": 0,
+       "max": 1,
+       "default": 0,
+       "step": 0.02,
+       "unit": "%"
+      },
+      {
+       "key": "mix",
+       "label": "Mix",
+       "type": "float",
+       "min": 0,
+       "max": 1,
+       "default": 1,
+       "step": 0.02,
+       "unit": "%"
+      },
+      {
+       "key": "env_amount",
+       "short_name": "ENV",
+       "label": "Env Amt",
+       "type": "float",
+       "min": -1,
+       "max": 1,
+       "default": 0,
+       "step": 0.02
+      },
+      {
+       "key": "lfo_amount",
+       "short_name": "AMT",
+       "label": "LFO Amt",
+       "type": "float",
+       "min": 0,
+       "max": 1,
+       "default": 0,
+       "step": 0.02,
+       "unit": "%"
+      },
+      {
+       "key": "mode",
+       "label": "Mode",
+       "type": "enum",
+       "options": [
+        "LP",
+        "HP",
+        "BP",
+        "Notch",
+        "Peak",
+        "AP"
+       ],
+       "default": "LP"
+      },
+      {
+       "key": "model",
+       "label": "Model",
+       "type": "enum",
+       "options": [
+        "SVF",
+        "Schwoog"
+       ],
+       "default": "SVF"
+      },
+      {
+       "level": "envelope",
+       "label": "Envelope"
+      },
+      {
+       "level": "lfo",
+       "label": "LFO"
+      },
+      {
+       "level": "output",
+       "label": "Output"
+      }
+     ]
+    },
+    "envelope": {
+     "label": "Envelope",
+     "knobs": [
+      "env_amount",
+      "env_attack",
+      "env_release"
+     ],
+     "params": [
+      "env_amount",
+      {
+       "key": "env_attack",
+       "short_name": "Atk",
+       "label": "Attack",
+       "type": "float",
+       "min": 1,
+       "max": 500,
+       "default": 10,
+       "step": 1,
+       "unit": "ms"
+      },
+      {
+       "key": "env_release",
+       "short_name": "Rel",
+       "label": "Release",
+       "type": "float",
+       "min": 1,
+       "max": 500,
+       "default": 150,
+       "step": 1,
+       "unit": "ms"
+      }
+     ]
+    },
+    "lfo": {
+     "label": "LFO",
+     "knobs": [
+      "lfo_amount",
+      "lfo_rate_hz",
+      "lfo_shape",
+      "lfo_rate_div",
+      "lfo_sync"
+     ],
+     "params": [
+      "lfo_amount",
+      {
+       "key": "lfo_shape",
+       "short_name": "Shape",
+       "label": "Shape",
+       "type": "enum",
+       "options": [
+        "Sine",
+        "Tri",
+        "Saw",
+        "Sqr",
+        "S&H"
+       ],
+       "default": "Sine"
+      },
+      {
+       "key": "lfo_sync",
+       "short_name": "Sync",
+       "label": "Sync",
+       "type": "enum",
+       "options": [
+        "Free",
+        "Sync"
+       ],
+       "default": "Sync"
+      },
+      {
+       "key": "lfo_rate_div",
+       "short_name": "Div",
+       "label": "Division",
+       "type": "enum",
+       "options": [
+        "1/1",
+        "1/2",
+        "1/4",
+        "1/4.",
+        "1/8",
+        "1/8.",
+        "1/8T",
+        "1/16",
+        "1/16T",
+        "1/32"
+       ],
+       "default": "1/8"
+      },
+      {
+       "key": "lfo_rate_hz",
+       "short_name": "Rate",
+       "label": "Rate Hz",
+       "type": "float",
+       "min": 0.01,
+       "max": 20,
+       "default": 1,
+       "step": 0.01,
+       "unit": "Hz"
+      }
+     ]
+    },
+    "output": {
+     "label": "Output",
+     "knobs": [
+      "mix",
+      "output"
+     ],
+     "params": [
+      "mix",
+      {
+       "key": "output",
+       "label": "Output",
+       "type": "float",
+       "min": -24,
+       "max": 12,
+       "default": 0,
+       "step": 0.5,
+       "unit": "dB"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

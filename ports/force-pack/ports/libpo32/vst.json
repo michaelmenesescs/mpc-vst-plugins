@@ -1,0 +1,30 @@
+{
+ "name": "Libpo32",
+ "vendor": "mestela",
+ "uid": "Libp",
+ "version": 10100,
+ "so": "po32-drum.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/po32_drum.c",
+   "src/dsp/po32.c",
+   "src/dsp/po32_synth.c",
+   "src/dsp/po32_patch_import.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/kits",
+   "-Isrc/kits/03_acid",
+   "-Isrc/kits/02_tape",
+   "-Isrc/kits/01_tonic"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

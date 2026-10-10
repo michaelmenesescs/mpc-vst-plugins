@@ -13,8 +13,10 @@ def load(path):
     """-> (params, sections [(label, [keys])] or None when the module has no ui_hierarchy)"""
     d = json.load(open(path))
     caps = d.get("capabilities", d)
-    raw = caps.get("chain_params") or d.get("chain_params")
-    if not raw:
+    raw = caps.get("chain_params")
+    if raw is None:
+        raw = d.get("chain_params")
+    if raw is None:
         raise SystemExit("%s: no chain_params" % path)
     params = []
     for p in raw:

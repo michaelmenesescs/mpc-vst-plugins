@@ -1,0 +1,26 @@
+{
+ "name": "Hank",
+ "vendor": "charlesvestal",
+ "uid": "Hank",
+ "version": 600,
+ "so": "hank.so",
+ "module": "module.json",
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/hank_plugin.cpp",
+   "src/dsp/hank_engine.cpp"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp",
+   "-Isrc/ui",
+   "-std=gnu++14"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

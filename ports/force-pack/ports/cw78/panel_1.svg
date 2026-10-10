@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628"><defs>
+<linearGradient id="hw-screw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+<filter id="hw-brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="5"/>
+ <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.20 0"/></filter>
+<filter id="hw-brushd" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0025 0.8" numOctaves="2" seed="9"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.16 0"/></filter>
+<filter id="hw-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+ <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.07 0"/></filter>
+<filter id="hw-wood" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.18" numOctaves="4" seed="21"/>
+ <feColorMatrix values="0 0 0 0 0.30  0 0 0 0 0.15  0 0 0 0 0.05  0 0 0 0.85 0"/></filter>
+<filter id="hw-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="hw-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.45"/></filter>
+<linearGradient id="hw-vshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="1" stop-color="#000" stop-opacity="0.14"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#0c0c0c"/>
+<rect x="10" y="6" width="1260" height="616" rx="4" fill="#191919"/>
+<rect x="10" y="6" width="1260" height="616" filter="url(#hw-grain)"/>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#4a2a16"/>
+<rect x="0" y="0" width="1280" height="628" rx="0" fill="#5a3218"/><rect x="0" y="0" width="1280" height="628" filter="url(#hw-wood)"/>
+<rect x="22" y="0" width="1236" height="628" rx="0" fill="#161616"/>
+<rect x="22" y="0" width="1236" height="628" filter="url(#hw-grain)"/>
+<line x1="30" y1="6" x2="30" y2="622" stroke="#a9abad" stroke-width="2.5"/>
+<line x1="232" y1="6" x2="232" y2="622" stroke="#a9abad" stroke-width="2.5"/>
+<line x1="665" y1="6" x2="665" y2="622" stroke="#a9abad" stroke-width="2.5"/>
+<line x1="1105" y1="6" x2="1105" y2="622" stroke="#a9abad" stroke-width="2.5"/>
+<line x1="1250" y1="6" x2="1250" y2="622" stroke="#a9abad" stroke-width="2.5"/>
+<line x1="670" y1="145" x2="1100" y2="145" stroke="#a9abad" stroke-width="2"/>
+<line x1="1110" y1="145" x2="1245" y2="145" stroke="#a9abad" stroke-width="2"/>
+<line x1="670" y1="332" x2="1100" y2="332" stroke="#a9abad" stroke-width="2"/>
+<text x="135" y="32" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">VARIATION</text>
+<text x="140" y="66" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">FILL IN</text>
+<line x1="88.1979" y1="156.532" x2="76.2435" y2="157.578" stroke="#e8e8e8" stroke-width="7"/>
+<text x="96.1674" y="155.835" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">1</text>
+<line x1="91.4538" y1="133.365" x2="80.2509" y2="129.064" stroke="#e8e8e8" stroke-width="7"/>
+<text x="98.9225" y="136.232" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">2</text>
+<line x1="104.536" y1="113.97" x2="96.3521" y2="105.193" stroke="#e8e8e8" stroke-width="7"/>
+<text x="109.992" y="119.82" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">3</text>
+<line x1="124.797" y1="102.272" x2="121.288" y2="90.7965" stroke="#e8e8e8" stroke-width="7"/>
+<text x="127.136" y="109.923" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">4</text>
+<line x1="148.135" y1="100.64" x2="150.012" y2="88.7879" stroke="#e8e8e8" stroke-width="7"/>
+<text x="146.883" y="108.542" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<line x1="169.826" y1="109.404" x2="176.709" y2="99.5743" stroke="#e8e8e8" stroke-width="7"/>
+<text x="165.237" y="115.957" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">6</text>
+<line x1="185.48" y1="126.79" x2="195.976" y2="120.972" stroke="#e8e8e8" stroke-width="7"/>
+<text x="178.483" y="130.668" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">7</text>
+<text x="78" y="172" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BREAK</text>
+<text x="88" y="190" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">R</text>
+<text x="80" y="204" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">(A)</text>
+<text x="156" y="208" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">OFF</text>
+<text x="198" y="172" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HB</text>
+<text x="198" y="192" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SD</text>
+<text x="218" y="208" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROLLING</text>
+<path d="M206 172 h18 v20 h-14" fill="none" stroke="#ececec" stroke-width="1"/>
+<circle cx="140" cy="155" r="33" fill="#000" opacity="0.5"/>
+<circle cx="140" cy="152" r="31" fill="#121212" stroke="#000" stroke-width="1"/>
+<circle cx="140" cy="152" r="27" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-dasharray="2 2"/>
+<line x1="135.212" y1="165.156" x2="130.423" y2="178.311" stroke="#e5432a" stroke-width="3"/>
+<text x="172" y="284" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">MEASURE</text>
+<g stroke="#ececec" stroke-width="2" stroke-linecap="round"><line x1="134.5" y1="364.1" x2="124.7" y2="362.4"/><line x1="146.1" y1="344.0" x2="139.7" y2="336.3"/><line x1="168.0" y1="336.0" x2="168.0" y2="326.0"/><line x1="189.9" y1="344.0" x2="196.3" y2="336.3"/><line x1="201.5" y1="364.1" x2="211.3" y2="362.4"/></g>
+<text x="112.851" y="360.276" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">2</text><text x="132.004" y="327.102" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">4</text><text x="168" y="314" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">8</text><text x="203.996" y="327.102" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">12</text><text x="223.149" y="360.276" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">16</text>
+<circle cx="168" cy="373" r="36" fill="#000" opacity="0.5"/>
+<circle cx="168" cy="370" r="34" fill="#121212" stroke="#000" stroke-width="1"/>
+<circle cx="168" cy="370" r="30" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-dasharray="2 2"/>
+<line x1="152.243" y1="367.222" x2="137.471" y2="364.617" stroke="#e5432a" stroke-width="3"/>
+<rect x="186" y="450" width="18" height="60" rx="4" fill="#050505"/>
+<rect x="189" y="478" width="12" height="50" rx="5" fill="url(#hw-screw)"/>
+<text x="232" y="456" font-size="8" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">• AUTO</text>
+<text x="270" y="478" font-size="8" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">• MANUAL</text>
+<rect x="175" y="540" width="76" height="70" rx="3" fill="#efe8cf" stroke="#000" stroke-width="1.5"/>
+<rect x="179" y="544" width="68" height="20" rx="2" fill="#fff" opacity="0.45"/>
+<rect x="293" y="82" width="8" height="122" rx="2" fill="#050505"/>
+<line x1="271" y1="88" x2="283" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="88" x2="323" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="99" x2="283" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="99" x2="323" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="110" x2="283" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="110" x2="323" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="121" x2="283" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="121" x2="323" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="132" x2="283" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="132" x2="323" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="143" x2="283" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="143" x2="323" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="154" x2="283" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="154" x2="323" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="165" x2="283" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="165" x2="323" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="176" x2="283" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="176" x2="323" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="187" x2="283" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="187" x2="323" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="271" y1="198" x2="283" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="311" y1="198" x2="323" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<g transform="translate(282 182)"><path d="M9 2 h12 q3 0 3 4 v14 q0 8 -9 8 q-9 0 -9 -8 v-14 q0 -4 3 -4 z" fill="#efe8cf" stroke="#6a6450" stroke-width="1"/><rect x="10" y="5" width="4" height="18" rx="2" fill="#fff" opacity="0.6"/></g>
+<rect x="378" y="82" width="8" height="122" rx="2" fill="#050505"/>
+<line x1="356" y1="88" x2="368" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="88" x2="408" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="99" x2="368" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="99" x2="408" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="110" x2="368" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="110" x2="408" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="121" x2="368" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="121" x2="408" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="132" x2="368" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="132" x2="408" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="143" x2="368" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="143" x2="408" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="154" x2="368" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="154" x2="408" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="165" x2="368" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="165" x2="408" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="176" x2="368" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="176" x2="408" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="187" x2="368" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="187" x2="408" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="356" y1="198" x2="368" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="396" y1="198" x2="408" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<g transform="translate(367 182)"><path d="M9 2 h12 q3 0 3 4 v14 q0 8 -9 8 q-9 0 -9 -8 v-14 q0 -4 3 -4 z" fill="#efe8cf" stroke="#6a6450" stroke-width="1"/><rect x="10" y="5" width="4" height="18" rx="2" fill="#fff" opacity="0.6"/></g>
+<rect x="496" y="82" width="8" height="122" rx="2" fill="#050505"/>
+<line x1="474" y1="88" x2="486" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="88" x2="526" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="99" x2="486" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="99" x2="526" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="110" x2="486" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="110" x2="526" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="121" x2="486" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="121" x2="526" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="132" x2="486" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="132" x2="526" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="143" x2="486" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="143" x2="526" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="154" x2="486" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="154" x2="526" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="165" x2="486" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="165" x2="526" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="176" x2="486" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="176" x2="526" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="187" x2="486" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="187" x2="526" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="474" y1="198" x2="486" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="514" y1="198" x2="526" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<g transform="translate(485 182)"><path d="M9 2 h12 q3 0 3 4 v14 q0 8 -9 8 q-9 0 -9 -8 v-14 q0 -4 3 -4 z" fill="#efe8cf" stroke="#6a6450" stroke-width="1"/><rect x="10" y="5" width="4" height="18" rx="2" fill="#fff" opacity="0.6"/></g>
+<rect x="548" y="82" width="8" height="122" rx="2" fill="#050505"/>
+<line x1="526" y1="88" x2="538" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="88" x2="578" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="99" x2="538" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="99" x2="578" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="110" x2="538" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="110" x2="578" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="121" x2="538" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="121" x2="578" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="132" x2="538" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="132" x2="578" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="143" x2="538" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="143" x2="578" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="154" x2="538" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="154" x2="578" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="165" x2="538" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="165" x2="578" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="176" x2="538" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="176" x2="578" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="187" x2="538" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="187" x2="578" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="526" y1="198" x2="538" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="566" y1="198" x2="578" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<g transform="translate(537 182)"><path d="M9 2 h12 q3 0 3 4 v14 q0 8 -9 8 q-9 0 -9 -8 v-14 q0 -4 3 -4 z" fill="#efe8cf" stroke="#6a6450" stroke-width="1"/><rect x="10" y="5" width="4" height="18" rx="2" fill="#fff" opacity="0.6"/></g>
+<rect x="600" y="82" width="8" height="122" rx="2" fill="#050505"/>
+<line x1="578" y1="88" x2="590" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="88" x2="630" y2="88" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="99" x2="590" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="99" x2="630" y2="99" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="110" x2="590" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="110" x2="630" y2="110" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="121" x2="590" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="121" x2="630" y2="121" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="132" x2="590" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="132" x2="630" y2="132" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="143" x2="590" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="143" x2="630" y2="143" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="154" x2="590" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="154" x2="630" y2="154" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="165" x2="590" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="165" x2="630" y2="165" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="176" x2="590" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="176" x2="630" y2="176" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="187" x2="590" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="187" x2="630" y2="187" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="578" y1="198" x2="590" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="618" y1="198" x2="630" y2="198" stroke="#bdbdbd" stroke-width="1"/>
+<g transform="translate(589 182)"><path d="M9 2 h12 q3 0 3 4 v14 q0 8 -9 8 q-9 0 -9 -8 v-14 q0 -4 3 -4 z" fill="#efe8cf" stroke="#6a6450" stroke-width="1"/><rect x="10" y="5" width="4" height="18" rx="2" fill="#fff" opacity="0.6"/></g>
+<text x="262" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">10</text>
+<text x="262" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="262" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="330" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">10</text>
+<text x="330" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="330" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="348" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="348" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="348" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="420" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="420" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="420" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="470" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">10</text>
+<text x="470" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="470" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="640" y="100" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">10</text>
+<text x="640" y="143" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">5</text>
+<text x="640" y="186" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">0</text>
+<text x="475" y="45" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CY HH</text>
+<text x="475" y="57" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">METALLIC</text>
+<text x="475" y="69" font-size="10" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BEAT</text>
+<text x="580" y="33" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ADD VOICE</text>
+<path d="M552 44 v-4 h52 v4 M578 40 v-4" fill="none" stroke="#ececec" stroke-width="1.2"/>
+<text x="552" y="70" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">TAMBOURINE</text>
+<text x="608" y="70" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">GUIRO</text>
+<rect x="290" y="445" width="290" height="98" rx="6" fill="none" stroke="#9a9a9a" stroke-width="3"/>
+<text x="435" y="455" font-size="9" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">PROGRAM RHYTHM</text>
+<text x="337" y="470" font-size="11" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:serif;font-weight:700;letter-spacing:0em;">I</text>
+<rect x="308" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="311" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="401" y="470" font-size="11" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:serif;font-weight:700;letter-spacing:0em;">II</text>
+<rect x="372" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="375" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="465" y="470" font-size="11" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:serif;font-weight:700;letter-spacing:0em;">III</text>
+<rect x="436" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="439" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="529" y="470" font-size="11" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:serif;font-weight:700;letter-spacing:0em;">IV</text>
+<rect x="500" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="503" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<rect x="585" y="455" width="625" height="95" rx="6" fill="none" stroke="#7a7a7a" stroke-width="1.5"/>
+<rect x="300" y="540" width="790" height="80" rx="6" fill="none" stroke="#7a7a7a" stroke-width="1.5"/>
+<text x="655" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROCK-1</text>
+<rect x="626" y="480" width="58" height="50" rx="3" fill="#2f6fd0" stroke="#000" stroke-width="1.2"/>
+<rect x="629" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="720" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROCK-2</text>
+<rect x="691" y="480" width="58" height="50" rx="3" fill="#2f6fd0" stroke="#000" stroke-width="1.2"/>
+<rect x="694" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="785" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROCK-3</text>
+<rect x="756" y="480" width="58" height="50" rx="3" fill="#2f6fd0" stroke="#000" stroke-width="1.2"/>
+<rect x="759" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="848" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROCK-4</text>
+<rect x="819" y="480" width="58" height="50" rx="3" fill="#2f6fd0" stroke="#000" stroke-width="1.2"/>
+<rect x="822" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="912" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DISCO-1</text>
+<rect x="883" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="886" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="975" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DISCO-2</text>
+<rect x="946" y="480" width="58" height="50" rx="3" fill="#f3b51e" stroke="#000" stroke-width="1.2"/>
+<rect x="949" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="1040" y="468" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CANCEL</text>
+<rect x="1011" y="480" width="58" height="50" rx="3" fill="#d8342a" stroke="#000" stroke-width="1.2"/>
+<rect x="1014" y="483" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="343" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">WALTZ</text>
+<rect x="314" y="555" width="58" height="50" rx="3" fill="#8a8a88" stroke="#000" stroke-width="1.2"/>
+<rect x="317" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="407" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHUFFLE</text>
+<rect x="378" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="381" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="470" y="538" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SLOW</text>
+<text x="470" y="548" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ROCK</text>
+<rect x="441" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="444" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="532" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SWING</text>
+<rect x="503" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="506" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="596" y="538" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">A-FOX TROT </text>
+<text x="596" y="548" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">B-TANGO</text>
+<rect x="567" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="570" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="657" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BOOGIE</text>
+<rect x="628" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="631" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="720" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ENKA</text>
+<rect x="691" y="555" width="58" height="50" rx="3" fill="#ecebe6" stroke="#000" stroke-width="1.2"/>
+<rect x="694" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="782" y="538" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BOSSA</text>
+<text x="782" y="548" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">NOVA</text>
+<rect x="753" y="555" width="58" height="50" rx="3" fill="#1f9e4a" stroke="#000" stroke-width="1.2"/>
+<rect x="756" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="845" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SAMBA</text>
+<rect x="816" y="555" width="58" height="50" rx="3" fill="#1f9e4a" stroke="#000" stroke-width="1.2"/>
+<rect x="819" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="908" y="538" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">A-MAMBO </text>
+<text x="908" y="548" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">B-CHACHA</text>
+<rect x="879" y="555" width="58" height="50" rx="3" fill="#1f9e4a" stroke="#000" stroke-width="1.2"/>
+<rect x="882" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="970" y="538" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">A-BEGUINE </text>
+<text x="970" y="548" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">B-RHUMBA</text>
+<rect x="941" y="555" width="58" height="50" rx="3" fill="#1f9e4a" stroke="#000" stroke-width="1.2"/>
+<rect x="944" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="1035" y="543" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CANCEL</text>
+<rect x="1006" y="555" width="58" height="50" rx="3" fill="#d8342a" stroke="#000" stroke-width="1.2"/>
+<rect x="1009" y="558" width="52" height="12" rx="2" fill="#fff" opacity="0.3"/>
+<text x="968" y="84" font-size="30" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:400;letter-spacing:0em;">CompuRhythm</text>
+<line x1="672" y1="100" x2="1100" y2="100" stroke="#f0872c" stroke-width="1.5"/>
+<text x="968" y="120" font-size="26" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:400;letter-spacing:0em;">CW-78</text>
+<text x="868" y="346" font-size="11" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CANCEL VOICE</text>
+<path d="M762 362 v-10 h70 M904 352 h90 v10" fill="none" stroke="#ececec" stroke-width="1"/>
+<text x="762" y="365" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CYMBAL</text>
+<text x="762" y="376" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HIGH HAT</text>
+<circle cx="762" cy="408" r="23" fill="#efe8cf" stroke="#000" stroke-width="1.2"/>
+<circle cx="756" cy="400" r="9" fill="#fff" opacity="0.45"/>
+<text x="838" y="370" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">BASS DRUM</text>
+<circle cx="838" cy="408" r="23" fill="#efe8cf" stroke="#000" stroke-width="1.2"/>
+<circle cx="832" cy="400" r="9" fill="#fff" opacity="0.45"/>
+<text x="915" y="370" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SNARE DRUM</text>
+<circle cx="915" cy="408" r="23" fill="#efe8cf" stroke="#000" stroke-width="1.2"/>
+<circle cx="909" cy="400" r="9" fill="#fff" opacity="0.45"/>
+<text x="993" y="365" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">COW BELL</text>
+<text x="993" y="376" font-size="8.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">CLAVES</text>
+<circle cx="993" cy="408" r="23" fill="#efe8cf" stroke="#000" stroke-width="1.2"/>
+<circle cx="987" cy="400" r="9" fill="#fff" opacity="0.45"/>
+<text x="1200" y="32" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">POWER</text>
+<text x="1200" y="56" font-size="8" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">▲ ON</text>
+<circle cx="1192" cy="100" r="26" fill="#0c0c0c" stroke="#000" stroke-width="1"/>
+<circle cx="1186" cy="92" r="9" fill="#fff" opacity="0.06"/>
+<text x="1185" y="160" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">FADE</text>
+<path d="M1135 196 v-30 h30 M1205 166 h30 v30" fill="none" stroke="#ececec" stroke-width="1.2"/>
+<text x="1130" y="212" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">IN</text>
+<text x="1218" y="212" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">OUT</text>
+<rect x="1120" y="232" width="20" height="50" rx="4" fill="#050505"/>
+<rect x="1124" y="256" width="12" height="50" rx="5" fill="url(#hw-screw)"/>
+<rect x="1195" y="232" width="20" height="50" rx="4" fill="#050505"/>
+<rect x="1199" y="256" width="12" height="50" rx="5" fill="url(#hw-screw)"/>
+<text x="1170" y="238" font-size="7.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">LONG</text>
+<text x="1170" y="262" font-size="7.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">SHORT</text>
+<text x="1170" y="284" font-size="7.5" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">OFF</text>
+<text x="1155" y="354" font-size="11" fill="#ececec" text-anchor="end" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">START</text>
+<path d="M1157 360 l14 -14" fill="none" stroke="#ececec" stroke-width="1.5"/>
+<text x="1173" y="356" font-size="11" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">STOP</text>
+<text x="1128" y="515" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">RHYTHM</text>
+<text x="1150" y="542" font-size="8" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">• A</text>
+<text x="1150" y="566" font-size="8" fill="#ececec" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">• B</text>
+<circle cx="762" cy="265" r="34" fill="#000" opacity="0.5"/>
+<circle cx="762" cy="262" r="34" fill="#151515" stroke="#000" stroke-width="1"/>
+<circle cx="762" cy="262" r="30" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-dasharray="2 2"/>
+<line x1="754.788" y1="269.212" x2="739.16" y2="284.84" stroke="#f07a2a" stroke-width="4"/>
+<circle cx="965" cy="265" r="38" fill="#000" opacity="0.5"/>
+<circle cx="965" cy="262" r="38" fill="#151515" stroke="#000" stroke-width="1"/>
+<circle cx="965" cy="262" r="34" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-dasharray="2 2"/>
+<line x1="956.939" y1="270.061" x2="939.473" y2="287.527" stroke="#f07a2a" stroke-width="4"/>
+<text x="770" y="160" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">ACCENT</text>
+<text x="970" y="160" font-size="12" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DRIVE</text>
+<rect x="1108" y="367" width="84" height="76" rx="3" fill="#efe8cf" stroke="#000" stroke-width="1.5"/>
+<rect x="1112" y="371" width="76" height="22" rx="2" fill="#fff" opacity="0.45"/>
+<rect x="1121" y="530" width="18" height="48" rx="4" fill="#050505"/>
+<rect x="1124" y="532" width="12" height="22" rx="5" fill="#d8d8d4"/>
+<rect x="262" y="222" width="398" height="218" rx="6" fill="none" stroke="#9a9a9a" stroke-width="3"/>
+<rect x="275" y="226" width="372" height="14" rx="0" fill="#191919"/>
+<text x="461" y="233" font-size="12" fill="#f0872c" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0.2em;">MASTER</text>
+<text x="330" y="262" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">HAT CHOKE</text>
+<text x="470" y="262" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">NOTE MAP</text>
+<text x="590" y="262" font-size="10" fill="#ececec" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans, Liberation Sans, Titillium Web, sans-serif;font-weight:700;letter-spacing:0em;">DISTORTION</text>
+</svg>

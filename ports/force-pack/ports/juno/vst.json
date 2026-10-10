@@ -1,0 +1,25 @@
+{
+ "name": "Junologue Chorus",
+ "vendor": "Peter Allwin (port charlesvestal)",
+ "uid": "Juno",
+ "version": 102,
+ "so": "junologue-chorus.so",
+ "module": "module.json",
+ "adapter": "schwungfx",
+ "effect": true,
+ "build": {
+  "root": "..",
+  "sources": [
+   "src/dsp/junologue_chorus.c"
+  ],
+  "cflags": [
+   "-Isrc",
+   "-Isrc/dsp"
+  ],
+  "libs": [
+   "-lm"
+  ]
+ },
+ "layout": "layout.conf",
+ "art": "html"
+}

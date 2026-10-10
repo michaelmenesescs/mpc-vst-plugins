@@ -68,7 +68,7 @@ edit_preload() {   # file mode so
         print pre "LD_PRELOAD=" out post; next
     }
     { print }' "$1" > "$1.new"
-    sed -i 's/^Environment= *$//' "$1.new"
+    sed 's/^Environment= *$//' "$1.new" > "$1.new.sed" && mv "$1.new.sed" "$1.new"
     mv "$1.new" "$1"
 }
 

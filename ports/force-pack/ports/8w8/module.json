@@ -1,0 +1,1261 @@
+{
+ "id": "8w8",
+ "name": "8W8",
+ "capabilities": {
+  "chain_params": [
+   {
+    "key": "bd_tune",
+    "name": "BD Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "bd_attack",
+    "name": "BD Attack",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 24,
+    "viz": false
+   },
+   {
+    "key": "bd_decay",
+    "name": "BD Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 87
+   },
+   {
+    "key": "bd_tone",
+    "name": "BD Tone",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 42
+   },
+   {
+    "key": "bd_drive",
+    "name": "BD Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "bd_dist_type",
+    "name": "BD Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "bd_level",
+    "name": "BD Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "sd_tune",
+    "name": "SD Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "sd_decay",
+    "name": "SD Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 108
+   },
+   {
+    "key": "sd_snappy",
+    "name": "SD Snappy",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 89
+   },
+   {
+    "key": "sd_drive",
+    "name": "SD Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "sd_dist_type",
+    "name": "SD Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "sd_level",
+    "name": "SD Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "lt_tune",
+    "name": "LT Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "lt_decay",
+    "name": "LT Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 68
+   },
+   {
+    "key": "lt_drive",
+    "name": "LT Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lt_dist_type",
+    "name": "LT Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "lt_level",
+    "name": "LT Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "mt_tune",
+    "name": "MT Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "mt_decay",
+    "name": "MT Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 56
+   },
+   {
+    "key": "mt_drive",
+    "name": "MT Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mt_dist_type",
+    "name": "MT Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "mt_level",
+    "name": "MT Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "ht_tune",
+    "name": "HT Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "ht_decay",
+    "name": "HT Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 53
+   },
+   {
+    "key": "ht_drive",
+    "name": "HT Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ht_dist_type",
+    "name": "HT Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "ht_level",
+    "name": "HT Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "lc_tune",
+    "name": "LC Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "lc_decay",
+    "name": "LC Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 58
+   },
+   {
+    "key": "lc_drive",
+    "name": "LC Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lc_dist_type",
+    "name": "LC Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "lc_level",
+    "name": "LC Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "mc_tune",
+    "name": "MC Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "mc_decay",
+    "name": "MC Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 36
+   },
+   {
+    "key": "mc_drive",
+    "name": "MC Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mc_dist_type",
+    "name": "MC Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "mc_level",
+    "name": "MC Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "hc_tune",
+    "name": "HC Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "hc_decay",
+    "name": "HC Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 34
+   },
+   {
+    "key": "hc_drive",
+    "name": "HC Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "hc_dist_type",
+    "name": "HC Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "hc_level",
+    "name": "HC Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "rs_tune",
+    "name": "RS Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "rs_decay",
+    "name": "RS Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 40
+   },
+   {
+    "key": "rs_drive",
+    "name": "RS Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "rs_dist_type",
+    "name": "RS Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "rs_level",
+    "name": "RS Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "cl_tune",
+    "name": "CL Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cl_decay",
+    "name": "CL Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cl_drive",
+    "name": "CL Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cl_dist_type",
+    "name": "CL Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "cl_level",
+    "name": "CL Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "ma_tune",
+    "name": "MA Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "ma_attack",
+    "name": "MA Attack",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 32
+   },
+   {
+    "key": "ma_decay",
+    "name": "MA Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 51
+   },
+   {
+    "key": "ma_drive",
+    "name": "MA Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ma_dist_type",
+    "name": "MA Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "ma_level",
+    "name": "MA Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "cp_tune",
+    "name": "CP Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cp_decay",
+    "name": "CP Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cp_drive",
+    "name": "CP Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cp_dist_type",
+    "name": "CP Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "cp_level",
+    "name": "CP Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "cb_tune",
+    "name": "CB Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cb_decay",
+    "name": "CB Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 62
+   },
+   {
+    "key": "cb_drive",
+    "name": "CB Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cb_dist_type",
+    "name": "CB Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "cb_level",
+    "name": "CB Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "ch_tune",
+    "name": "CH Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "ch_decay",
+    "name": "CH Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 47
+   },
+   {
+    "key": "ch_drive",
+    "name": "CH Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ch_dist_type",
+    "name": "CH Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "ch_level",
+    "name": "CH Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "hh_choke",
+    "name": "Choke",
+    "type": "enum",
+    "options": [
+     "Off",
+     "CH>OH",
+     "Mutual"
+    ],
+    "default": 1
+   },
+   {
+    "key": "oh_tune",
+    "name": "OH Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "oh_decay",
+    "name": "OH Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 74
+   },
+   {
+    "key": "oh_drive",
+    "name": "OH Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "oh_dist_type",
+    "name": "OH Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "oh_level",
+    "name": "OH Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "cy_tune",
+    "name": "CY Tune",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64
+   },
+   {
+    "key": "cy_decay",
+    "name": "CY Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 70
+   },
+   {
+    "key": "cy_drive",
+    "name": "CY Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cy_dist_type",
+    "name": "CY Distortion",
+    "type": "enum",
+    "options": [
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "cy_level",
+    "name": "CY Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 64,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "master_dist",
+    "name": "Master Dist",
+    "type": "enum",
+    "options": [
+     "Off",
+     "Diode",
+     "Clip",
+     "SAT",
+     "BFZ",
+     "PDIST",
+     "Fold",
+     "Crush"
+    ],
+    "default": 0
+   },
+   {
+    "key": "master_drive",
+    "name": "Master Drive",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "comp",
+    "name": "Comp",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "volume",
+    "name": "Volume",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 100,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "vel_depth",
+    "name": "Velocity",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 127
+   },
+   {
+    "key": "note_map",
+    "name": "Note Map",
+    "type": "enum",
+    "options": [
+     "Rack 36",
+     "GM"
+    ],
+    "default": 0
+   },
+   {
+    "key": "sd_rev",
+    "name": "SD Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "sd_dly",
+    "name": "SD Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lt_rev",
+    "name": "LT Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lt_dly",
+    "name": "LT Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mt_rev",
+    "name": "MT Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mt_dly",
+    "name": "MT Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ht_rev",
+    "name": "HT Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ht_dly",
+    "name": "HT Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lc_rev",
+    "name": "LC Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "lc_dly",
+    "name": "LC Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mc_rev",
+    "name": "MC Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "mc_dly",
+    "name": "MC Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "hc_rev",
+    "name": "HC Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "hc_dly",
+    "name": "HC Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "rs_rev",
+    "name": "RS Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "rs_dly",
+    "name": "RS Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cl_rev",
+    "name": "CL Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cl_dly",
+    "name": "CL Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ma_rev",
+    "name": "MA Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ma_dly",
+    "name": "MA Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cp_rev",
+    "name": "CP Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cp_dly",
+    "name": "CP Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cb_rev",
+    "name": "CB Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cb_dly",
+    "name": "CB Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ch_rev",
+    "name": "CH Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "ch_dly",
+    "name": "CH Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "oh_rev",
+    "name": "OH Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "oh_dly",
+    "name": "OH Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cy_rev",
+    "name": "CY Rev",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "cy_dly",
+    "name": "CY Dly",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 0
+   },
+   {
+    "key": "rev_decay",
+    "name": "REV Decay",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 73
+   },
+   {
+    "key": "rev_tone",
+    "name": "REV Tone",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 57
+   },
+   {
+    "key": "rev_hpf",
+    "name": "REV HPF",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 62
+   },
+   {
+    "key": "rev_level",
+    "name": "REV Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 85,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "dly_time",
+    "name": "DLY Time",
+    "type": "enum",
+    "options": [
+     "1/32",
+     "1/16T",
+     "1/16",
+     "1/8T",
+     "1/16.",
+     "1/8",
+     "1/4T",
+     "1/8.",
+     "1/4",
+     "1/2T",
+     "1/4.",
+     "1/2",
+     "1/2."
+    ],
+    "default": 7
+   },
+   {
+    "key": "dly_fdbk",
+    "name": "DLY Fdbk",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 52
+   },
+   {
+    "key": "dly_tone",
+    "name": "DLY Tone",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 51
+   },
+   {
+    "key": "dly_hpf",
+    "name": "DLY HPF",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 62
+   },
+   {
+    "key": "dly_level",
+    "name": "DLY Level",
+    "type": "int",
+    "min": 0,
+    "max": 127,
+    "default": 85,
+    "viz": {
+     "kind": "fader"
+    }
+   },
+   {
+    "key": "ui_focus",
+    "name": "Focus",
+    "type": "int",
+    "min": 0,
+    "max": 16,
+    "default": 0
+   },
+   {
+    "key": "mutes",
+    "name": "Mutes",
+    "type": "int",
+    "min": 0,
+    "max": 65535,
+    "default": 0
+   }
+  ],
+  "ui_hierarchy": null
+ }
+}

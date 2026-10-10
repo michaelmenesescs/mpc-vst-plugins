@@ -18,7 +18,8 @@ Layout file:
     knob    cx= cy= r= label="..." key=<param> [ink=<hex>] [ink_dim=<hex>]   (ink / ink_dim: this knob's name and value text colours)
     toggle  cx= cy= label="..." key=<param>
     button  cx= cy= label="..." key=<param>          (trigger)
-    enum_h  cx= cy= label="..." key=<param> [options="A,B,.."] [sw=<px>] [rows=<n>]
+    enum_h  cx= cy= label="..." key=<param> [options="A,B,.."] [sw=<px>] [rows=<n>] [at="x:y,.."]
+                                                       (at=: each option's centre, screen px, in place of a row)
     enum_v  cx= cy= label="..." key=<param> [options="A,B,.."] [sw=<px>]   (options default to the param's)
     slider_v cx= cy= w= h= label="..." key=<param>     (vertical slider; value text below)
     slider_h cx= cy= w= h= label="..." key=<param>     (horizontal slider; value text below)
@@ -440,6 +441,11 @@ def seg_rects(w):
         y0 = w["cy"] - (n * (sh + gap)) // 2
         return [(w["cx"] - sw // 2, y0 + i * (sh + gap), sw, sh) for i in range(n)]
     sw, sh, gap = w.get("sw") or 117, w.get("sh") or 33, 2   # sw=/sh=: segment size
+    if w.get("at"):   # at="x:y,x:y,..": each option's own centre (screen px), as a machine places its buttons
+        pts = [tuple(int(float(v)) for v in xy.split(":")) for xy in str(w["at"]).split(",")]
+        if len(pts) != n:
+            raise SystemExit("enum_h %s: at= has %d positions for %d options" % (w.get("key"), len(pts), n))
+        return [(x - sw // 2, y - sh // 2, sw, sh) for x, y in pts]
     rows = w.get("rows", 1)
     per = -(-n // rows)
     out = []
