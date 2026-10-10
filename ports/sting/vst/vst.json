@@ -1,0 +1,1 @@
+{"build":{"cflags":["-Isrc","-Isrc/dsp","-std=gnu++17"],"libs":["-lm","-ldl"],"root":"..","sources":["src/engine.cpp"]},"defines":{"DISPLAY_REV_NO_UPDATE":0,"HAS_DISPLAY_REV":1,"HAS_LFO_BPM":1,"HAS_TRANSPORT":1},"layout":"layout.conf","name":"sting","params":"params.json","so":"sting.so","uid":"STG1","vendor":"Citizen Science","version":10000}

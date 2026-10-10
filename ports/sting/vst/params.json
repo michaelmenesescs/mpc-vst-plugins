@@ -1,0 +1,204 @@
+{
+ "name": "sting",
+ "params": [
+  {
+   "key": "seed",
+   "name": "Seed",
+   "min": 0,
+   "max": 999999,
+   "default": 12345,
+   "display": "int",
+   "nudge_pct": 10
+  },
+  {
+   "key": "steps",
+   "name": "Steps",
+   "min": 1,
+   "max": 32,
+   "default": 16,
+   "display": "int"
+  },
+  {
+   "key": "rate",
+   "name": "Rate",
+   "options": [
+    "1/32",
+    "1/16T",
+    "1/16",
+    "1/8T",
+    "1/8",
+    "1/4"
+   ],
+   "default": "1/16"
+  },
+  {
+   "key": "scale",
+   "name": "Scale",
+   "options": [
+    "Chromatic",
+    "Major",
+    "Minor",
+    "Dorian",
+    "Phrygian",
+    "Lydian",
+    "Mixolydian",
+    "Harm Minor",
+    "Pent Major",
+    "Pent Minor",
+    "Blues",
+    "Whole Tone"
+   ],
+   "default": "Minor"
+  },
+  {
+   "key": "root",
+   "name": "Root",
+   "options": [
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B"
+   ],
+   "default": "C"
+  },
+  {
+   "key": "density",
+   "name": "Density",
+   "min": 0,
+   "max": 100,
+   "default": 70,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "chaos",
+   "name": "Chaos",
+   "min": 0,
+   "max": 100,
+   "default": 50,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "accent_amt",
+   "name": "Accents",
+   "min": 0,
+   "max": 100,
+   "default": 30,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "slide_prob",
+   "name": "Slides",
+   "min": 0,
+   "max": 100,
+   "default": 25,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "gate_len",
+   "name": "Gate Len",
+   "min": 5,
+   "max": 100,
+   "default": 50,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "swing",
+   "name": "Swing",
+   "min": 0,
+   "max": 75,
+   "default": 0,
+   "display": "int",
+   "unit": "%"
+  },
+  {
+   "key": "octave",
+   "name": "Octave",
+   "min": 0,
+   "max": 7,
+   "default": 2,
+   "display": "int"
+  },
+  {
+   "key": "channel",
+   "name": "MIDI Ch",
+   "min": 1,
+   "max": 16,
+   "default": 1,
+   "display": "int"
+  },
+  {
+   "key": "velocity",
+   "name": "Velocity",
+   "min": 1,
+   "max": 127,
+   "default": 100,
+   "display": "int"
+  },
+  {
+   "key": "accent_vel",
+   "name": "Accent Vel",
+   "min": 1,
+   "max": 127,
+   "default": 127,
+   "display": "int"
+  },
+  {
+   "key": "regenerate",
+   "name": "Regenerate",
+   "momentary": true
+  },
+  {
+   "key": "status",
+   "name": "Port",
+   "display": "string",
+   "poll": false
+  }
+ ],
+ "sections": [
+  {
+   "label": "Pattern",
+   "keys": [
+    "seed",
+    "steps",
+    "rate",
+    "scale",
+    "root"
+   ]
+  },
+  {
+   "label": "Generation",
+   "keys": [
+    "density",
+    "chaos",
+    "accent_amt",
+    "slide_prob",
+    "regenerate"
+   ]
+  },
+  {
+   "label": "Output",
+   "keys": [
+    "gate_len",
+    "swing",
+    "octave",
+    "channel",
+    "velocity",
+    "accent_vel",
+    "status"
+   ]
+  }
+ ]
+}
