@@ -8,3 +8,6 @@ __pycache__/
 Assets/
 catalog/dist/
 catalog/.cache/
+
+# local reference photos for skin geometry (never commit)
+ref/
