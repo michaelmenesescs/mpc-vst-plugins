@@ -1,0 +1,9 @@
+/* dp4: Ensoniq DP/4-inspired hardware faceplate (hand-written) */
+.frame-border { stroke: none; fill: none; }
+.frame-rule { display: none; }
+.frame-title { fill: #e8e8ea; font-size: 17px; letter-spacing: 0.12em; }
+.look-line { stroke: #f4f4f2; }
+.box { fill: #17102e; stroke: #2c2148; }
+.box-label { fill: #8f8ab8; }
+.text { fill: #e8e8ea; }
+.look-notch { stroke: #1a1a1a; }
