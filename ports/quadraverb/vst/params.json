@@ -1,0 +1,335 @@
+[
+  {
+    "default": "Chorus>Dly>Verb",
+    "key": "config",
+    "name": "Config",
+    "options": [
+      "Pitch>Dly>Verb",
+      "Chorus>Dly>Verb",
+      "Flange>Dly>Verb",
+      "Phaser>Verb",
+      "Trem>Dly>Verb",
+      "Reso+Ring>Verb"
+    ]
+  },
+  {
+    "default": 0,
+    "key": "eq_low",
+    "max": 12,
+    "min": -12,
+    "name": "EQ Low",
+    "unit": "dB"
+  },
+  {
+    "default": 0,
+    "key": "eq_mid",
+    "max": 12,
+    "min": -12,
+    "name": "EQ Mid",
+    "unit": "dB"
+  },
+  {
+    "default": 800,
+    "key": "eq_midfreq",
+    "max": 4000,
+    "min": 200,
+    "name": "EQ Mid Freq",
+    "unit": "Hz"
+  },
+  {
+    "default": 0,
+    "key": "eq_high",
+    "max": 12,
+    "min": -12,
+    "name": "EQ High",
+    "unit": "dB"
+  },
+  {
+    "default": "Hall",
+    "key": "rev_type",
+    "name": "Reverb Type",
+    "options": [
+      "Room",
+      "Hall",
+      "Plate",
+      "Small"
+    ]
+  },
+  {
+    "default": 70,
+    "display": "int",
+    "key": "rev_size",
+    "max": 100,
+    "min": 20,
+    "name": "Reverb Size",
+    "unit": "%"
+  },
+  {
+    "default": 55,
+    "display": "int",
+    "key": "rev_decay",
+    "max": 100,
+    "min": 0,
+    "name": "Reverb Decay",
+    "unit": "%"
+  },
+  {
+    "default": 40,
+    "display": "int",
+    "key": "rev_damp",
+    "max": 100,
+    "min": 0,
+    "name": "Reverb Damp",
+    "unit": "%"
+  },
+  {
+    "default": 35,
+    "display": "int",
+    "key": "rev_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Reverb Mix",
+    "unit": "%"
+  },
+  {
+    "default": "1/4",
+    "key": "dly_sync",
+    "name": "Delay Sync",
+    "options": [
+      "Off",
+      "1/8",
+      "1/4D",
+      "1/4",
+      "1/2D",
+      "1/2"
+    ]
+  },
+  {
+    "default": 375,
+    "key": "dly_time",
+    "max": 2000,
+    "min": 1,
+    "name": "Delay Time",
+    "unit": "ms"
+  },
+  {
+    "default": 35,
+    "display": "int",
+    "key": "dly_fb",
+    "max": 95,
+    "min": 0,
+    "name": "Delay Feedback",
+    "unit": "%"
+  },
+  {
+    "default": 25,
+    "display": "int",
+    "key": "dly_damp",
+    "max": 100,
+    "min": 0,
+    "name": "Delay Damp",
+    "unit": "%"
+  },
+  {
+    "default": 30,
+    "display": "int",
+    "key": "dly_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Delay Mix",
+    "unit": "%"
+  },
+  {
+    "default": 0.8,
+    "key": "cho_rate",
+    "max": 5,
+    "min": 0.05,
+    "name": "Chorus Rate",
+    "unit": "Hz"
+  },
+  {
+    "default": 60,
+    "display": "int",
+    "key": "cho_depth",
+    "max": 100,
+    "min": 0,
+    "name": "Chorus Depth",
+    "unit": "%"
+  },
+  {
+    "default": 40,
+    "display": "int",
+    "key": "cho_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Chorus Mix",
+    "unit": "%"
+  },
+  {
+    "default": 0.4,
+    "key": "fla_rate",
+    "max": 5,
+    "min": 0.05,
+    "name": "Flanger Rate",
+    "unit": "Hz"
+  },
+  {
+    "default": 70,
+    "display": "int",
+    "key": "fla_depth",
+    "max": 100,
+    "min": 0,
+    "name": "Flanger Depth",
+    "unit": "%"
+  },
+  {
+    "default": 40,
+    "display": "int",
+    "key": "fla_fb",
+    "max": 80,
+    "min": 0,
+    "name": "Flanger Feedback",
+    "unit": "%"
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "fla_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Flanger Mix",
+    "unit": "%"
+  },
+  {
+    "default": 0.5,
+    "key": "pha_rate",
+    "max": 5,
+    "min": 0.05,
+    "name": "Phaser Rate",
+    "unit": "Hz"
+  },
+  {
+    "default": 70,
+    "display": "int",
+    "key": "pha_depth",
+    "max": 100,
+    "min": 0,
+    "name": "Phaser Depth",
+    "unit": "%"
+  },
+  {
+    "default": "6",
+    "key": "pha_stages",
+    "name": "Phaser Stages",
+    "options": [
+      "4",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "pha_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Phaser Mix",
+    "unit": "%"
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "pit_semi",
+    "max": 12,
+    "min": -12,
+    "name": "Pitch Semitones",
+    "unit": "st"
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "pit_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Pitch Mix",
+    "unit": "%"
+  },
+  {
+    "default": 800,
+    "key": "res_freq",
+    "max": 8000,
+    "min": 100,
+    "name": "Reso Freq",
+    "unit": "Hz"
+  },
+  {
+    "default": 60,
+    "display": "int",
+    "key": "res_reso",
+    "max": 100,
+    "min": 0,
+    "name": "Reso Resonance",
+    "unit": "%"
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "res_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Reso Mix",
+    "unit": "%"
+  },
+  {
+    "default": 220,
+    "key": "ring_rate",
+    "max": 2000,
+    "min": 0.5,
+    "name": "Ring Rate",
+    "unit": "Hz"
+  },
+  {
+    "default": 0,
+    "display": "int",
+    "key": "ring_mix",
+    "max": 100,
+    "min": 0,
+    "name": "Ring Mix",
+    "unit": "%"
+  },
+  {
+    "default": 4,
+    "key": "trem_rate",
+    "max": 10,
+    "min": 0.1,
+    "name": "Trem Rate",
+    "unit": "Hz"
+  },
+  {
+    "default": 60,
+    "display": "int",
+    "key": "trem_depth",
+    "max": 100,
+    "min": 0,
+    "name": "Trem Depth",
+    "unit": "%"
+  },
+  {
+    "default": "Tremolo",
+    "key": "trem_mode",
+    "name": "Trem Mode",
+    "options": [
+      "Tremolo",
+      "AutoPan"
+    ]
+  },
+  {
+    "default": 60,
+    "display": "int",
+    "key": "mix",
+    "max": 100,
+    "min": 0,
+    "name": "Master Mix",
+    "unit": "%"
+  }
+]

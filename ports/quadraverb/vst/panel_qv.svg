@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
+<defs>
+<linearGradient id="qvf" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#161619"/><stop offset="1" stop-color="#0c0c0e"/>
+</linearGradient>
+<radialGradient id="qvsc" cx="0.4" cy="0.35" r="0.8">
+<stop offset="0" stop-color="#e8e8e8"/><stop offset="1" stop-color="#4a4a4e"/>
+</radialGradient>
+<filter id="qvg" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11"/>
+<feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1280" height="628" fill="#060607"/>
+<rect x="0" y="0" width="44" height="628" fill="#09090b"/>
+<rect x="1236" y="0" width="44" height="628" fill="#09090b"/>
+<circle cx="22" cy="34" r="9" fill="url(#qvsc)"/>
+<circle cx="22" cy="594" r="9" fill="url(#qvsc)"/>
+<circle cx="1258" cy="34" r="9" fill="url(#qvsc)"/>
+<circle cx="1258" cy="594" r="9" fill="url(#qvsc)"/>
+<rect x="44" y="10" width="1192" height="608" rx="8" fill="url(#qvf)" stroke="#26262c" stroke-width="1"/>
+<rect x="44" y="10" width="1192" height="608" filter="url(#qvg)"/>
+<!-- title block -->
+<text x="78" y="54" font-size="36" fill="#4a9eff" text-anchor="start" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:800;font-style:italic;letter-spacing:0.03em;">QUADRAVERB</text>
+<text x="78" y="80" font-size="11" fill="#62626c" text-anchor="start" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.18em;">MULTI EFFECTS PROCESSOR</text>
+<!-- signal LED ladder -->
+<g>
+<circle cx="120" cy="130" r="6" fill="#5a1210" stroke="#2a0806"/><text x="136" y="130" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">CLIP</text>
+<circle cx="120" cy="152" r="6" fill="#0f3a12" stroke="#06200a"/><text x="136" y="152" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-6dB</text>
+<circle cx="120" cy="174" r="6" fill="#0f3a12" stroke="#06200a"/><text x="136" y="174" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-12dB</text>
+<circle cx="120" cy="196" r="6" fill="#3a3410" stroke="#201c06"/><text x="136" y="196" font-size="10" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">-20dB</text>
+</g>
+<text x="120" y="222" font-size="10" fill="#62626c" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.14em;">SIGNAL</text>
+<!-- LCD bezel -->
+<rect x="300" y="120" width="400" height="120" rx="6" fill="#040404" stroke="#2c2c32" stroke-width="1.5"/>
+<rect x="312" y="132" width="376" height="96" fill="#0e2a0e"/>
+<rect x="312" y="132" width="376" height="96" fill="none" stroke="#1e4a1e" stroke-width="1"/>
+<text x="500" y="140" font-size="9" fill="#3f7a3f" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.2em;">PROGRAM</text>
+<!-- PAGE / VALUE buttons -->
+<g>
+<rect x="724" y="130" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="724" y="184" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="772" y="130" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+<rect x="772" y="184" width="40" height="46" rx="4" fill="#1b1b1f" stroke="#38383f"/>
+</g>
+<g fill="#c9c9d2">
+<polygon points="744,142 758,158 730,158"/><polygon points="744,218 758,202 730,202"/>
+<polygon points="792,142 806,158 778,158"/><polygon points="792,218 806,202 778,202"/>
+</g>
+<g font-size="10" fill="#8a8a94" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.1em;">
+<text x="744" y="248">PAGE</text><text x="792" y="248">VALUE</text>
+</g>
+<!-- effect block buttons -->
+<g font-size="9" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">
+<rect x="836" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="857" y="151">PROG</text>
+<rect x="884" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="905" y="151">VERB</text>
+<rect x="932" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="953" y="151">DLY</text>
+<rect x="980" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1001" y="151">PTCH</text>
+<rect x="1028" y="130" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1049" y="151">EQ</text>
+<rect x="836" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="857" y="201">STOR</text>
+<rect x="884" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="905" y="201">CONF</text>
+<rect x="932" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="953" y="201">MIX</text>
+<rect x="980" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1001" y="201">MIDI</text>
+<rect x="1028" y="180" width="42" height="40" rx="3" fill="#1b1b1f" stroke="#38383f"/><text x="1049" y="201">BYP</text>
+</g>
+<!-- data wheel -->
+<circle cx="1155" cy="180" r="63" fill="none" stroke="#2c2c32" stroke-width="2"/>
+<text x="1155" y="258" font-size="13" fill="#8a8a94" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.28em;">DATA</text>
+<!-- lower printed legend -->
+
+<!-- printed configuration chart (artwork) -->
+<text x="500" y="306" font-size="10" fill="#62626c" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;letter-spacing:0.2em;">CONFIGURATION</text>
+<text x="640" y="396" font-size="11" fill="#62626c" text-anchor="middle" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;letter-spacing:0.24em;">CONFIGURATION CHART</text>
+<text x="80" y="420" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Pitch>Dly>Verb</text>
+<rect x="300" y="406" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="420" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,414 412,426 422,420" fill="#4a9eff"/>
+<rect x="430" y="406" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="420" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">PITCH</text>
+<polygon points="542,414 542,426 552,420" fill="#4a9eff"/>
+<rect x="560" y="406" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="420" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">DELAY</text>
+<polygon points="672,414 672,426 682,420" fill="#4a9eff"/>
+<rect x="690" y="406" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="420" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="802,414 802,426 812,420" fill="#4a9eff"/>
+<rect x="820" y="406" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="872" y="420" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+<text x="80" y="456" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Chorus>Dly>Verb</text>
+<rect x="300" y="442" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="456" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,450 412,462 422,456" fill="#4a9eff"/>
+<rect x="430" y="442" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="456" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">CHORUS</text>
+<polygon points="542,450 542,462 552,456" fill="#4a9eff"/>
+<rect x="560" y="442" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="456" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">DELAY</text>
+<polygon points="672,450 672,462 682,456" fill="#4a9eff"/>
+<rect x="690" y="442" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="456" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="802,450 802,462 812,456" fill="#4a9eff"/>
+<rect x="820" y="442" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="872" y="456" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+<text x="80" y="492" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Flange>Dly>Verb</text>
+<rect x="300" y="478" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="492" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,486 412,498 422,492" fill="#4a9eff"/>
+<rect x="430" y="478" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="492" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">FLANGE</text>
+<polygon points="542,486 542,498 552,492" fill="#4a9eff"/>
+<rect x="560" y="478" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="492" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">DELAY</text>
+<polygon points="672,486 672,498 682,492" fill="#4a9eff"/>
+<rect x="690" y="478" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="492" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="802,486 802,498 812,492" fill="#4a9eff"/>
+<rect x="820" y="478" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="872" y="492" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+<text x="80" y="528" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Phaser>Verb</text>
+<rect x="300" y="514" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="528" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,522 412,534 422,528" fill="#4a9eff"/>
+<rect x="430" y="514" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="528" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">PHASER</text>
+<polygon points="542,522 542,534 552,528" fill="#4a9eff"/>
+<rect x="560" y="514" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="528" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="672,522 672,534 682,528" fill="#4a9eff"/>
+<rect x="690" y="514" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="528" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+<text x="80" y="564" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Trem>Dly>Verb</text>
+<rect x="300" y="550" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="564" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,558 412,570 422,564" fill="#4a9eff"/>
+<rect x="430" y="550" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="564" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">TREMOLO</text>
+<polygon points="542,558 542,570 552,564" fill="#4a9eff"/>
+<rect x="560" y="550" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="564" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">DELAY</text>
+<polygon points="672,558 672,570 682,564" fill="#4a9eff"/>
+<rect x="690" y="550" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="564" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="802,558 802,570 812,564" fill="#4a9eff"/>
+<rect x="820" y="550" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="872" y="564" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+<text x="80" y="600" font-size="13" fill="#8a8a94" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;">Reso+Ring>Verb</text>
+<rect x="300" y="586" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="352" y="600" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">EQ</text>
+<polygon points="412,594 412,606 422,600" fill="#4a9eff"/>
+<rect x="430" y="586" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="482" y="600" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">RESONATOR</text>
+<polygon points="542,594 542,606 552,600" fill="#4a9eff"/>
+<rect x="560" y="586" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="612" y="600" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">RING MOD</text>
+<polygon points="672,594 672,606 682,600" fill="#4a9eff"/>
+<rect x="690" y="586" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="742" y="600" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">REVERB</text>
+<polygon points="802,594 802,606 812,600" fill="#4a9eff"/>
+<rect x="820" y="586" width="104" height="28" rx="4" fill="#141418" stroke="#33333c"/>
+<text x="872" y="600" font-size="11" fill="#c9c9d2" text-anchor="middle" dominant-baseline="central" style="font-family:FreeSans,Liberation Sans,Titillium Web,sans-serif;font-weight:700;">MIX</text>
+</svg>
