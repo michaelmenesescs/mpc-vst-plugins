@@ -61,6 +61,22 @@ from each reference photo, so an edit can't quietly move a knob off the hardware
 `build-tools/` has the batch tools that made the ports (`gen_ports.py` writes vst.json/module.json; it regenerates
 vst.json without the `layout`/`art` keys these skins need, so rerun `hwskin.py` after it).
 
+## Fixes to the module sources
+- `patches/schwung-303.patch` (apply in the schwung-303 checkout before building): each Devil Fish knob sets only its
+  own engine value, and Shaper Drive (which rebuilds the square wave's table, ~0.7 ms on a Force) is applied from
+  render at most every 1024 frames. Before it, any Devil Fish knob rebuilt the table and a Q-Link sweep reached
+  105% of a block on the Force; after, 31%.
+- Chiptune builds the Game Boy emulator through `ports/chiptune/gb_unity.cpp` (its `Blip_Buffer` renamed). Linked
+  next to the NES emulator's own `Blip_Buffer` with `--allow-multiple-definition`, one constructor ran on the
+  other's object and the plugin aborted as soon as it was created. `gen_ports.py` no longer links duplicates that way.
+
+## Status (2026-10-11)
+On a Force (MPC OS 3.x, 2026-10-11): all 25 installed. Each of the 15 instruments loaded on a track from the
+touchscreen and MPC read its skin (`TUI.json` and images) from the plugin folder; the 10 effects load on the
+device and report the vendor and name of their skin folder (they were not put on an insert slot). CPU bench: every
+plugin PASS or WARN, none over budget. The panels themselves (knob positions, Q-Link order) still need a look on
+the screen by someone at the device.
+
 ## Status (2026-10-10)
 Offline: every skin builds with 0 real checker warnings; previews overlaid on the reference photos (808, 909, 606,
 CR-78 and MicroFreak redrawn at the photos' geometry on 2026-10-10); installer

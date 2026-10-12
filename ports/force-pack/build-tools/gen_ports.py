@@ -315,8 +315,16 @@ def main():
             cflags.append(cxx_std(repo))
         libs = ["-lm"]
         base = [os.path.basename(s) for s in sources]
-        if len(base) != len(set(base)):   # e.g. two Blip_Buffer.cpp (nes + gb emu): upstream localizes them
-            libs.append("-Wl,--allow-multiple-definition")
+        if len(base) != len(set(base)):
+            # Two libraries with same-named classes (chiptune: the NES and GB emulators' Blip_Buffer). Linking them
+            # with --allow-multiple-definition ran one's constructor on the other's object and crashed on load, so
+            # build the second through a renaming unity file in vst/ (see schwung-chiptune vst/gb_unity.cpp).
+            unity = os.path.join(vdir, "gb_unity.cpp")
+            if os.path.exists(unity):
+                sources = [x for x in sources if "gb_snd_emu" not in x] + ["vst/gb_unity.cpp"]
+            else:
+                print("WARNING %s: duplicate source names %s; the link will fail until they are separated"
+                      % (name, sorted({b for b in base if base.count(b) > 1})))
         cfg["build"] = {"root": "..", "sources": sources, "cflags": cflags, "libs": libs}
         json.dump(cfg, open(os.path.join(vdir, "vst.json"), "w"), indent=1)
         print("%-26s params=%-4d (%-11s) sources=%-4d effect=%s" % (

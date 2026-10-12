@@ -20,6 +20,7 @@ while read -r id dir; do
   cp "$src"/panel_*.svg "$dst/" 2>/dev/null || true
   cp "$src"/hw_*.svg "$dst/" 2>/dev/null || true
   cp "$src"/knob_*.svg "$dst/" 2>/dev/null || true
+  cp "$src"/*_unity.cpp "$dst/" 2>/dev/null || true   # build-only sources the port adds (chiptune)
 done < ports.txt
 rsync -a --delete gallery/ "$FP/gallery/"
 echo synced

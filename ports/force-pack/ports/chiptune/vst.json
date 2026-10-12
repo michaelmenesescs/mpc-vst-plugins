@@ -11,12 +11,8 @@
    "src/libs/nes_snd_emu/nes_apu/Nes_Apu.cpp",
    "src/libs/nes_snd_emu/nes_apu/Nes_Oscs.cpp",
    "src/libs/nes_snd_emu/nes_apu/Blip_Buffer.cpp",
-   "src/libs/gb_snd_emu/Gb_Apu.cpp",
-   "src/libs/gb_snd_emu/Gb_Oscs.cpp",
-   "src/libs/gb_snd_emu/Blip_Buffer.cpp",
-   "src/libs/gb_snd_emu/Multi_Buffer.cpp",
-   "src/libs/gb_snd_emu/gb_apu_wrapper.cpp",
-   "src/dsp/chiptune_plugin.cpp"
+   "src/dsp/chiptune_plugin.cpp",
+   "vst/gb_unity.cpp"
   ],
   "cflags": [
    "-Isrc",
@@ -27,8 +23,7 @@
    "-std=gnu++14"
   ],
   "libs": [
-   "-lm",
-   "-Wl,--allow-multiple-definition"
+   "-lm"
   ]
  },
  "layout": "layout.conf",

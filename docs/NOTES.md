@@ -895,6 +895,20 @@ Both addins (remote 0.1.0 → 0.2.0, usb-audio 0.1.0) were installed, upgraded a
 - Remote addin: its capture opened `/dev/dri/card0`, and DRM makes the first opener of a card with no master the master. When it got there before MPC, MPC failed with "Failed to initialise display" and systemd gave up after its restart limit (`systemctl reset-failed acvs` and start). **Any addin or tool that opens the DRM card must `DRM_IOCTL_DROP_MASTER` right after opening it.** While MPC boots, the card scans out the console framebuffer (3840x800), not MPC's 1280x800. Fixed in 0.2.0.
 - Remote addin: Chromium shows a multipart part only once the next part arrives, so a stream that sends frames only on change must resend the last frame when the screen goes idle; without that the page is blank until something changes. Fixed in 0.2.0.
 
+### 2026-10-11: Force pack on a Force: skins load, two engine bugs fixed
+- Plugins whose vendor was over 31 characters showed the generic parameter page (see the skin folder rule above).
+- MPC opens a plugin's `Plugin Skins/TUI.json`, `Q-Links - 8by1.json` and the first page's images when the plugin is
+  created on a track (seen with an inotify watch), so a watch on the skin folders shows whether MPC found the skin
+  without looking at the screen.
+- Touches can be injected by writing evdev events (multi-touch protocol B: slot, tracking id, position, BTN_TOUCH,
+  SYN_REPORT) to the Force's `ILI2117 Touchscreen` node, `/dev/input/event0`; MPC reads that node directly. Axes are
+  0..2048 in panel orientation: for a point (x, y) on the 1280x800 screen, touch x = y*2.56 and touch y =
+  (1279-x)*1.6. A tap needs ~300 ms of hold; a double tap on a track header opens Track Settings, and a double tap
+  on its PLUGIN field opens the plugin list. Hardware buttons come over USB MIDI (`/dev/snd/midiC0D0`) and can't be
+  injected this way, so the plugin's own page and the insert slots weren't reachable.
+- Chiptune aborted when created (GB and NES `Blip_Buffer` linked together); 303's Devil Fish knobs rebuilt a wave
+  table per change. Both fixed (ports/force-pack/README.md, "Fixes to the module sources").
+
 ### 2026-10-03: MPC leaks `temp_*.img` files in /var/tmp/filmstrips at every start
 Each MPC start writes `temp_*.img` files (one start: 71 files, 178 MB; the largest 11 MB) to `/var/tmp/filmstrips` (the overlay's upper dir is on /data) and never deletes them. A day of restart-heavy testing left 2.5 GB of them and filled /data. Files no process holds open can be deleted. Delete them through `/var/tmp/filmstrips`: deleting them from the upper dir directly doesn't give the space back until `echo 2 > /proc/sys/vm/drop_caches`. Not a plugin or addin bug, but anything that restarts MPC often (installers, tests) adds to it.
 

@@ -1,0 +1,107 @@
+diff --git a/src/dsp/plugin.cpp b/src/dsp/plugin.cpp
+index b6c08b6..ea62b81 100644
+--- a/src/dsp/plugin.cpp
++++ b/src/dsp/plugin.cpp
+@@ -109,6 +109,11 @@ struct P303 {
+     // Decay range depends on devil_mod_switch (Devilfish: 30-3000, stock: 200-2000).
+     double decayMin = 200.0;
+     double decayMax = 2000.0;
++
++    // setTanhShaperDrive rebuilds the square wave's table (~0.7 ms on a Force): applied from render only when the
++    // value changed, at most every SHAPER_MIN_FRAMES, so a Q-Link sweep can't stack rebuilds into one block.
++    double shaper_applied = -1.0, shaper_wanted = 36.9;
++    int    shaper_wait = 0;
+ };
+ 
+ // ---------------------------------------------------------------------------
+@@ -125,26 +130,34 @@ static void apply_accent(P303 *p)    { p->engine.setAccent(   linToLin(p->n_acce
+ static void apply_volume(P303 *p)    { p->engine.setVolume(   linToLin(p->n_volume,    0, 1, -60.0,    0.0)); }
+ static void apply_tuning(P303 *p)    { p->engine.setTuning(   linToLin(p->n_tuning,    0, 1, 400.0,  480.0)); }
+ 
+-static void apply_devil_mods(P303 *p) {
+-    if (p->devil_mod_switch) {
+-        p->decayMin = 30.0;
+-        p->decayMax = 3000.0;
+-        p->engine.setAmpDecay(         linToLin(p->n_normal_decay,      0, 1,  30.0, 3000.0));
+-        p->engine.setAccentDecay(      linToLin(p->n_accent_decay,      0, 1,  30.0, 3000.0));
+-        p->engine.setFeedbackHighpass( linToExp(p->n_feedback_hpf,      0, 1, 350.0,  100.0));
+-        p->engine.setNormalAttack(     linToExp(p->n_soft_attack,       0, 1,   0.3, 3000.0));
+-        p->engine.setSlideTime(        linToLin(p->n_slide_time,        0, 1,   2.0,  360.0));
+-        p->engine.setTanhShaperDrive(  linToLin(p->n_tanh_shaper_drive, 0, 1,  25.0,   80.0));
+-    } else {
+-        p->decayMin = 200.0;
+-        p->decayMax = 2000.0;
+-        p->engine.setAmpDecay(1230.0);
+-        p->engine.setAccentDecay(200.0);
+-        p->engine.setFeedbackHighpass(150.0);
+-        p->engine.setNormalAttack(3.0);
+-        p->engine.setSlideTime(60.0);
+-        p->engine.setTanhShaperDrive(36.9);
++static const int SHAPER_MIN_FRAMES = 1024;
++
++// Each Devil Fish knob sets only its own engine value (stock values while the switch is off).
++static void apply_normal_decay(P303 *p) { p->engine.setAmpDecay(p->devil_mod_switch ? linToLin(p->n_normal_decay, 0, 1, 30.0, 3000.0) : 1230.0); }
++static void apply_accent_decay(P303 *p) { p->engine.setAccentDecay(p->devil_mod_switch ? linToLin(p->n_accent_decay, 0, 1, 30.0, 3000.0) : 200.0); }
++static void apply_feedback_hpf(P303 *p) { p->engine.setFeedbackHighpass(p->devil_mod_switch ? linToExp(p->n_feedback_hpf, 0, 1, 350.0, 100.0) : 150.0); }
++static void apply_soft_attack(P303 *p)  { p->engine.setNormalAttack(p->devil_mod_switch ? linToExp(p->n_soft_attack, 0, 1, 0.3, 3000.0) : 3.0); }
++static void apply_slide_time(P303 *p)   { p->engine.setSlideTime(p->devil_mod_switch ? linToLin(p->n_slide_time, 0, 1, 2.0, 360.0) : 60.0); }
++static void apply_shaper(P303 *p)       { p->shaper_wanted = p->devil_mod_switch ? linToLin(p->n_tanh_shaper_drive, 0, 1, 25.0, 80.0) : 36.9; }
++
++static void flush_shaper(P303 *p, int frames) {
++    if (p->shaper_wait > 0) p->shaper_wait -= frames;
++    if (p->shaper_wanted != p->shaper_applied && p->shaper_wait <= 0) {
++        p->engine.setTanhShaperDrive(p->shaper_wanted);
++        p->shaper_applied = p->shaper_wanted;
++        p->shaper_wait = SHAPER_MIN_FRAMES;
+     }
++}
++
++static void apply_devil_mods(P303 *p) {
++    p->decayMin = p->devil_mod_switch ? 30.0 : 200.0;
++    p->decayMax = p->devil_mod_switch ? 3000.0 : 2000.0;
++    apply_normal_decay(p);
++    apply_accent_decay(p);
++    apply_feedback_hpf(p);
++    apply_soft_attack(p);
++    apply_slide_time(p);
++    apply_shaper(p);
+     apply_decay(p);  // decayMin/Max changed
+ }
+ 
+@@ -168,6 +181,7 @@ static void* v2_create(const char *module_dir, const char *json_defaults) {
+     apply_volume(p);
+     apply_tuning(p);
+     apply_devil_mods(p);  // sets decay range then calls apply_decay
++    flush_shaper(p, 0);
+ 
+     return p;
+ }
+@@ -273,13 +287,13 @@ static void v2_set_param(void *instance, const char *key, const char *val) {
+     else if (!std::strcmp(key, "volume"))     { p->n_volume    = fv; apply_volume(p); }
+     else if (!std::strcmp(key, "tuning"))     { p->n_tuning    = fv; apply_tuning(p); }
+     else if (!std::strcmp(key, "waveform"))   { p->waveform    = std::atoi(val); apply_waveform(p, p->waveform); }
+-    else if (!std::strcmp(key, "devil_mod_switch")) { p->devil_mod_switch = std::atoi(val); apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "normal_decay")     ) { p->n_normal_decay      = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "accent_decay")     ) { p->n_accent_decay      = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "feedback_hpf")     ) { p->n_feedback_hpf      = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "soft_attack")      ) { p->n_soft_attack       = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "slide_time")       ) { p->n_slide_time        = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
+-    else if (!std::strcmp(key, "tanh_shaper_drive")) { p->n_tanh_shaper_drive = fv; if (p->devil_mod_switch) apply_devil_mods(p); }
++    else if (!std::strcmp(key, "devil_mod_switch")) { int on = std::atoi(val); if (on != p->devil_mod_switch) { p->devil_mod_switch = on; apply_devil_mods(p); } }
++    else if (!std::strcmp(key, "normal_decay")     ) { p->n_normal_decay      = fv; apply_normal_decay(p); }
++    else if (!std::strcmp(key, "accent_decay")     ) { p->n_accent_decay      = fv; apply_accent_decay(p); }
++    else if (!std::strcmp(key, "feedback_hpf")     ) { p->n_feedback_hpf      = fv; apply_feedback_hpf(p); }
++    else if (!std::strcmp(key, "soft_attack")      ) { p->n_soft_attack       = fv; apply_soft_attack(p); }
++    else if (!std::strcmp(key, "slide_time")       ) { p->n_slide_time        = fv; apply_slide_time(p); }
++    else if (!std::strcmp(key, "tanh_shaper_drive")) { p->n_tanh_shaper_drive = fv; apply_shaper(p); }
+     else if (!std::strcmp(key, "drive_model"))      { p->drive_model = std::atoi(val); p->drive_fx.set_model(p->drive_model); }
+     else if (!std::strcmp(key, "drive"))            { p->n_drive     = fv; }
+     else if (!std::strcmp(key, "drive_mix"))        { p->n_drive_mix = fv; }
+@@ -425,6 +439,7 @@ static void v2_render_block(void *instance, int16_t *out, int frames) {
+         return;
+     }
+     P303 *p = static_cast<P303 *>(instance);
++    flush_shaper(p, frames);
+ 
+     // Open303 emits mono. Render into a stack buffer.
+     float mono[MOVE_FRAMES_PER_BLOCK];
