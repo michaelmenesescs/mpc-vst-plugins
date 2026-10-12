@@ -1,6 +1,6 @@
 {
  "name": "303",
- "vendor": "Robin Schmidt midilab davemollen Charles Vestal",
+ "vendor": "charlesvestal",
  "uid": "303X",
  "version": 303,
  "so": "303.so",
@@ -41,5 +41,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "Robin Schmidt midilab davemollen Charles Vestal"
 }

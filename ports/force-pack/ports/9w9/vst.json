@@ -1,6 +1,6 @@
 {
  "name": "9W9",
- "vendor": "athousanddetails; after ER-99 (Matthew Cieplak)",
+ "vendor": "athousanddetails",
  "uid": "9W9X",
  "version": 20700,
  "so": "9w9.so",
@@ -24,5 +24,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "athousanddetails; after ER-99 (Matthew Cieplak)"
 }

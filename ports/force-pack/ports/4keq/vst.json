@@ -1,6 +1,6 @@
 {
  "name": "4K EQ",
- "vendor": "4K EQ 2 by Dusk Audio (GPL-3.0); port athousanddetails",
+ "vendor": "athousanddetails",
  "uid": "4KEQ",
  "version": 10003,
  "so": "4k-eq.so",
@@ -28,5 +28,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "4K EQ 2 by Dusk Audio (GPL-3.0); port athousanddetails"
 }

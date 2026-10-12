@@ -1,6 +1,6 @@
 {
  "name": "Junologue Chorus",
- "vendor": "Peter Allwin (port charlesvestal)",
+ "vendor": "Peter Allwin",
  "uid": "Juno",
  "version": 102,
  "so": "junologue-chorus.so",
@@ -21,5 +21,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "Peter Allwin (port charlesvestal)"
 }

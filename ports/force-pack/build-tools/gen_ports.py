@@ -261,6 +261,10 @@ def uid_for(name, used):
     return cand
 
 
+# Short vendors for modules whose author credit is longer than the 31 characters MPC reads (gen_vst.py rejects longer).
+VENDOR_SHORT = {"303": "charlesvestal", "Midiverb": "charlesvestal", "4K EQ": "athousanddetails"}
+
+
 def version_int(v):
     p = [int(x) for x in re.findall(r'\d+', str(v))[:3]] + [0, 0, 0]
     return p[0] * 10000 + p[1] * 100 + p[2]
@@ -276,6 +280,9 @@ def main():
         vendor = re.sub(r'\s*[Cc]ommunity\s*', '', vendor)
         vendor = re.sub(r'[\\/:*?"<>|]+', ' ', vendor)          # no path chars: '/' would nest the skin folder
         vendor = re.sub(r'\s+', ' ', vendor).strip() or "Move Everything"
+        credits = vendor
+        if len(vendor) > 31:    # MPC sees 31 characters and finds the skin by '<vendor> - VST - <name>'
+            vendor = VENDOR_SHORT.get(name) or re.split(r'[;(]', vendor)[0].strip()[:31].strip()
         ctype = str(caps.get("component_type", ""))
         effect = ctype in EFFECT_TYPES or (bool(caps.get("audio_in")) and not caps.get("audio_out"))
         # Effects export move_audio_fx_init_v2 (in-place process_block); instruments export
@@ -292,6 +299,8 @@ def main():
                   open(os.path.join(vdir, "module.json"), "w"), indent=1)
         cfg = {"name": name, "vendor": vendor, "uid": uid,
                "version": version_int(mod.get("version", "1.0.0")), "so": so, "module": "module.json"}
+        if credits != vendor:
+            cfg["credits"] = credits
         if is_fx:
             cfg["adapter"] = "schwungfx"
         if effect:

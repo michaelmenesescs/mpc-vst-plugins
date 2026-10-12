@@ -1,6 +1,6 @@
 {
  "name": "Braids",
- "vendor": "Emilie Gillet (port charlesvestal)",
+ "vendor": "Emilie Gillet",
  "uid": "Brai",
  "version": 208,
  "so": "braids.so",
@@ -31,5 +31,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "Emilie Gillet (port charlesvestal)"
 }

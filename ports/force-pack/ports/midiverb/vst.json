@@ -1,6 +1,6 @@
 {
  "name": "Midiverb",
- "vendor": "Charles Vestal (DSP thement midiverb_emulator)",
+ "vendor": "charlesvestal",
  "uid": "Midi",
  "version": 202,
  "so": "midiverb.so",
@@ -23,5 +23,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "Charles Vestal (DSP thement midiverb_emulator)"
 }

@@ -1,6 +1,6 @@
 {
  "name": "8W8",
- "vendor": "athousanddetails; circuit models from the TR-808 service notes and Werner Abel Smith; rim shot transcribed from sc808 (Yoshinosuke Horiuchi Sam Aaron, Sonic Pi)",
+ "vendor": "athousanddetails",
  "uid": "8W8X",
  "version": 10500,
  "so": "8w8.so",
@@ -26,5 +26,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "athousanddetails; circuit models from the TR-808 service notes and Werner Abel Smith; rim shot transcribed from sc808 (Yoshinosuke Horiuchi Sam Aaron, Sonic Pi)"
 }

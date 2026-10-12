@@ -9,6 +9,7 @@ Two kinds of check:
   - the hardware's placement: controls at the positions measured from each machine's reference photo (README.md
     lists the photos), so a later edit can't quietly move a knob away from where the hardware has it."""
 import glob
+import json
 import os
 import sys
 import unittest
@@ -80,6 +81,18 @@ class Playable(unittest.TestCase):
                         for x, y in (map(int, xy.split(":")) for xy in w["at"].split(",")):
                             with self.subTest(plugin=pid(path), key=w["key"], at=(x, y)):
                                 self.assertTrue(0 <= x <= W and Y_OFF <= y <= Y_OFF + H)
+
+
+class Vendor(unittest.TestCase):
+    """MPC reads 31 characters of the vendor (effGetVendorString) and finds the skin by '<vendor> - VST - <name>':
+    a longer vendor loads the plugin with the generic parameter page (seen on a Force, 2026-10-11)."""
+
+    def test_vendor_fits(self):
+        files = glob.glob(os.path.join(HERE, "ports", "*", "vst.json")) + glob.glob(os.path.join(REPO, "ports", "*", "vst", "vst.json"))
+        self.assertGreater(len(files), 20)
+        for f in files:
+            v = json.load(open(f))["vendor"]
+            self.assertLessEqual(len(v), 31, "%s: vendor %r" % (f, v))
 
 
 class HwPanel(unittest.TestCase):

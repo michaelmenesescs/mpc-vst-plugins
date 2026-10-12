@@ -1,6 +1,6 @@
 {
  "name": "Weird Dreams",
- "vendor": "Vincent Fillion (DSP Daniele Filaretti, MIT)",
+ "vendor": "Vincent Fillion",
  "uid": "Weir",
  "version": 208,
  "so": "weird-dreams.so",
@@ -19,5 +19,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "Vincent Fillion (DSP Daniele Filaretti, MIT)"
 }

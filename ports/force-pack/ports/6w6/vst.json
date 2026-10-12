@@ -1,6 +1,6 @@
 {
  "name": "6W6",
- "vendor": "athousanddetails; voices after 606-Inspired-Synth-Drums (Matthew Fecher AudioKit Pro)",
+ "vendor": "athousanddetails",
  "uid": "6W6X",
  "version": 10800,
  "so": "6w6.so",
@@ -26,5 +26,6 @@
   ]
  },
  "layout": "layout.conf",
- "art": "html"
+ "art": "html",
+ "credits": "athousanddetails; voices after 606-Inspired-Synth-Drums (Matthew Fecher AudioKit Pro)"
 }
