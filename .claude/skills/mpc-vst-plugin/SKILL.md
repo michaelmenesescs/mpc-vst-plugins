@@ -41,6 +41,7 @@ Stop any separately attached audio engines first.
 7. The user tests on the device: plugin list → insert → play → edit screen → Q-Links → save/reload project.
 
 ## Gotchas
+- vst.json `vendor` must be 31 characters or fewer: MPC only reads 31 and finds the skin by `<vendor> - VST - <name>`, so a longer one shows the generic parameter page (Force, 2026-10-11). Put long author credits in `credits`.
 - Integer DSP params: set `"display": "int"`. The wrapper then rounds, and `settle()` moves an option list or a whole-number
   param one step per data wheel click or Q-Link event (else it sticks between two values), and a drag or sweep without flicker.
   MPC sends a wheel click and a Q-Link event alike (the read-back value plus 0.01 / 1/128 of the range: docs/NOTES.md "Stepping of

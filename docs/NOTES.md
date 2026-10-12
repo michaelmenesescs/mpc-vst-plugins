@@ -26,6 +26,9 @@ from the Force and may differ on MPC Live/One/X/Key (e.g. `Force Documents` vs `
 - Skin folder name `<manufacturer> - VST - <plugin name>` matched. Reference skins:
   `/usr/share/Akai/Content/Synths/*/Plugin Skins/` (e.g. Decimator = simple, Bassline = 4 tabs,
   knobs + `btnBypass` + `slider` + `comboBox` + `Label` + `Focus`).
+- The vendor in that folder name must be 31 characters or fewer (device, Force, 2026-10-11). The wrapper answers
+  `effGetVendorString` in a 32-byte buffer, so MPC looks for the cut-off name, finds no skin and shows its generic
+  parameter page; the plugin itself loads fine. `gen_vst.py` rejects a longer vendor; credits go in `credits`.
 - `importFiles` in `TUI.json` resolve relative to the skin; use absolute
   `/usr/share/Akai/Content/Synths/...` paths when the skin lives elsewhere.
 - Component library: `AKAI Components/AKAI Generic Components.json` (knobBlack/Blue/Green/Grip/

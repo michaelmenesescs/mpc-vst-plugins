@@ -9,6 +9,7 @@ vst.json (paths are relative to the vst.json's folder):
     {
       "name": "My Synth", "vendor": "me", "uid": "MySy", "version": 1000,
       "so": "my_synth.so",                       # lives in the plugin folder /sdcard/Synths/<vendor> - VST - <name>/
+      "credits": "...",                          # optional full author credit; vendor itself must be <= 31 characters
       "params": "params.json",                   # parameter list (tools/params.py), in VST index order
       "layout": "layout.conf",                   # optional; without it the skin studio's auto-layout is used
       "short_names": {"LFO1 > ": "L1 "},          # optional on-screen name shortening
@@ -54,6 +55,11 @@ def load(path):
             sys.exit("vst.json: missing %r" % k)
     if len(cfg["uid"]) != 4:
         sys.exit("vst.json: uid must be 4 characters (e.g. 'MzVc')")
+    # The wrapper hands MPC at most 31 characters (effGetVendorString, 32-byte buffer) and MPC finds the skin by
+    # '<vendor> - VST - <name>': a longer vendor loads the plugin with MPC's generic parameter page instead.
+    if len(cfg["vendor"]) > 31:
+        sys.exit("vst.json: vendor %r is %d characters; MPC only sees 31, so the skin would not load"
+                 % (cfg["vendor"], len(cfg["vendor"])))
     return cfg
 
 
