@@ -1,0 +1,17 @@
+{
+ "id": "snake",
+ "name": "snake",
+ "author": "michaelmenesescs",
+ "repo": "michaelmenesescs/mpc-sequencers",
+ "kind": "instrument",
+ "role": "midi",
+ "license": "MIT",
+ "summary": "Cartesian sequencer: a 4x4 grid of pitch nodes played by two clocks, X along a snake path and Y in strides of four, with per-node pitch, gate and glide, four path shapes and scale quantisation.",
+ "style": "step-sequencer",
+ "tags": [
+  "sequencer",
+  "cartesian",
+  "midi"
+ ],
+ "asset_pattern": "snake-*-mpc-armv7.zip"
+}
