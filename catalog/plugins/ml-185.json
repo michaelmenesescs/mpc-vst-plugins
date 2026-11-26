@@ -1,0 +1,18 @@
+{
+ "id": "ml-185",
+ "name": "ML-185",
+ "author": "michaelmenesescs",
+ "repo": "michaelmenesescs/mpc-sequencers",
+ "kind": "instrument",
+ "role": "midi",
+ "license": "MIT",
+ "summary": "8-stage stage sequencer: per-stage pitch, 1-8 pulses (ratchets), gate modes, slide and accent, with length, direction, rate, swing and 11 scales. Drives a synth track or hardware over its own MIDI port; the screen follows the Q-Link page.",
+ "style": "step-sequencer",
+ "tags": [
+  "sequencer",
+  "stage",
+  "ratchet",
+  "midi"
+ ],
+ "asset_pattern": "ML-185-*-mpc-armv7.zip"
+}
