@@ -1,0 +1,15 @@
+{
+ "id": "schwung-midiverb",
+ "name": "Midiverb",
+ "author": "charlesvestal",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "reverb",
+ "tags": [
+  "midiverb",
+  "reverb"
+ ],
+ "license": "GPL-3.0-only",
+ "asset_pattern": "Midiverb-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module Midiverb by charlesvestal: Alesis Midiverb / Midifex / Midiverb II emulator (lo-fi 23.4 kHz reverb). Stock Q-Link skin."
+}

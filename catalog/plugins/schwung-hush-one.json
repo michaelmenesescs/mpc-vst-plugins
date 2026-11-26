@@ -1,0 +1,15 @@
+{
+ "id": "schwung-hush-one",
+ "name": "HUSH ONE",
+ "author": "charlesvestal",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "instrument",
+ "style": "mono-bass",
+ "tags": [
+  "sh-101",
+  "monosynth"
+ ],
+ "license": "MIT",
+ "asset_pattern": "HUSH-ONE-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module HUSH ONE by charlesvestal: Monophonic subtractive synthesizer emulating the Roland SH-101. Stock Q-Link skin."
+}

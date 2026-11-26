@@ -1,0 +1,15 @@
+{
+ "id": "schwung-tapescam",
+ "name": "TAPESCAM",
+ "author": "charlesvestal",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "lofi-tape",
+ "tags": [
+  "tape",
+  "saturation"
+ ],
+ "license": "MIT",
+ "asset_pattern": "TAPESCAM-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module TAPESCAM by charlesvestal: Tape saturation and degradation effect. Stock Q-Link skin."
+}

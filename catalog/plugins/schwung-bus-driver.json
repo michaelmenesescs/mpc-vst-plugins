@@ -1,0 +1,15 @@
+{
+ "id": "schwung-bus-driver",
+ "name": "Bus Driver",
+ "author": "legsmechanical",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "dynamics",
+ "tags": [
+  "drum-bus",
+  "compressor"
+ ],
+ "license": "MIT",
+ "asset_pattern": "Bus-Driver-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module Bus Driver by legsmechanical: Drum-bus glue modelled from measurement: one-knob compression, three drive characters, band-limited crunch, damping, and a tuned sub generator. Stock Q-Link skin."
+}

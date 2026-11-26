@@ -1,0 +1,15 @@
+{
+ "id": "schwung-junologue-chorus",
+ "name": "Junologue Chorus",
+ "author": "Peter Allwin",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "modulation",
+ "tags": [
+  "juno",
+  "chorus"
+ ],
+ "license": "MIT",
+ "asset_pattern": "Junologue-Chorus-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module Junologue Chorus by Peter Allwin: Juno-60 chorus emulation - port of peterall/junologue-chorus. Stock Q-Link skin."
+}

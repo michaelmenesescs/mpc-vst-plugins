@@ -1,0 +1,15 @@
+{
+ "id": "schwung-psx-verb",
+ "name": "PSX Verb",
+ "author": "charlesvestal",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "reverb",
+ "tags": [
+  "playstation",
+  "reverb"
+ ],
+ "license": "MIT",
+ "asset_pattern": "PSX-Verb-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module PSX Verb by charlesvestal: PlayStation 1 SPU reverb emulation. Stock Q-Link skin."
+}

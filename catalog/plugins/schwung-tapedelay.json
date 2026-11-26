@@ -1,0 +1,16 @@
+{
+ "id": "schwung-tapedelay",
+ "name": "TapeDelay",
+ "author": "cyrusasfa",
+ "repo": "michaelmenesescs/mpc-vst-plugins",
+ "kind": "effect",
+ "style": "delay",
+ "tags": [
+  "tape",
+  "echo",
+  "re-201"
+ ],
+ "license": "MIT",
+ "asset_pattern": "TapeDelay-*-mpc-armv7.zip",
+ "summary": "MPC/Force build of the Schwung/Move module TapeDelay by cyrusasfa: Tape delay with flutter and tone shaping. Stock Q-Link skin."
+}
