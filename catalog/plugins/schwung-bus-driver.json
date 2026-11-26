@@ -1,0 +1,16 @@
+{
+ "id": "schwung-bus-driver",
+ "name": "Bus Driver",
+ "author": "legsmechanical",
+ "repo": "michaelmenesescs/mpc-schwung-ports",
+ "kind": "effect",
+ "license": "MIT",
+ "summary": "Drum-bus glue built from measurements: one-knob compression, three drive characters with band-limited crunch, damping, transient shaping and a tuned sub generator, plus trim, output and dry/wet.",
+ "style": "dynamics",
+ "tags": [
+  "drum-bus",
+  "compressor",
+  "saturation"
+ ],
+ "asset_pattern": "Bus-Driver-*-mpc-armv7.zip"
+}
