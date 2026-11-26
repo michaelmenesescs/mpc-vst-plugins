@@ -102,13 +102,14 @@ drop-in, and MPC's first start after a boot runs without the addins until someth
 (reinstalling an addin does). Reported on a Key 37 and a Live II (mpc-addin-usb-audio #1 and #2), and seen on a Key 37
 (NOTES.md, 2026-10-11).
 
-So when the installer uses the shared drop-in and `/etc` is an overlay, it also writes
+So when an addin is loaded from a drop-in (the shared one, or another file in `/etc` it was added to, such as
+`hwremap.conf`) and `/etc` is an overlay, the installer also writes
 `/usr/lib/systemd/system/mpc-addins-reload.service` on the root filesystem, linked from `acvs.service.wants/`. It runs once
-per boot after `etc.mount` and before MPC, and only runs `systemctl daemon-reload`. It does nothing while there is no
-drop-in (`ConditionPathExists`), and a failure is ignored, so MPC then starts as it did before. The root is mounted
+per boot after `etc.mount` and before MPC, and only runs `systemctl daemon-reload`. It does nothing while MPC's service has
+no drop-in (`ConditionDirectoryNotEmpty`), and a failure is ignored, so MPC then starts as it did before. The root is mounted
 read-only: the installer remounts it writable for that one write and read-only again, and warns and carries on if it
-cannot. The first install writes it, later installs leave the root alone, and the last uninstall (the one that removes
-the drop-in) deletes it. A file of that name the installer did not write is never touched. A firmware update replaces the
+cannot. The first install writes it, later installs leave the root alone, and the uninstall after which no drop-in loads
+an addin deletes it. A file of that name the installer did not write is never touched. A firmware update replaces the
 root filesystem, so the unit goes with it: re-run an addin's installer afterwards, as for the drop-in. Without the overlay
 (MPC OS 2.x, or a unit edited in place) nothing is written. Tests: case 14 in `tools/test_addin.sh`.
 

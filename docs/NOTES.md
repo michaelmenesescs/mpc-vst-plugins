@@ -3164,3 +3164,10 @@ A silent probe instrument (`midiprobe` in the mpc-vst-ondes port repo: logs ever
 
 So a plugin can use bend, mod wheel, expression, sustain and channel pressure as played controls on this keyboard. Not tried:
 other Gen1/Gen2 models, MIDI from an external controller, and what a sequenced track's recorded bend sends.
+
+## 2026-11-27: uninstalling one addin removed the boot-reload unit others needed (Force, 3.10.1, device)
+
+On a Force whose addins are listed in `hwremap.conf`, uninstalling the only addin in `90-mpc-addins.conf` removed
+`mpc-addins-reload.service`, and reinstalling did not write it again (no shared drop-in). Nothing then reloaded systemd after
+boot, so `/etc` overlay drop-ins (addins, connman's restart policy) were not seen. The unit is now kept while any drop-in in
+`/etc` preloads from the addins' folder, and its condition is a non-empty drop-in folder. Tests: case 18b.

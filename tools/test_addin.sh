@@ -236,7 +236,7 @@ export ADDIN_MOUNTS="$T/mounts-ovl"
 BU="$T/root/usr/lib/systemd/system/mpc-addins-reload.service"; BW="$T/root/usr/lib/systemd/system/acvs.service.wants/mpc-addins-reload.service"
 run a install.sh
 grep -qx "After=etc.mount" "$BU" && grep -qx "Before=acvs.service" "$BU" && grep -qx "ExecStart=-/bin/systemctl daemon-reload" "$BU" \
-  && grep -qx "ConditionPathExists=/etc/systemd/system/acvs.service.d/90-mpc-addins.conf" "$BU" && [ "$(readlink "$BW")" = "../mpc-addins-reload.service" ] \
+  && grep -qx "ConditionDirectoryNotEmpty=/etc/systemd/system/acvs.service.d" "$BU" && [ "$(readlink "$BW")" = "../mpc-addins-reload.service" ] \
   && ok "overlay /etc: a reload unit, pulled in by MPC's service" || bad "boot unit: $(cat "$BU" 2>&1)"
 grep -q "mount -o remount,rw /" "$T/log" && [ "$(tail -n 3 "$T/log" | grep -c 'remount,ro /')" = 1 ] && ok "overlay /etc: the root is made writable for it, then read-only again" || bad "remount: $(cat "$T/log")"
 n=$(grep -c remount "$T/log"); run b install.sh
@@ -324,8 +324,16 @@ run a install.sh
 grep -qx "Environment=\"LD_PRELOAD=/data/hw.so:/data/r.so:$A\"" "$HW" && [ ! -e "$DROP" ] && [ ! -e "$T/root/data/system/etc/overlay/systemd/system/acvs.service.d/90-mpc-addins.conf" ] \
   && ok "shadowing drop-in: the addin is added to the later-sorting file in the writable layer, no shared drop-in" || bad "shadowing install: $(cat "$HW" 2>&1; cat "$T/out")"
 grep -qx drop_caches "$T/log" && ok "shadowing drop-in: the cached view is refreshed" || bad "shadowing: no refresh: $(cat "$T/log")"
+[ -f "$BU" ] && [ -L "$BW" ] && ok "shadowing drop-in: the boot-reload unit is written without a shared drop-in" || bad "shadowing: no boot unit: $(cat "$T/out")"
+run b install.sh
+cp "$HW" "$HWV.new" 2>/dev/null || true; chmod u+w "$(dirname "$HWV")" "$HWV"; cp "$HW" "$HWV"; rm -f "$HWV.new"   # the view after the cache refresh
 run a uninstall.sh
-grep -qx 'Environment="LD_PRELOAD=/data/hw.so:/data/r.so"' "$HW" && ok "shadowing drop-in: uninstall takes the addin out again" || bad "shadowing uninstall: $(cat "$HW" 2>&1)"
+[ -f "$BU" ] && [ -L "$BW" ] && ok "shadowing drop-in: the unit stays while another addin is listed there" || bad "shadowing: unit removed too early: $(cat "$T/out")"
+cp "$HW" "$HWV"
+run b uninstall.sh
+grep -qx 'Environment="LD_PRELOAD=/data/hw.so:/data/r.so"' "$HW" && ok "shadowing drop-in: uninstall takes the addins out again" || bad "shadowing uninstall: $(cat "$HW" 2>&1)"
+cp "$HW" "$HWV"; run a install.sh; cp "$HW" "$HWV"; run a uninstall.sh
+[ ! -e "$BU" ] && [ ! -e "$BW" ] && ok "shadowing drop-in: the unit goes with the last addin" || bad "shadowing: unit left behind"
 chmod -R u+w "$T/root"
 export ADDIN_MOUNTS="$T/mounts-plain"
 

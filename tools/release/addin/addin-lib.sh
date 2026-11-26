@@ -196,7 +196,8 @@ preload_remove() {   # service so: out of every writable file that lists it, the
 # After a reboot. Where /etc is an overlay that systemd mounts itself (etc.mount, a few seconds into boot, on MPC OS 3.x),
 # systemd has read its units before the drop-in above is visible: MPC's first start after a boot runs without the addins
 # until something reloads systemd (docs/ADDINS.md, "After a reboot"). A small unit on the root filesystem, pulled in by
-# MPC's service, reloads systemd once /etc is mounted and before MPC starts. It does nothing while there is no drop-in.
+# MPC's service, reloads systemd once /etc is mounted and before MPC starts. It does nothing while the service has no drop-in.
+# It is needed while any drop-in loads an addin: the shared one, or another file an addin was added to (hwremap.conf).
 # The root is mounted read-only, so writing it means a short remount; failing that, the installer warns and carries on.
 BOOT_UNIT=mpc-addins-reload.service
 BOOT_MARK="mpc-vst-plugins addin installer"
@@ -248,14 +249,23 @@ remount_root() {   # rw | ro (logged under test; ADDIN_REMOUNT_FAILS=1 simulates
 boot_unit_text() {   # service
     printf '[Unit]\nDescription=Reload systemd once /etc is mounted, so MPC starts with its addins (%s)\n' "$BOOT_MARK"
     printf '# /etc is an overlay mounted after systemd read its units: without a reload, the addins drop-in is not seen at boot.\n'
-    printf 'After=etc.mount\nBefore=%s.service\nConditionPathExists=/etc/systemd/system/%s.service.d/%s\n\n' "$1" "$1" "$DROPIN_NAME"
+    printf 'After=etc.mount\nBefore=%s.service\nConditionDirectoryNotEmpty=/etc/systemd/system/%s.service.d\n\n' "$1" "$1"
     printf '[Service]\nType=oneshot\nExecStart=-/bin/systemctl daemon-reload\nTimeoutStartSec=60\n'
 }
 boot_paths() {   # service: sets BU (the unit) and BW (its link in the service's .wants)
     BU="$SYSTEMD_ROOT/usr/lib/systemd/system/$BOOT_UNIT"; BW="$SYSTEMD_ROOT/usr/lib/systemd/system/$1.service.wants/$BOOT_UNIT"
 }
-boot_reload_add() {   # service: when the shared drop-in is in use on an /etc overlay
-    [ -f "$(ours "$1")" ] || return 0
+# Whether an addin still depends on a drop-in in /etc: the shared drop-in, or a drop-in there that preloads from the addins'
+# folder (the parent of this addin's own).
+etc_addins() {   # service
+    [ ! -f "$(ours "$1")" ] || return 0
+    for f in "$SYSTEMD_ROOT/etc/systemd/system/$1.service.d/"*.conf; do
+        [ -f "$f" ] && preload_of "$(upper_of "$f")" | tr ':' '\n' | grep -qF "${DIR%/*}/" && return 0
+    done
+    return 1
+}
+boot_reload_add() {   # service: while an addin is loaded from a drop-in on an /etc overlay
+    etc_addins "$1" || return 0
     etc_overlay_rw || [ -n "$ETC_UPPER" ] || return 0
     boot_paths "$1"
     if [ -f "$BU" ] && [ "$(cat "$BU")" = "$(boot_unit_text "$1")" ] && [ -L "$BW" ]; then return 0; fi
@@ -273,8 +283,8 @@ boot_reload_add() {   # service: when the shared drop-in is in use on an /etc ov
     sync
     [ $was_ro = 0 ] || remount_root ro || echo "warning: / is still writable; it is read-only again after a reboot" >&2
 }
-boot_reload_remove() {   # service: once the shared drop-in is gone (the last addin), take out the unit it wrote
-    [ ! -f "$(ours "$1")" ] || return 0
+boot_reload_remove() {   # service: once no drop-in loads an addin (the last one is gone), take out the unit it wrote
+    ! etc_addins "$1" || { boot_reload_add "$1"; return 0; }
     boot_paths "$1"
     [ -L "$BW" ] || { [ -f "$BU" ] && grep -qF "$BOOT_MARK" "$BU"; } || return 0
     was_ro=0; root_ro && was_ro=1
