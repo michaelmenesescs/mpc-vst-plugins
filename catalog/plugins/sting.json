@@ -1,0 +1,18 @@
+{
+ "id": "sting",
+ "name": "sting",
+ "author": "michaelmenesescs",
+ "repo": "michaelmenesescs/mpc-sequencers",
+ "kind": "instrument",
+ "role": "midi",
+ "license": "MIT",
+ "summary": "Generative acid sequencer: seeded, deterministic 303-style lines from density, chaos, accent and slide probabilities, with steps, rate, scale and swing. Same seed, same line, every time.",
+ "style": "generative",
+ "tags": [
+  "acid",
+  "303",
+  "generative",
+  "midi"
+ ],
+ "asset_pattern": "sting-*-mpc-armv7.zip"
+}
