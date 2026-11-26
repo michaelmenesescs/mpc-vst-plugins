@@ -125,6 +125,15 @@ it at boot, the stock app's data left alone, full source (kernel modules too) an
 permission for. Root, kernel modules, USB gadget changes and network services are fine but must be declared in `flags`; a maintainer
 reviews them and adds `flags_reviewed`, and the card shows them. `python3 tools/alt_os_check.py` checks the file.
 
+## Other sources (closed-source or paid plugins)
+A plugin whose source is closed, or that you sell, can be listed as a link on the site's **Other sources** section. The card links to
+your own site; the catalog hosts no file, shows no checksum and installs nothing, and Plugin Manager and the installers never offer it.
+Free closed-source plugins go here too. Open a PR adding `catalog/listings/<id>.json` (fields: docs/CATALOG_SPEC.md, "Other
+sources"); `python3 tools/catalog_listings.py` checks it. A maintainer reviews every listing against `docs/POLICY.md`, "Other sources":
+no ROMs, firmware or unlicensed samples, no other company's branding, no closed binary built from GPL code; for a paid listing a support
+contact answered within 14 days, a refund policy on your shop page, and licence activation that works offline. If your source is open,
+add your plugin to the catalog proper instead (above).
+
 ## Companion apps
 A desktop tool that works with a standalone MPC but is not a plugin (for example MPC Link) is listed on the site's **Companion apps**
 tab from `catalog/apps.json`, not from `catalog/plugins/`. Open a PR adding one object to `apps`: `id`, `title`, `summary`, `author`,

@@ -1,0 +1,12 @@
+{
+  "id": "silicon",
+  "name": "SILICON",
+  "author": "Shannon Instruments",
+  "repo": "jasonnicklaus1980-coder/Silicon-",
+  "kind": "instrument",
+  "license": "MIT",
+  "summary": "MPC OS 3.x ARM32 four-layer FM synthesizer with four selectable FM engines.",
+  "style": "fm",
+  "tags": ["fm", "synth"],
+  "asset_pattern": "SILICON-*-mpc-armv7.zip"
+}

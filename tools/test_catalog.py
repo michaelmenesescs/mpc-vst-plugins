@@ -1905,7 +1905,9 @@ class ListingsTest(unittest.TestCase):
         self.write(self.L)
         r = build(b)
         self.assertEqual(r.returncode, 0, r.stderr)
-        self.assertEqual(open(os.path.join(a, "catalog.json"), "rb").read(), open(os.path.join(b, "catalog.json"), "rb").read())
+        # "generated" is the build time to the second: two builds can straddle a second boundary, so leave it out of the comparison
+        load = lambda d: {k: v for k, v in json.load(open(os.path.join(d, "catalog.json"))).items() if k != "generated"}
+        self.assertEqual(load(a), load(b))
         self.assertFalse(os.path.exists(os.path.join(a, "listings.json")))
         self.assertEqual(json.load(open(os.path.join(b, "listings.json")))["listings"][0]["id"], "pro-synth")
 

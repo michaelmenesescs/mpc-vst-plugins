@@ -304,6 +304,26 @@ resolver, so a new release is a PR. `{"schema": 1, "systems": [...]}`, each syst
 | `flags` | required `{root, kernel_modules, usb_gadget}` (booleans) and `network` (`[{port, auth, purpose}]`, `[]` for none) |
 | `flags_reviewed` | required when any flag is set: `{by, date, flags}`, a maintainer's login and exactly the flags set. Shown on the card with the flags |
 
+## Other sources (`catalog/listings/<id>.json`) (2026-11-23, offline: unit tests and a headless-browser check)
+Closed-source or paid plugins that their developers host and sell themselves: link-only cards on the site's Other sources section
+(policy: `docs/POLICY.md`, "Other sources"). One file per listing, checked by `tools/catalog_listings.py` (also run by
+`catalog_build.py --check-registry`). The build writes the entries, sorted by id, to `listings.json` next to `catalog.json`, and only when
+there is at least one; `catalog.json` and `catalog.tsv` never carry a listing, and the old-address mirror (`catalog_mirror.py`) does not copy
+`listings.json`. The site shows the section only when built with `catalog_site.py --other-sources` and there is a listing. Nothing is
+fetched or resolved: a listing has no versions, zip or checksum. Unknown fields are refused.
+
+| field | |
+|---|---|
+| `id`, `name`, `author`, `summary` | required, as for a registry entry (`id` a lowercase slug and the file name; `summary` at most 350 characters). `id` must not be a plugin in `catalog/plugins/` |
+| `kind` | required: `instrument` or `effect` (no addins) |
+| `source` | required: `closed` or `source-available` (`open` is refused: that plugin belongs in the catalog proper) |
+| `price` | required, at most 40 characters: `Free`, or as the developer prices it (`from $29`). A listing is paid unless the price is `Free` |
+| `shop_url` | required https link: the page where people buy or download it |
+| `support` | required for a paid listing: `{contact, response_days}`, an https link and 1 to 14 |
+| `demo_url`, `homepage`, `screenshot` | optional https links (`screenshot` pinned, as for a registry entry) |
+| `style`, `tags` | optional, as for a registry entry (lowercase slugs, at most 8 tags) |
+| `devices` | optional: `["mpc-sample"]` if the developer says it works on the MPC Sample. A developer claim, shown as one ("Developer says it works on"); MPC / Force leaves out a listing whose only device is the Sample |
+
 ## Portable paths (for engines)
 Engines locate their data next to the `.so` (`wrapper/plugin_dir.h`, `MODULE_SUBDIR`), never at a fixed `/sdcard`.
 The installers currently still install to the directory in the entry's `file=` and skins to `/sdcard/Synths`.

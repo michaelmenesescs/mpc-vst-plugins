@@ -80,7 +80,7 @@ jobs:
         run: python3 tools/catalog_issues.py
       - name: Generate the site
         if: ${{ github.event_name != 'pull_request' }}
-        run: python3 tools/catalog_site.py
+        run: python3 tools/catalog_site.py --other-sources   # the Other sources section appears only once catalog/listings/ has a listing (docs/CATALOG_SPEC.md)
       - name: Copy the Install page's downloads into the site (pinned, catalog/downloads.json)
         if: ${{ github.event_name != 'pull_request' }}
         run: python3 tools/site_downloads.py

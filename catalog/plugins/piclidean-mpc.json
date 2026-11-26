@@ -6,7 +6,7 @@
   "kind": "instrument",
   "role": "midi",
   "license": "MIT",
-  "summary": "Sixteen-lane hybrid MIDI sequencer with Euclidean patterns, per-step expression, scales, selective randomization and dual-LFO modulation.",
+  "summary": "πClideaN is a 16-lane hybrid MIDI sequencer with Euclidean and custom patterns, A/B variations, per-step expression, scales, guided randomization, humanization and four dual-LFO modulation slots. Imports Microtonic Patternarium patterns and includes 150 BEST A+B patterns matching πToniC's drum kits.",
   "style": "generative",
   "tags": [
     "midi",

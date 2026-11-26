@@ -134,6 +134,10 @@ mention `@open-mpc/maintainers` with one line on why. Hand over when:
   Only a maintainer sets `flags_reviewed`.
 - **Alternative OS entries** (`catalog/alt_os.json`): always. Check the zip against the entry (stock binary hash check, no rootfs
   writes, `boot_skip`, `content` claims, bundled plugins) and that the device report is real, then hand over; a maintainer sets `flags_reviewed`.
+- **Other sources listings** (`catalog/listings/`): always. Check that `tools/catalog_listings.py` passes, the shop page works and
+  matches the listing (name, price, closed or source-available), the plugin is not built from GPL code without its source, there is no
+  ROM, firmware or other company's branding, and for a paid listing the support contact and refund policy exist; then hand over
+  (`docs/POLICY.md`, "Other sources").
 - **Trust fields:** `featured`, `tier`, `depends`, `conflicts`, `devices`, `retire`, or a new collection. (`min_os` is not one: it is an author opt-out, checked in item 11.)
 - **Ownership doubt:** the PR author isn't clearly the repo owner, or an entry changes `repo` or `author`.
 - **A yank or a delisting request**, a security report, or a complaint from another author or company.

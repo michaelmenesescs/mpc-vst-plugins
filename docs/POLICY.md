@@ -15,6 +15,9 @@ suggestion; nothing here is in force until the owners adopt it (a PR that remove
   MPC and installers run as root on the device, so the checks below exist to limit damage, not to guarantee safety.
 
 ## What can be listed
+These rules are for the catalog proper: what Plugin Manager and the installers offer. Closed-source and paid plugins can only be
+listed as links, under "Other sources" below.
+
 - **Public source, under an SPDX open licence.** A licence that limits use (for example non-commercial) is accepted only as
   `"source_available": true`: the source must be public, and the card shows a "Restricted use" badge so nobody mistakes it
   for open source. This is what the catalog already does (`tools/catalog_build.py`, `catalog/README.md`; the JV-880's MAME
@@ -33,6 +36,33 @@ suggestion; nothing here is in force until the owners adopt it (a PR that remove
 - **A release must be catalog-conformant** (`mpc-plugin.json` from `tools/release.py`, `catalog_check.py` OK). Releases made with
   the shared release workflow are; a plugin made with Akai's SDK is listed through the same checks.
 - Authors keep their own repos. Listing does not require moving a repo into the organization.
+
+## Other sources: closed-source and paid plugins (listings)
+A separate section of the site for plugins that their developers host and sell themselves. **Advertisement only:** a listing is
+a card that links to the developer's own site. OpenMPC takes no money, issues no licences, hosts no files and installs nothing;
+Plugin Manager, the installers and `catalog.json` never carry a listing. Free closed-source plugins are listed here too.
+- **Eligible:** original code, or code whose licence allows closed or commercial distribution. No closed binary built from GPL
+  code (a GPL plugin with public source belongs in the catalog proper). An open-source plugin belongs in the catalog proper, not here.
+- **Same content rules as the catalog proper:** no ROM or firmware dependence, no bundled third-party samples or banks without the
+  rights, no other company's branding. Only the public MPC plugin interfaces (no OS patching); addins and alternative OSes are not
+  listed here.
+- **The developer:**
+  - answers the support contact on the listing within the time it states (14 days at most) for a paid listing;
+  - fixes a plugin broken by an MPC OS update within 30 days, or the listing is marked as not working on that MPC OS (not removed);
+  - states the refund policy on the shop page;
+  - does not require a connection to load a project: licence activation works offline on the device (a file or key);
+  - says when a plugin is discontinued; the listing then says so, for people who already bought it.
+- **OpenMPC:**
+  - listing is free;
+  - a listing PR is always handed to a maintainer (`docs/CATALOG_REVIEW.md`); a maintainer who sells a plugin does not review
+    their own listing;
+  - a listing is delisted for breaking these rules, with the reason in a public issue or PR;
+  - the site says purchases and support are between the buyer and the developer, and that OpenMPC has not reviewed the files.
+- **DECIDE:**
+  - adopt this section (suggested: yes);
+  - whether maintainers test listed plugins on a device and show it on the card, and on which devices (suggested: later, once
+    there are listings; until then cards show the developer's own device claim only);
+  - how long before a listing whose developer stops answering is delisted (suggested: the same deadline as for the catalog proper).
 
 ## Review and merging
 - A new plugin needs one reviewed pull request adding `catalog/plugins/<id>.json`. Later releases are discovered and
