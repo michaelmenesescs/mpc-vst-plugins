@@ -1,0 +1,14 @@
+{
+ "id": "schwung-4k-eq",
+ "name": "4K EQ",
+ "author": "athousanddetails",
+ "repo": "michaelmenesescs/mpc-schwung-ports",
+ "kind": "effect",
+ "license": "GPL-3.0-only",
+ "summary": "British console EQ: four calibrated bands in Brown and Black voicings, stepped high- and low-pass filters, gain, frequency and Q per band, auto-gain, oversampling and bypass. For shaping drums, busses and the mix.",
+ "style": "filter-eq",
+ "tags": [
+  "eq"
+ ],
+ "asset_pattern": "4K-EQ-*-mpc-armv7.zip"
+}
